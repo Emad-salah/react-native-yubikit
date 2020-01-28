@@ -1,0 +1,33 @@
+{
+	"name": "react-native-yubikit",
+	"title": "React Native Yubikit",
+	"version": "0.1.0",
+	"description": "A bridge for Yubikit SDK on React Native",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Emad-salah/react-native-yubikit.git",
+		"baseUrl": "https://github.com/Emad-salah/react-native-yubikit"
+	},
+	"keywords": [
+		"react-native"
+	],
+	"author": {
+		"name": "Emad Kheir",
+		"email": "emads14@gmail.com"
+	},
+	"license": "MIT",
+	"licenseFilename": "LICENSE",
+	"readmeFilename": "README.md",
+	"peerDependencies": {
+		"react": "^16.9.0",
+		"react-native": ">=0.59.0-rc.0 <1.0.x"
+	},
+	"devDependencies": {
+		"react": "^16.9.0",
+		"react-native": "^0.61.5"
+	}
+}
