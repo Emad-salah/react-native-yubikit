@@ -1210,7 +1210,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = BA4BA52EB57A8664B61EE2E696835EC4 /* Products */;
@@ -1382,6 +1381,39 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		02B427704AD23A2E7C477CE02ED88C00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YubiKit/YubiKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YubiKit/YubiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YubiKit/YubiKit.modulemap";
+				PRODUCT_MODULE_NAME = YubiKit;
+				PRODUCT_NAME = YubiKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1513,38 +1545,6 @@
 			};
 			name = Debug;
 		};
-		BEE651AC9F8230D342E2299EFC485637 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/YubiKit/YubiKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/YubiKit/YubiKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/YubiKit/YubiKit.modulemap";
-				PRODUCT_MODULE_NAME = YubiKit;
-				PRODUCT_NAME = YubiKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1609,7 +1609,7 @@
 			};
 			name = Debug;
 		};
-		FDFEE9C3B4B890BA0C5AE991337E8A13 /* Release */ = {
+		E44C92AD5A23E67E5EF6486B306A2F69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */;
 			buildSettings = {
@@ -1635,6 +1635,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1666,8 +1667,8 @@
 		F8941DEB2CC5DCD9C04C2F8AACBC6B3D /* Build configuration list for PBXNativeTarget "YubiKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BEE651AC9F8230D342E2299EFC485637 /* Debug */,
-				FDFEE9C3B4B890BA0C5AE991337E8A13 /* Release */,
+				02B427704AD23A2E7C477CE02ED88C00 /* Debug */,
+				E44C92AD5A23E67E5EF6486B306A2F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

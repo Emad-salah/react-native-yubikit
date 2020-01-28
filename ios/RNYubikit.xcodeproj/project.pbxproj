@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		079EF867525791D7E0598B34 /* Pods_RNYubikit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7871D46020A8A9641B56B184 /* Pods_RNYubikit.framework */; };
 		B3E7B58A1CC2AC0600A0062D /* RNYubikit.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNYubikit.m */; };
+		C31DC35D23E08EDD000DBBCE /* RNYubikit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31DC35C23E08EDD000DBBCE /* RNYubikit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,10 @@
 		8FA3FED1780FE9A92629F24E /* Pods-RNYubikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNYubikit.release.xcconfig"; path = "Target Support Files/Pods-RNYubikit/Pods-RNYubikit.release.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNYubikit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNYubikit.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNYubikit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNYubikit.m; sourceTree = "<group>"; };
+		C31DC35B23E08EDC000DBBCE /* RNYubikit-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RNYubikit-Bridging-Header.h"; sourceTree = "<group>"; };
+		C31DC35C23E08EDD000DBBCE /* RNYubikit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNYubikit.swift; sourceTree = "<group>"; };
+		C31DC35E23E0A2B0000DBBCE /* YubiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YubiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31DC36023E0A2C2000DBBCE /* YubiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = YubiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7FE6795070DFD5754D6ABDC /* Pods-RNYubikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNYubikit.debug.xcconfig"; path = "Target Support Files/Pods-RNYubikit/Pods-RNYubikit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,7 +55,6 @@
 				C7FE6795070DFD5754D6ABDC /* Pods-RNYubikit.debug.xcconfig */,
 				8FA3FED1780FE9A92629F24E /* Pods-RNYubikit.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -67,16 +71,20 @@
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNYubikit.h */,
 				B3E7B5891CC2AC0600A0062D /* RNYubikit.m */,
+				C31DC35C23E08EDD000DBBCE /* RNYubikit.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				055F03F7280EDF8D29B270EF /* Pods */,
 				9658A69A3230897E1FFD5ADC /* Frameworks */,
+				C31DC35B23E08EDC000DBBCE /* RNYubikit-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
 		9658A69A3230897E1FFD5ADC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C31DC36023E0A2C2000DBBCE /* YubiKit.framework */,
 				7871D46020A8A9641B56B184 /* Pods_RNYubikit.framework */,
+				C31DC35E23E0A2B0000DBBCE /* YubiKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +121,7 @@
 				TargetAttributes = {
 					58B511DA1A9E6C8500147676 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -121,6 +130,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -164,6 +174,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNYubikit.m in Sources */,
+				C31DC35D23E08EDD000DBBCE /* RNYubikit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,16 +278,21 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7FE6795070DFD5754D6ABDC /* Pods-RNYubikit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNYubikit;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNYubikit-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -284,16 +300,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8FA3FED1780FE9A92629F24E /* Pods-RNYubikit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNYubikit;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RNYubikit-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
