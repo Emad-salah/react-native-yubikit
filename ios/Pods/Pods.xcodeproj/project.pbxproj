@@ -1,0 +1,1678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02266BACC589CEBABB377B9118987218 /* YKFKeyOATHRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E8E86C0DE5A485157A3DCB3DC4E6D65E /* YKFKeyOATHRequest.m */; };
+		02F945B094048CEFD02890D92157B08B /* YKFKeyU2FSignRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F992C4B0FAC991FF48F1C1B52AC3C3A /* YKFKeyU2FSignRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		045C2D6F15253093589AEE4486C267D2 /* YKFKeyOATHError.m in Sources */ = {isa = PBXBuildFile; fileRef = 766E020412DD6C201831D82B14F8ED1D /* YKFKeyOATHError.m */; };
+		04E3019B218B4DE3CBBF2509F4E5145E /* UIWindowAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03395E50A5089E005F2D9A7B8327849E /* UIWindowAdditions.m */; };
+		04EA743A05708F39C5CFE6B573A42EC6 /* YKFKeyFIDO2GetAssertionResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DFA74B91197A5DF79B354639CE1516A /* YKFKeyFIDO2GetAssertionResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		058C217066D2AE597C001F50296A7764 /* YKFKeyFIDO2GetInfoResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C560079E1D3B47FCB081B35BDAA7026 /* YKFKeyFIDO2GetInfoResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05E6BE33BE04BD8AE64C3BB841BDDF55 /* YKFKeyRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BDE67B1F2AF1E82F780C1C81BEC4D484 /* YKFKeyRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		061CFF650B1CA700FF128AAB96B7E7C8 /* YKFKeyU2FRegisterResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D73F5119B90AC84C92C6DBE962E391 /* YKFKeyU2FRegisterResponse.m */; };
+		0647A39F7BE844FF78FFB671752E9F4B /* YKFLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 267B1E82D121D882A9BEB3F046EDDBB3 /* YKFLogger.m */; };
+		06CEB8338D13F99181873D2E2124E3C6 /* YKFNFCConnectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = A62ED1EA1057200C3368F074DCE30802 /* YKFNFCConnectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		070417C9C29FBC23AC74A3B704BDF078 /* YKFKeyCommandConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FC5C9B1EDE41B81BDE6CDB128DB07 /* YKFKeyCommandConfiguration.m */; };
+		0794F585C523934FB0D806F1F28B2015 /* YKFWebAuthnClientData.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AAC02EF8810445D5663FB25461FDDD /* YKFWebAuthnClientData.m */; };
+		0B3326F7D3CF54232584F1ED7D8E072E /* YKFOATHSetCodeAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 9811D7E7C5A310D45D62749AF17EFECF /* YKFOATHSetCodeAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0B8F4CF87CD0D3F4539FC8773B2490EE /* YKFKeyOATHPutRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F0201C4B3ED2204C0C378C5EAABDB5ED /* YKFKeyOATHPutRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BB0AD19F3C080964BDE9234C3285B9A /* YKFKeySessionError.h in Headers */ = {isa = PBXBuildFile; fileRef = AC51FA40E8A62CF348C603BA44D270F3 /* YKFKeySessionError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BC500C2F0454A18F74BF49105986F34 /* YKFFIDO2GetNextAssertionAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7623FA1EF9F7A01F8B79463BFFCA1F /* YKFFIDO2GetNextAssertionAPDU.m */; };
+		0BE50FE34902DC6E892DAE3928B73AD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0C088A45A8B49B500E834CF1903603D0 /* YKFKeyU2FRegisterRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F174B6910E68F9EE05A6484BA95BBCCB /* YKFKeyU2FRegisterRequest.m */; };
+		0D521B9FBB3DD104BBBF8656B6A4CC1E /* YKFURIIdentifierCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACE97647862C131C9D9EB6306EDECF5 /* YKFURIIdentifierCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D8DBC867EAF031A306394C474A835BB /* YKFPCSCTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B50385D2D0CB5884980CC16B6AB7017 /* YKFPCSCTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E004F9F7DB7DC6BA23B42D15C76F7B8 /* YKFKeyOATHCalculateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A45D378E3E97E49438091DFB2A21A6 /* YKFKeyOATHCalculateResponse.m */; };
+		10638926C5FCA6A3C3EDDA9BDD916B96 /* YKFViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FE86A8A86B6890B1D35CE609AB08E1C /* YKFViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1145788AAB6E0324AC86CC2C3EB04FD5 /* YKFKeyOATHListResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A8A58CFA66B0E5FD9D5FFE4E6A40F23 /* YKFKeyOATHListResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12DB8E9B2E345F874BC1F1A4FCF63114 /* YKFSelectFIDO2ApplicationAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A3F949E0C65C800DB692715A7898C93 /* YKFSelectFIDO2ApplicationAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1422DC5EB2850381566120F942DF68FA /* YKFKeyOATHSelectApplicationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7BE0334FAC0F5C23466D3A18977044 /* YKFKeyOATHSelectApplicationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14C63D410FB1EAC2E68E72FD8158EABE /* YKFPermissions.m in Sources */ = {isa = PBXBuildFile; fileRef = A0829E3A3511B2810D56020753961E56 /* YKFPermissions.m */; };
+		154289F9FD91A9C795D0657F5E3FC248 /* YKFNFCError.m in Sources */ = {isa = PBXBuildFile; fileRef = EC63DFC9B89AE1FBA11A6DCF6AE40A7A /* YKFNFCError.m */; };
+		1618C46D207BD99490CBCB4AA3B11931 /* YKFKeyOATHCalculateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EF8232298097C374EC3F9003D9A9A01F /* YKFKeyOATHCalculateRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		168D35D2D94DEA04708862DA9B42E693 /* YKFKeyCommandConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 705476242ED70D06C5CE51B41FFBD7D5 /* YKFKeyCommandConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17CA1399D38E387C150024271A982D26 /* YKFKeyOATHListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 165F8B0395C29874A6329C3DC9E72686 /* YKFKeyOATHListResponse.m */; };
+		18CDC927D15184E90B4777A2481E031D /* YKFKeyFIDO2GetAssertionRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A37AEF0E64A31165D8EC2B4FD970784 /* YKFKeyFIDO2GetAssertionRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		197D771DF67D673C90B6A03B2AE3D579 /* YKFKeyFIDO2SetPinRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD3DBBF23418F36A365E917D437ABF5 /* YKFKeyFIDO2SetPinRequest.m */; };
+		1982D1D269BA2EC77F1C022E887EC8EC /* YKFCBORDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D805D706A7DDEEDAD421B2180B0094EE /* YKFCBORDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19BC83997E403DA40672AEA4996F0BD9 /* YKFOTPURIParser.h in Headers */ = {isa = PBXBuildFile; fileRef = F14F297C4343ADF7AE9E4C1829366143 /* YKFOTPURIParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A1C07460862FABBB536C26AF420F4B8 /* YKFOATHCalculateAllAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = FD75BFDA169E6E7D4C59E2045D4590E1 /* YKFOATHCalculateAllAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A31AB014E63F8BA6B1554C687E3FA16 /* YKFFIDO2MakeCredentialAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 4504FEB06C812892DF8B0F6B7D118BF2 /* YKFFIDO2MakeCredentialAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D15F6B811ACE9422173E957BF891290 /* YKFOATHValidateAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BA67B83BEE55EB07121A5FEC2E8B9C7 /* YKFOATHValidateAPDU.m */; };
+		1D50883E6184F4EF3F31BF4A0B222A48 /* YKFOTPURIParserProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = D5BD08A6800ECBA44AAAF161CBF6185B /* YKFOTPURIParserProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E8525DCAF5970789A9805FF3C6136FE /* YKFKVOObservation.m in Sources */ = {isa = PBXBuildFile; fileRef = DEE5A26147182B2692305915EB332E47 /* YKFKVOObservation.m */; };
+		1EEC6F12C50C6357DBEDF81B803DB3CF /* YKFNSDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E612B03B7CB8B4D43B8C3134ABBF1CB1 /* YKFNSDataAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F5576C541DFDACAACF96F7B846C19F2 /* YKFKeyService.h in Headers */ = {isa = PBXBuildFile; fileRef = 0782DF2FAA91BBA1E99DEEF12E86E6E4 /* YKFKeyService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		203C95B60E8B4B4DB835E3749662B0BC /* YKFKeyOATHCalculateRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E72A635F56FF95ECBD779ADA6DCCB2A3 /* YKFKeyOATHCalculateRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20D9AD5C53D61D2896FD37CCBD7F7AAA /* YKFCBORType.h in Headers */ = {isa = PBXBuildFile; fileRef = D23E6A568465242926A5F6458F1CFDCE /* YKFCBORType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		226BE6FA79871C368393DC89D6E07CE8 /* YKFSelectFIDO2ApplicationAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = FB30C6EB1C029487BB23935BBEAEE4DA /* YKFSelectFIDO2ApplicationAPDU.m */; };
+		2277BDA46E1C338195AF53E6F9133054 /* YKFKeyFIDO2ClientPinResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BC557B92DF7118F485E3702600157BF /* YKFKeyFIDO2ClientPinResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2504ED823830496CF5B8594714CB6AD4 /* YKFKeyU2FRegisterResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F95EC5B7FE2508C3873721B1516D7B /* YKFKeyU2FRegisterResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25F73362BFC5CA0F7AC93FC1558A5637 /* YKFURIIdentifierCode.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAB0BEF322D46F8E7A1EE332A67281C /* YKFURIIdentifierCode.m */; };
+		2623D8E5B73CB51A94F12969FC7E360E /* YKFKeyFIDO2GetAssertionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 48E12B7099522B6CE4B4DF59DF7E4D0D /* YKFKeyFIDO2GetAssertionResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26575FB04B690FB1B67DED4EE5510C8E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		27D340BDE15CD8BB3771433E9F10EB1C /* YKFKeyFIDO2MakeCredentialResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5171E721DBBC6530B6EC04DB75256375 /* YKFKeyFIDO2MakeCredentialResponse.m */; };
+		2947A109134672EE3C217D63D23E9A5F /* YKFKeyFIDO2Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 0669B8D0C7221BCB678691D25E52F651 /* YKFKeyFIDO2Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		299C881BB3C11BB27C7E785331D37E4D /* YKFQRCodeScanViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E7806370D3C4C99B27A84C3A0859752A /* YKFQRCodeScanViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29E84345FCBDDF2D32C6D4E023825C62 /* YKFOATHCalculateAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 85556A9B4648F1BA6D446FF5CAB2596C /* YKFOATHCalculateAPDU.m */; };
+		2AAC64EEA24AB326423198A1D4202F74 /* YubiKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D814B9AC9FA2E86DA9783B174C9F44 /* YubiKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AD7A07B7966D2DFB8E2EAE2EFFD77CD /* YKFKeyAPDUError.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A5B9A82393C4F4E9A0DEA0EF696361D /* YKFKeyAPDUError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B8D6BF2093611D87F4287D6B3EFC4B8 /* YKFKeyU2FRegisterResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D4B408C2FA88FA1E7DDD095264DA63 /* YKFKeyU2FRegisterResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C12F43CD1C96C60E3527910B2081C6A /* YKFFIDO2Type+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E9D790BE29D82EAD8A1E398EDB383CBE /* YKFFIDO2Type+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C747B3D3ED6F511F336146CCAE77BD2 /* YKFKeyService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EA000E5F539F36A7A750A15AC436807 /* YKFKeyService+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CB140D23C29923D32412E819F17B358 /* YKFFIDO2ClientPinAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = F9074B5F8D406CE974F74956BF62FC25 /* YKFFIDO2ClientPinAPDU.m */; };
+		2CE1395520FD36BEADE44F01FA42243D /* YKFPCSCLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A70CE3B6F842FB52D75E963AB357C0 /* YKFPCSCLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D39A4AB924C5269D1D41F972A22CC78 /* YKFFIDO2Type.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9433FC4D9963C0C79BB51715A38779 /* YKFFIDO2Type.m */; };
+		2E283008A33210364C6FFA353762F61C /* YKFOTPToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5CED6FE8CFB3EED4F5B38410340662 /* YKFOTPToken.m */; };
+		2E7920B8FABBD16D3FAAE66413BEF286 /* YKFNFCOTPService.h in Headers */ = {isa = PBXBuildFile; fileRef = B0F8AE6248F6D78D10FEBE2736453819 /* YKFNFCOTPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3000B2F086C764FE3431916DB9A93558 /* YKFKeyFIDO2ClientPinRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 17867C685A5538B7FDC156A5E3B39790 /* YKFKeyFIDO2ClientPinRequest.m */; };
+		3098F760D53F95D89B483D65274F9544 /* YKFNSStringAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AFD565CEF50FE7EFB35D0DE8CDBE707 /* YKFNSStringAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310DF96DB4A1A0EA87949543E4F78F38 /* YKFKeyFIDO2GetAssertionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 794285FAB767D779E684FAF1134C47F5 /* YKFKeyFIDO2GetAssertionResponse.m */; };
+		330C789F451A6BB271C809C4E8A06A97 /* YKFKeyFIDO2MakeCredentialResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F300277C4D8A1ED7C63DAF7C8FDAF06 /* YKFKeyFIDO2MakeCredentialResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		337F6657F08E2C6B17C5162304C18EA8 /* UIWindowAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FC6391BDC71B1601FE2A1D680073CBD2 /* UIWindowAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33C0DE205D0B91A24BAAED6B347134A4 /* YKFOTPTextParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 739D12A44782B4E09B0C308E6782CC9C /* YKFOTPTextParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33F92D120C394905B118F88FB5565D4A /* YKFKeyOATHError.h in Headers */ = {isa = PBXBuildFile; fileRef = C472662043054F0B6ABBBF25E973BAB9 /* YKFKeyOATHError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		349405F1AE851F1EA5C7309CD4993EED /* YKFKeyU2FError.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA5D164B0583FFF15ED6C15EA3E73EA /* YKFKeyU2FError.m */; };
+		34AAE07229408BB893E1E4CAAA203C25 /* YKFNSMutableDataAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F88A0CF9CDA049C02ACDD70BE81C7B9 /* YKFNSMutableDataAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34C21EAEA1DF9C1432CA692D15752E34 /* YKFKeyFIDO2MakeCredentialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A7D6FDA7C4182462714736B50CD375C0 /* YKFKeyFIDO2MakeCredentialRequest.m */; };
+		34EEA6C64BC31BC915B2C93A0DCE18B9 /* UIDeviceAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 50963C70AB2CC09901ED3B7508271C7D /* UIDeviceAdditions.m */; };
+		35651AA2A5EB340496E3A5E65A06D3F2 /* YubiKitManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F88B95E99EBCED8A2C4A882AE62FA54 /* YubiKitManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		35D4D0A4E6BBBE3436545ABDDD6F6FEF /* YKFKeyOATHValidateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ECC4EB23B572098A9E670078971BE5B /* YKFKeyOATHValidateRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		370318190748F445C9CF258FA6CEA2AB /* YKFNFCOTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 466DEF655A986331CBF7BC047EAC5494 /* YKFNFCOTPService.m */; };
+		37E55274ABD9557D4EE0C985D9F26B88 /* YKFKeyOATHListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DB2ACA36CDD6B7C63764BB7A152BDEEB /* YKFKeyOATHListRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37FADE8660EBB5D74F1E280B720570AC /* YKFNFCTagDescription+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C99F709251358F14D824D1853C1B0D9 /* YKFNFCTagDescription+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3806767237EB6D10356D389A6EDFB895 /* YKFKeyU2FSignResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B230A4630788D2D8011DAD0D8E85560 /* YKFKeyU2FSignResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3859215D626A50D1475B905FB039140D /* YKFFIDO2GetAssertionAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = DC353B60F181460BE1D6DE43AD905CD9 /* YKFFIDO2GetAssertionAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389DE2BF0B46C5CE0F96FD2C17D8CB85 /* YKFAccessoryDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = F69D0193B0A92C0E07DACC3D41CE96DE /* YKFAccessoryDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3938C6E5EE6A475591A4F92C244DEC98 /* YKFCBORDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 64B90D261A88BAF2997ED7465B731D25 /* YKFCBORDecoder.m */; };
+		3C571B5BF225E8FB117502809236C525 /* YubiKitConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BA3588183FF648E0859683E06F7A16 /* YubiKitConfiguration.m */; };
+		3D1C8686AFAD3F34E5F6B539922CC8EC /* YubiKitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A3972BD58242892383FCD4D4B0D43 /* YubiKitManager.m */; };
+		3D5A62A6F2C8BD25B4693BC7289E6EDD /* YKFKeyU2FSignResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 34310E0160F797A548A74C7F9A7F31E9 /* YKFKeyU2FSignResponse.m */; };
+		3DDE4A36EF00733AB98C135D50BE53FB /* YKFKeyFIDO2GetInfoResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 659716B360C721CB894C30C8ECB1E0D8 /* YKFKeyFIDO2GetInfoResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F8750693C13EE1FCCC4007F286B27F2 /* YKFKeyFIDO2SetPinRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D02609D486E6385C48A57098953F70E6 /* YKFKeyFIDO2SetPinRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4178F3852399A10E87A727F09AD2CF54 /* YKFAccessoryConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD2BA0DDEF2F50D11C1AC926F9DE386 /* YKFAccessoryConnectionController.m */; };
+		41A7E5AF7CE4D0B1AF6C235CCD5C8668 /* EAAccessory+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = F3CBABCB340D8AFF9A487A4ABBF9E96B /* EAAccessory+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41FA2BB280CBE3BB12CA1740FC617700 /* YKFOATHSetCodeAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C63E91D45C2FEF7A171712A8D309D58 /* YKFOATHSetCodeAPDU.m */; };
+		426E4CCF0FF71C2D0CF5E554893CEF76 /* YKFKeyFIDO2ClientPinResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F936684B6B53EF014C4C542DDD8055 /* YKFKeyFIDO2ClientPinResponse.m */; };
+		4295B8B7BE0D0E1D409087E0B522B615 /* YKFQRReaderSession.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4E44FF376E06DB629E656F99FF06B5 /* YKFQRReaderSession.m */; };
+		42DF8B1D6ACC124A1284E02358BF713C /* YKFKeyU2FRegisterRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = EFC72FB349A70C592604F5EBA5B7C0B5 /* YKFKeyU2FRegisterRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42FE7A34363203D293E832D261DB410E /* YKFKeyOATHRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F316D481BE3ED506E305754F9898C4B /* YKFKeyOATHRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A14F363D4B22E5FD04F4EBDEFCCD41 /* YKFKeyFIDO2ChangePinRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 891FC021BFD19ABF4111E8312C9FD008 /* YKFKeyFIDO2ChangePinRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4640E07B21196F9FAD8D17B9EA8E4BA3 /* YKFKeyFIDO2GetAssertionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D482880A1DC97FB479033E72751474F3 /* YKFKeyFIDO2GetAssertionRequest.m */; };
+		47A807C101AC3ECC43B1ED754EB93B5B /* YKFQRCodeScanError.m in Sources */ = {isa = PBXBuildFile; fileRef = 250EBB277D645985DD6A137D1F5D8A5B /* YKFQRCodeScanError.m */; };
+		493311124DA661744A1FF25B60EB4426 /* YKFKeyOATHCalculateAllResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = FE6DD59F630A22353BE24F3C0D2BC189 /* YKFKeyOATHCalculateAllResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49552EF3CF24D88B1CCEC5B266404C50 /* YKFKeyU2FSignRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C568190C7B2C60A1639DF0FE7A9B45B9 /* YKFKeyU2FSignRequest.m */; };
+		4B0D03C768A88BE8E7EF9FDCFE45D7B7 /* YKFKeyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 748F6A16004327359D7725BD8730B3DA /* YKFKeyService.m */; };
+		4B713D986C95E4689D989A0415C896A4 /* YKFKeyU2FSignResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBDECF74F15887F227F2E53AFFF7440 /* YKFKeyU2FSignResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D13365499DC98D9B84FC76555F90552 /* YKFKVOObservation.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F72C68733A352BD3FE4DDD956BF6CBA /* YKFKVOObservation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F6B623462C0FAEDE9155DA02097B786 /* YKFKeyRawCommandService.h in Headers */ = {isa = PBXBuildFile; fileRef = 88152EBC944F0AA5194AD33D1B0E9764 /* YKFKeyRawCommandService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		500DEEC2ECCC0231552F4AA1DC085A04 /* YKFFIDO2GetAssertionAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 52488A37DD2CA1AE1D4C2AD142E5F1A1 /* YKFFIDO2GetAssertionAPDU.m */; };
+		51CB5E7B9964E6DCC57893302A81FFB0 /* YKFSelectU2FApplicationAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 41572C2656285FF6410A6F0E44F6458E /* YKFSelectU2FApplicationAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51D93B47800DF470F4D430E5E3A8344B /* YKFFIDO2ClientPinAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 146445465B9EEE185A3C50FB54387F02 /* YKFFIDO2ClientPinAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		528C63D7948D917FD53318ACC87332EA /* YKFKeyU2FRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 658AF39611BAE7BE1779EC4DE7DA46C0 /* YKFKeyU2FRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		537680FFD15D9CE06FEBBFD519779E04 /* YKFOATHListAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 420181F6568A3706F14A6AFDE60F649C /* YKFOATHListAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53817581B5C91E304B1E20CEA6534B80 /* YKFKeyFIDO2Request+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E6EB47202014104D4C26360AE7C6B22C /* YKFKeyFIDO2Request+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5389B0954D0C4DE876268585D0B7E375 /* YKFPCSCErrorMap.h in Headers */ = {isa = PBXBuildFile; fileRef = AD1DA8C7283889979AD8427764DE8B0D /* YKFPCSCErrorMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5469400F6EA2FCFD90C0DA8D10E0F5AB /* YubiKitConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 8727186DFDAC4D6A1660ADCD832B58A5 /* YubiKitConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54CE7A4C4FEDCF2BE47CDC0FB63E02A7 /* YKFNFCTagDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = 48EDC630F9AD99BC2CCC4FF2FB450938 /* YKFNFCTagDescription.m */; };
+		55387F07ACBB9177EACFEA85B42EDBD5 /* YKFDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6289F5B4CAA79A37B098B50A32B32A03 /* YKFDispatch.m */; };
+		554FA166F90A58B3D27F1A39401B3F3B /* YKFAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = E3F734575350A24F5CD84CD4A7853550 /* YKFAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56D2347F3F0C730FA7D148226E0A1E52 /* YKFFIDO2TouchPoolingAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 49C246B111C5480AB873CDA4A3CAA265 /* YKFFIDO2TouchPoolingAPDU.m */; };
+		56FCA34D3329DCA04C3058F8F298F62A /* YKFKeyOATHPutRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3C4A2DE3DCEB40F39139FC2F265739 /* YKFKeyOATHPutRequest.m */; };
+		5758C61C3481F8B7C7EAA0045A0917AD /* YKFOTPToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 54051B0312E1A76089D7CB2A1D143C26 /* YKFOTPToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5788C8916A59B119C29FFD252F4DCE8C /* YKFKeyU2FRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 683B66CD7A7E60D8C6CC844F17E093A8 /* YKFKeyU2FRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58CB8C7191C9D5DF12E593BE862AA19C /* YKFKeyFIDO2Error.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F188FB37A30761D59B0994C7B1AC6A0 /* YKFKeyFIDO2Error.m */; };
+		5C7C60C0B4C3E410BB92891F31373A2E /* YKFFIDO2GetInfoAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = A3958A04DE8155EC254B1F6D5C22FC11 /* YKFFIDO2GetInfoAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CE5E71673422232D4ED541FBF21412E /* YKFOTPTextParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C8867D9806B96C109BE665907F83E3B5 /* YKFOTPTextParser.m */; };
+		5D22CCBD736A2CB85335484F407C838F /* YKFFIDO2GetInfoAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D668EE64645409860647B602931CDB /* YKFFIDO2GetInfoAPDU.m */; };
+		5DE036666A4B1655761AC4B7D172ABCD /* YKFLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = B12DA12782899B1E254E3541CC2DF4BB /* YKFLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6149DCE249C6C8F835E624BD2C8187AD /* YKFKeyRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E6B89B9EB0E6CA8E0D6317C074E40A /* YKFKeyRequest.m */; };
+		61A0AE9A384756B9269A86496C5B0506 /* YKFQRCodeScanOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = D375763F95C0A882D8A4F3214EE0854F /* YKFQRCodeScanOverlayView.m */; };
+		632A6F3A6605322912DD42ED82898291 /* YKFDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 996FA260922C11EFF83B9593071DDF22 /* YKFDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		638E4193B13ED22280E61709D41DA7B9 /* YKFKeyRawCommandService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D07D5929329D2988A42B786C38BC105 /* YKFKeyRawCommandService+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63E457ECF7BF556FD99F362FF9F82939 /* YKFOATHResetAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9B303D2D7B6BD6800F2233D0713AD5 /* YKFOATHResetAPDU.m */; };
+		645A8E4A9C83DE046B7F2BD237809109 /* YKFKeyU2FService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = AFEEE8DF28B7CEAFB752D287BFAD56E4 /* YKFKeyU2FService+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6503A343199397E7BD9890058C1261B4 /* YKFPermissions.h in Headers */ = {isa = PBXBuildFile; fileRef = 614D47F3856C05E1582669C695BF5B4C /* YKFPermissions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66754B054AB0C2F004E4BE7E51C9C37C /* YKFKeyOATHSetCodeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A9CB792CD56C27A1665451F7920972FA /* YKFKeyOATHSetCodeRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69020EB34FBF174BAFA4D2E08313A716 /* YKFKeyOATHRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 523A92F3C1E220F64D1970680F9ECA6C /* YKFKeyOATHRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A968D3F2C244A13820EC1CD45A62E91 /* YKFAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 878F46C963BF80C98CE0C5521AB902B3 /* YKFAPDU.m */; };
+		6B71FB57B856A94CA411D083823A0814 /* YKFKeyU2FService.h in Headers */ = {isa = PBXBuildFile; fileRef = F68DEBBCE5C07C0CE6FA6DCB1221EAC9 /* YKFKeyU2FService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BFEF8AE1C284737C6F93763F257592B /* YKFQRReaderSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BB0E33604C926917D50F6317A2AB2FCF /* YKFQRReaderSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C8A28AD3025325CC4B08B34F77A4CE8 /* YKFOTPTextParserProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 987BBD70E6B546DFD5503C06FB74FE83 /* YKFOTPTextParserProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CA245573A5795FC2F147361801CFE2D /* YKFKeyFIDO2ChangePinRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF8112A9B703824F1B8470F5E379FE01 /* YKFKeyFIDO2ChangePinRequest.m */; };
+		6D8668C58BD1A967DEFFBDDB9DF917C1 /* YKFAPDU+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 152F228C8D795DB6C6C1DE45E8F5E224 /* YKFAPDU+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DECDF4EB191703223A82FA212D964A1 /* YKFFIDO2PinAuthKey.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF85AEAF6A994B13CF08ACF8B5DCE96 /* YKFFIDO2PinAuthKey.m */; };
+		6F62D22BEE7D67E48988D027F4EBF3AF /* YKFPCSCLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE2CC2F11BF705A7ADCADC634871B56 /* YKFPCSCLayer.m */; };
+		70A6AC143BD16228E2F90B68197A7B51 /* YKFKeyOATHCalculateAllResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F77D8E6E7C20811BBC20225CC31BC19B /* YKFKeyOATHCalculateAllResponse.m */; };
+		72E8D56D39755CBEEAC319FA85B252D8 /* YKFKeyOATHValidateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B3F51DA1C944F455781FBFACE02FE1 /* YKFKeyOATHValidateResponse.m */; };
+		73B0721FA086B177E7CDBB57514101D9 /* YKFNSMutableDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FDDD2F2E3201053BE08CF04C1DFA317 /* YKFNSMutableDataAdditions.m */; };
+		744FB0D7EADFF3EC587E87144F9DB275 /* YKFKeyOATHListResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 7399D91756C22A1BB99EA00626CCF65D /* YKFKeyOATHListResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75B8BA866A861C95B23282F8FBFEEC12 /* YKFKeyOATHCalculateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E4429131E208AC967484274F21169C4 /* YKFKeyOATHCalculateResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76246F8FD2028D942EAAACFF48DF9440 /* YubiKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5AF0D76AB83F669C793BAE5DA885473 /* YubiKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76AA77D0A69DFC85AE1B08B5551E7816 /* YKFKeyOATHResetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 10FB4474DBF485F5B6A69A6063AC8078 /* YKFKeyOATHResetRequest.m */; };
+		76ACBC54EE3F0751961D22573CFC1743 /* MF_Base32Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 73C417E75B2CEDAD70ADF2014768F68C /* MF_Base32Additions.m */; };
+		78956729234F545AD5F72C92BBC8A007 /* YKFKeyFIDO2ClientPinRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = B30CFE0C82B8617396411FBEBE8E4F23 /* YKFKeyFIDO2ClientPinRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78C5B15A402561D786AFEBF7187F792C /* YKFKeyFIDO2MakeCredentialRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C7382E637FA652B44D2E8427F7DA7AB2 /* YKFKeyFIDO2MakeCredentialRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A91A9E46E181FEE9D3C8B4307DD005D /* YKFOATHSendRemainingAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = E742FF65786D115BA1A97C887CA1CBB7 /* YKFOATHSendRemainingAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D1DFCDA6BDE498C1B7920DF0798FBC5 /* YKFKeyOATHCalculateAllRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E28CCC1E64693750426067BD031DE788 /* YKFKeyOATHCalculateAllRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8002D2B108152C877383B2CD7B46E568 /* YKFAccessoryConnectionController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A64CE204120B79712A95DCA32F88F5 /* YKFAccessoryConnectionController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		804ABBA05FB21D058AA19A7EEE3121DB /* YKFOATHPutAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = E21E868D4C784B56C217AFA9885B3DC0 /* YKFOATHPutAPDU.m */; };
+		80C9E52EBC6479B81E47066C90AB3513 /* YKFNSStringAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = E8CBB57B8C9874E2A5BFBB02D403492E /* YKFNSStringAdditions.m */; };
+		80F495A52FFE3104773768C2BF4893E9 /* YKFKeyOATHCalculateAllRequest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E319505C8C42161D32218C78D8C87B6A /* YKFKeyOATHCalculateAllRequest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80FBFF25C6E6DA904A39BA32ABFF9625 /* YKFCBORType.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE711B67962399207893E9D92103B16 /* YKFCBORType.m */; };
+		8300A475FD790CE12AE7718BF0BDF14D /* YKFAccessorySession+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 198E6AD4C64923330689BDF4281FE929 /* YKFAccessorySession+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83DEB781C9ED4347A8E5BE9ED13730F5 /* YKFAccessorySession.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C007A1EB65D65DA75D1DA51EF7788AF /* YKFAccessorySession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85CA443B836BD596CDCC97D908F7AF85 /* YKFAccessorySessionConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ABA851E92097F37E4F5D22FB61B2F86 /* YKFAccessorySessionConfiguration.m */; };
+		87609623751197722B04D8093BB66940 /* YKFAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = C6D2AC0112A7E7A2FBCD52A2D0BF6110 /* YKFAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87D678A681C1E5E7F681F94B9857941E /* YKFKeyOATHCalculateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7A89869CFA15D4345620E106226F2F /* YKFKeyOATHCalculateRequest.m */; };
+		892A00ABD6EA7E52233117D515A662F6 /* YKFOTPTokenValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6455A5FFB20E563DE8F9E069A8EF24CA /* YKFOTPTokenValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		897983CA1D5DAB9B6B7FC330360A7DBD /* YKFQRCodeScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503079F51D4E6D9459863A5442A9069B /* YKFQRCodeScanViewController.m */; };
+		8B9970F3A9480935D651351A1CEA19FF /* YKFOATHCredentialValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE9F33F23492B09D83EBF42B687DAEC /* YKFOATHCredentialValidator.m */; };
+		8CAAF64B301A6FEE1E6F79D85AD8C32D /* NFCNDEFReaderSession+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 312461225A10F6375850F6BB743EA7A3 /* NFCNDEFReaderSession+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8D5EB4F1CF01871C398239B96521ED /* YKFFIDO2ResetAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA5D3D36CE7901804D80AF23CECE09A /* YKFFIDO2ResetAPDU.m */; };
+		901F9277E236856F502A4BF25E54B01C /* YKFNSDataAdditions+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E759C1CDA5D975F0E28FDE562645B1E /* YKFNSDataAdditions+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		903B13445C5C184B27473AEFB3D87AFC /* YKFAccessorySession+Debugging.h in Headers */ = {isa = PBXBuildFile; fileRef = 10A12A5934F0F7F2047D38408BA06794 /* YKFAccessorySession+Debugging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92622D3572417B8559B39D652F33151B /* YKFKeyOATHResetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 798A0DCEF703E93B3429371D178265DA /* YKFKeyOATHResetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92C74507E6ED4D600957AFC9738DAC68 /* YKFFIDO2CommandAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 01A2F92740BE3E3C858967B43D70210C /* YKFFIDO2CommandAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9323A281AC77A998AB90B2AA4240399F /* YKFKeyOATHValidateResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C481F0AB9D68746770B3E39B084FEFB8 /* YKFKeyOATHValidateResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9490047C90ADC83AC9E706454A6AD0A9 /* YKFKeyOATHCalculateAllResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2467A174544A355C427ECEBB75DE3281 /* YKFKeyOATHCalculateAllResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		98CD52FB12448B38BD06EB0B4729598F /* YKFKeySessionError.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA8EE3F4F112ABED3D61CE43DE9D36B /* YKFKeySessionError.m */; };
+		993D5D1585DC41286C8F4B6DD1ACF96E /* YKFKeyConnectionControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = A99866E68BB78BC16CEE5EBF8895535A /* YKFKeyConnectionControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9991E6572F32153F777A0EB99B2953F0 /* YKFAccessoryDescription+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 06D4F4B4B7421B96381AB59CC7B06985 /* YKFAccessoryDescription+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99C297B71C394134A9CAA2CE1148FC2F /* EAAccessoryManager+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 2749319238C07E76F983137B5B881592 /* EAAccessoryManager+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A1B6E23F6C3806E0369A2FD6EAF7F54 /* YKFKeyOATHSelectApplicationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B8005A79EF30291E0674A4CF8D247FA9 /* YKFKeyOATHSelectApplicationResponse.m */; };
+		9A8CFE127FAF04EEAB3718721DB0A064 /* YKFOTPTokenValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6820E9850BFB83410EE878C3FC7C0F1B /* YKFOTPTokenValidator.m */; };
+		9B581DFB234B010731DED81D63EEF439 /* YKFSelectU2FApplicationAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = DF2467ECE7CAB081DB47F2F30A092170 /* YKFSelectU2FApplicationAPDU.m */; };
+		9C3E26175EDB744D3F2B0179E44EAE41 /* YKFNFCTagDescription.h in Headers */ = {isa = PBXBuildFile; fileRef = 697A92E8F3C355E43D3A4A92F39F12DE /* YKFNFCTagDescription.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3F4F876DB417CD8381F5BDDCA08B04 /* YKFOATHCredential+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D5DCC91FE4DDFF5B2C085E8E691CA535 /* YKFOATHCredential+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D6B5AB8E08D61A8A6E3C21E39E1E4BF /* YubiKitExternalLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAB2380D010C8874FA615DEC82898F0 /* YubiKitExternalLocalization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E4B0F9D71DF0BF1C8FEC536D4275E7D /* YKFFIDO2Type.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D83DA540C7A8FD59F03607E61BD0C80 /* YKFFIDO2Type.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E79445E725538413EB2BE1824FF0ED7 /* YKFOATHSendRemainingAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = C2159E6E6198C39A85C2825BF6A26BE5 /* YKFOATHSendRemainingAPDU.m */; };
+		9F357810B22862DA299A228359DE4287 /* YKFNFCSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 43BB50BD6BF8035FD37B456A905BE8B7 /* YKFNFCSession.m */; };
+		9F65C126CD058C1032AF0E245D38F36D /* YKFNFCError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4893B0DC1449B97F693827CF1CA2FF4E /* YKFNFCError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A14A382BE54CD021546D3386D963C111 /* YKFKeyAPDUError.m in Sources */ = {isa = PBXBuildFile; fileRef = BCE5B26557352995ADB2B2A2156A76E8 /* YKFKeyAPDUError.m */; };
+		A1E8530CC7E04A8543890332B47F0581 /* YKFBlockMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CAF0A7E1960B6D8B4A0832321E7F32D1 /* YKFBlockMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2943BCA3E54958575E9254D717DAD23 /* YKFAPDUCommandInstruction.h in Headers */ = {isa = PBXBuildFile; fileRef = 37045C596F265272D90A4C343109CB6F /* YKFAPDUCommandInstruction.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2A7AAAE08EDF3B3676866E235FA921C /* YKFOTPURIParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 63144642282A153D5AE06530AF410BB3 /* YKFOTPURIParser.m */; };
+		A64A7DCE80627CAF28C0817CFFC35389 /* YKFQRCodeScanOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E9A048AAEE26CC3B22954C0A08CFB2 /* YKFQRCodeScanOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6BF2536E6B0D16031E8184EB3BF3BF6 /* YKFKeyFIDO2Request.h in Headers */ = {isa = PBXBuildFile; fileRef = F6301288C2F11A5BA3ECC940D4D39BAA /* YKFKeyFIDO2Request.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8470077609781A85375B5ED9CDCC76E /* YKFOATHResetAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 37674B29FBB2914A671F228C8959BC6B /* YKFOATHResetAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A97BFBECEC576FEEEC9E604546964010 /* YKFQRCodeScanError.h in Headers */ = {isa = PBXBuildFile; fileRef = 55989B8779600DE7D655592805D7F146 /* YKFQRCodeScanError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABE938CCF2210C6F3BE75DD56D7BD4E7 /* YubiKitDeviceCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 12CB02385DC56194C81EA2E5D938EC10 /* YubiKitDeviceCapabilities.m */; };
+		ACDBBDCF035BC2CF3313377B0ACFE962 /* YKFKeyOATHService.h in Headers */ = {isa = PBXBuildFile; fileRef = 746CD2A68BEAA615BF57648C1C04948C /* YKFKeyOATHService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADE92294F7E22B22CBA29FB1BAE20C36 /* YKFOATHPutAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AAD1CA847CC3EA5A788331894FBCB2C /* YKFOATHPutAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B296E05F33C278C6354800D1A29350F4 /* YKFKeyU2FError.h in Headers */ = {isa = PBXBuildFile; fileRef = E797055A99C5E3EE179DEE96D6A01803 /* YKFKeyU2FError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B2E591D1E376862C01143ECF65ECB240 /* YKFAccessorySession+Debugging.m in Sources */ = {isa = PBXBuildFile; fileRef = CF3DD8E8D1EA77B2489C796473115CC7 /* YKFAccessorySession+Debugging.m */; };
+		B44BBBE93B359D00DB6550FBB8B63220 /* YKFFIDO2GetNextAssertionAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = A2F062E6125A7523EDBCF0B4A6C8F4EC /* YKFFIDO2GetNextAssertionAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5048658387FBFB872CD1702E6EF1CCA /* YKFOATHCredential.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A0158425CE26ABAC319288164B108F1 /* YKFOATHCredential.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5EE3A4BE4087083EBD9D04DF81CEE7D /* YKFKeyFIDO2Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CFEB4D80BC05D6BD9DB0D1D314F9B01 /* YKFKeyFIDO2Service.m */; };
+		B84D79EC153F875CCFB10E28D2A75E30 /* YKFKeyOATHCalculateAllRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA1010C994C1D3A53D63BAE17035531 /* YKFKeyOATHCalculateAllRequest.m */; };
+		B97E2142DA63343FBE9F06BF8C082859 /* YKFNFCConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = E079E33819F4C1410549DE15ADB274F7 /* YKFNFCConnectionController.m */; };
+		BB58A082713D2AE7E9BFBF7918B9193B /* YKFSelectOATHApplicationAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 425101CDC41CB7BB028918A6E5BD20CA /* YKFSelectOATHApplicationAPDU.m */; };
+		BB89C3467BBC3B86489EED1594CC0912 /* YKFU2FRegisterAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CAB45F626207126EA9E6E171B02B5E7 /* YKFU2FRegisterAPDU.m */; };
+		BD3A4EDFE7AF59C356750C1554FDE90D /* YKFKeyOATHCalculateResponse+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C5090E704AE19E25C622287F3C27A825 /* YKFKeyOATHCalculateResponse+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEF670008585B2D699B458E74BD8B6FF /* YKFU2FSignAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = DA698681D6BD5A91C3F715294A387F7C /* YKFU2FSignAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF54A0B8B35DB19781539D046E0B5B34 /* YKFCBOREncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A3644E23CF894AFA3C4318B22DE2C0C9 /* YKFCBOREncoder.m */; };
+		BF5C3438B91D2C9795B5115B2A5BCBEF /* YKFFIDO2TouchPoolingAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = E62722FCC048A85C59D6B559A9F4C60D /* YKFFIDO2TouchPoolingAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF938CC288B947B4B1BD8F70588B875F /* YKFNSDataAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 586157F66D4F53ECAB31A2D69927981E /* YKFNSDataAdditions.m */; };
+		C04A383E4A8932E9F56D8FD0314739C3 /* YubiKitDeviceCapabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F65F8C5A494A026CC3A371B0FDE4B83B /* YubiKitDeviceCapabilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C119E5F1C748ADE9869C33B01997DF63 /* YKFOTPTokenParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 334A57B50067DC9D92FF22E586C1BC6E /* YKFOTPTokenParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C349AD5CB8CF1DD21D52526FCC193EB5 /* YKFNFCSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DE798EA8CA163F8B2DF15E3CAA935CE /* YKFNFCSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C44765BC5D2177A0D5B3C67BC99E35CC /* YKFOATHCalculateAllAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AF60443C668348F8E83A551A5F9490 /* YKFOATHCalculateAllAPDU.m */; };
+		C4FC61526EA4DAF79AE40AA25D14120E /* YKFKeyOATHDeleteRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F1722D79690A24097A52A325DB68EF4 /* YKFKeyOATHDeleteRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7B8475DC1B227EFAA765FBB96CA45C6 /* YKFKeyFIDO2Service+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 29F362677971E1674686FB5FE9ECF2C5 /* YKFKeyFIDO2Service+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7CAFADF6FB8C2CA329698CD4EC97E3D /* YKFWebAuthnClientData.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B7BA12B5EF36F26C308DC0812BE887 /* YKFWebAuthnClientData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C84DB5D1AD190EF7B14D9056A20F9803 /* YubiKitLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C1D18EE3ED25C3679A924AB8A8F2CDC /* YubiKitLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C944A40BBD6C8AD82DDD86761119D128 /* YKFPCSCErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 03A3C79711B6A64377D95F89F6D46217 /* YKFPCSCErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C99E6B66B269F4B3DFB3C18774FB4DDF /* YKFKeyOATHService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 52F89F3FEF44B2629C1693264DF82625 /* YKFKeyOATHService+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA69D1D2267A5EFA2BC0FAD6C07DDE76 /* UIDevice+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 468AFDC57BFE9E97D22F4805D4A134A0 /* UIDevice+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA754F35214DF786CF8DB7AFDCA4EBB1 /* YKFPCSC.h in Headers */ = {isa = PBXBuildFile; fileRef = 31F41675C1C0A5BA184F4E333CCA2858 /* YKFPCSC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD05A40B0C00EB947BCE10FFEB10E157 /* YKFU2FSignAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F4247D0D3B88DE8B2CE86963A6AA6F4 /* YKFU2FSignAPDU.m */; };
+		CE476376A44AB7876743E95E7ACCCA79 /* YubiKitLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = CF134C2DA17FE820509551F5B9AF2556 /* YubiKitLogger.m */; };
+		CEE7D3610D19D654201C8F0AEEB7096A /* YKFCBOREncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 763C897AD5EBD58A7C5739D4AC36FD3A /* YKFCBOREncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEEE1E2EACCA8EA6552D91FD4C9C5520 /* YKFKeySessionError+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = A70BEF69DD2BE458845D3299EE6939FC /* YKFKeySessionError+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CFC3CE536F866092A6E619A299B87398 /* YKFKeyOATHService.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F019242F2D9989D537801E7B07B47A /* YKFKeyOATHService.m */; };
+		D2BF20F3BBFA19407DBD208E62A72629 /* YKFKeyFIDO2GetAssertionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5FCE78B9F9917936E4273A3AD5692F /* YKFKeyFIDO2GetAssertionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D3671C7DE055D53FC1FF00AA365ACC03 /* YKFAccessorySessionConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFAD09D273BF21131D59AB5CDE9672D /* YKFAccessorySessionConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4B8ED38AB6A9FC70B0E5F3EC604A5AB /* YKFKeyFIDO2MakeCredentialRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = DD503617CE49B6C657F1F4CFA04DCABA /* YKFKeyFIDO2MakeCredentialRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5062498291DA8F2AD2EEF8E46C6C34F /* YKFCBORTag.h in Headers */ = {isa = PBXBuildFile; fileRef = 36FFF5A810AC5F98537FAAFBDD751B67 /* YKFCBORTag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D565F7DB2A7DB60A2DBB032A2B852F45 /* MF_Base32Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = B97D1381DDF2F006EC47278EA07BB72C /* MF_Base32Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D659A86C11C80ECD74D917286C9F871F /* YKFU2FRegisterAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = E78D807393E4C6C781DD01CB7362C87C /* YKFU2FRegisterAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D930100A4EFC4F599FFA671E9D970C43 /* YKFAccessoryDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C80ED25EC34FF0A9DED1B2F377AEC06C /* YKFAccessoryDescription.m */; };
+		D9A21D41C863652A47ADD6811E6A99F2 /* YKFKeyOATHDeleteRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D866ED043D3D2ABB54BFAD83AEE8648 /* YKFKeyOATHDeleteRequest.m */; };
+		D9E60EF12D4BDF5CB5C9943C4CB6849B /* Pods-RNYubikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB5841969F57E1EC3E394DAAEE753DC /* Pods-RNYubikit-dummy.m */; };
+		DAF259E3307589535DE2F00D874555CA /* YKFFIDO2ResetAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 984205CC27EE0CD78DDE84BE0739D9D0 /* YKFFIDO2ResetAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC4E4D274EC4BB3553AB75124CE1F947 /* YKFOATHDeleteAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF7D261DFE6FB7918A2ED6A35437DF3 /* YKFOATHDeleteAPDU.m */; };
+		DD6C0153A6D59634749F7578E3653119 /* YKFOATHCalculateAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = 71AB593831A2A26B08878EB4E0D2CCA8 /* YKFOATHCalculateAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD86CAF2B1BE2CD117EFD2702496AAB6 /* YKFKeyRawCommandService.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5D787F2729DB96B4C04495D980D4F4 /* YKFKeyRawCommandService.m */; };
+		DD8D15AB9D3E7C0A16683822428EA94C /* YKFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184F5327B5582BF5DD4F9007FDD50FB1 /* YKFViewController.m */; };
+		DDB9D603C82AC22C824756DCA0E509D9 /* YKFFIDO2MakeCredentialAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0DF468DDB9AA335CD513FAD990FA0B /* YKFFIDO2MakeCredentialAPDU.m */; };
+		DE6C918142FAABAC4DF197D0A7DE07F1 /* YKFOATHListAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7C14A97E35D93F109DA7A36E165409 /* YKFOATHListAPDU.m */; };
+		E0B0B03E086E3661CF8D98A21002B12D /* YKFKeyOATHSetCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D97AC2B990A888CA4BD972406E44A5C4 /* YKFKeyOATHSetCodeRequest.m */; };
+		E1E1537DFA397DC0E2BE6B7EE1CFEF86 /* YKFOATHValidateAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = C0E9BC884A4A21D7B8FD2D35BA09D8DE /* YKFOATHValidateAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E28433919CF22916A59BEF48FA43790A /* YKFOTPTokenParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 96463BECCC9E14E9023463A0E60B0CA6 /* YKFOTPTokenParser.m */; };
+		E30361791222FBCC670AAE051D0C054B /* YubiKitDeviceCapabilities+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 18F34D59540416B1751FEA931BA06072 /* YubiKitDeviceCapabilities+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E33D2C7D4A219F268C361F9A024D3FC4 /* YKFPCSCErrorMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B9D1F440A09A5172151277B94AC210 /* YKFPCSCErrorMap.m */; };
+		E3E0C45738413052B1EA883272A3ED74 /* YKFKeyFIDO2VerifyPinRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A39EE23ACCC87C4A77481692BBC6D1 /* YKFKeyFIDO2VerifyPinRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4D86E07EE182B5F70B2D9A1543D12FD /* YKFView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8386FF43538C18ADC95E26574A7AD3 /* YKFView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5662C6DB48286D52B61294F59F719C9 /* YKFOATHCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C1BEEE10DD5995FDD2A04A1538DB55 /* YKFOATHCredential.m */; };
+		E571392D035CB173313C839CE326683B /* YKFOATHCredentialValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 128D4091D9E64C9F008D191F1D4CA62F /* YKFOATHCredentialValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E64E5CB6BA29532F59FBC62268AE7BE4 /* YKFKeyFIDO2VerifyPinRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE63BBAAD75EFB6D57529A8DACA0AECC /* YKFKeyFIDO2VerifyPinRequest.m */; };
+		E6CE147DAFE981CBA72510B1B32A6DC1 /* YKFAccessorySession.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ABAF748320B75F139557F343B42330 /* YKFAccessorySession.m */; };
+		E6D9CCF03EF601DEF8E9F3D08C9F9E84 /* EASession+Testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 67B46BCB151810288A7DDD9C9EA0BB2A /* EASession+Testing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E736B7016A799DAE714833C81E384E77 /* YubiKitExternalLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = ED21033D4EE89A19E0191C1AE27E312B /* YubiKitExternalLocalization.m */; };
+		E8453FC213983BE77D5F7470EDBF1A4E /* YKFKeyFIDO2Error.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B0D1E4F6DE438F3348269CD04A7BC17 /* YKFKeyFIDO2Error.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8AA34F983C46F5A3D894F4BB265239A /* YKFKeyFIDO2Request.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E4C8A546ED6E12C1C2AEAA9ACEFC88D /* YKFKeyFIDO2Request.m */; };
+		EAE883D595C112317C2A339DD10A0514 /* YKFNFCOTPService+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E178054D5D4E30968630CD128E83E86B /* YKFNFCOTPService+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED22D8576B3EF02960D5D2A55663B39D /* YKFKeyU2FService.m in Sources */ = {isa = PBXBuildFile; fileRef = D79829122B49B508ECED6C208FFA8BAD /* YKFKeyU2FService.m */; };
+		EDB15560C901BD9B6651761A04342127 /* YKFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F6E9509C0CE6BD25E33D0FC7C030E63 /* YKFView.m */; };
+		F17EE9BA072F8AF4F31E05E9A121B273 /* YKFPCSC.m in Sources */ = {isa = PBXBuildFile; fileRef = 883A19F5877B92EC5702875DAFEC501D /* YKFPCSC.m */; };
+		F243B5785EB27BE418DCFFA2A7002AA6 /* Pods-RNYubikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03DDCA66FD9AF5BD7348EAF8D3A9F3CF /* Pods-RNYubikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4841B293B43EE285E5561EAA2041075 /* YKFKeyFIDO2MakeCredentialResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = DD904311A9D42FF1F7D6F7EC1FB1605F /* YKFKeyFIDO2MakeCredentialResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4D1A51349CF5DACB777734A39E92C6D /* UIDeviceAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B0280380CF1C957532818AFA3EB0FDC0 /* UIDeviceAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F514412EE2363337FB0898357ACB9E2F /* YKFFIDO2PinAuthKey.h in Headers */ = {isa = PBXBuildFile; fileRef = B52A08D9C5F3358B204B797551AAF36F /* YKFFIDO2PinAuthKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F549F72B4CFD35D4706D23357C125F2B /* YKFQRCodeScanError+Errors.h in Headers */ = {isa = PBXBuildFile; fileRef = C0FD400FD11F673305EF69D0EA8529A5 /* YKFQRCodeScanError+Errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F566CCA7A2AE76C30EBA4A0446C6CAA6 /* YKFFIDO2CommandAPDU.m in Sources */ = {isa = PBXBuildFile; fileRef = 98A5B29233EE3D3D34376CDE2A2DAF89 /* YKFFIDO2CommandAPDU.m */; };
+		F67013408676A03A97DD4647C11EB443 /* YKFNFCError+Errors.h in Headers */ = {isa = PBXBuildFile; fileRef = A461513D89C1FC5C4B4F0357FC491C31 /* YKFNFCError+Errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70B2FE0297C62CDD3455DFCCE9A4959 /* YKFSelectOATHApplicationAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAB9FFDAADE754F79E32A472EA08701 /* YKFSelectOATHApplicationAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F75EBC228E689D630BBF345F0EA64C46 /* YKFKeyOATHValidateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF0E39999BEE4A49FCE362F1E40798A1 /* YKFKeyOATHValidateRequest.m */; };
+		F92168179D7778E56734A1DA4A9958F4 /* YKFKeyU2FRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95619B24383CCF33145F8B8C7C91E6E4 /* YKFKeyU2FRequest.m */; };
+		F94DF4629FE6D3E78EEC5D81BAB14B1E /* YKFKeyFIDO2GetInfoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F77B1481BE4C3A61A6E2CE5895933C /* YKFKeyFIDO2GetInfoResponse.m */; };
+		FA69D50A1C185A92ED96CD7CFAE36957 /* YubiKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC22CB049A297A262FBB0BE51654EA4 /* YubiKit-dummy.m */; };
+		FB7EA2027BFC0C1F923CA9E7F5959398 /* YKFKeyOATHListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF229EEC16CB8EA5FC0E122094A59E2 /* YKFKeyOATHListRequest.m */; };
+		FB92D2BABCAFE6BC12559E00E504CCC9 /* YKFOATHDeleteAPDU.h in Headers */ = {isa = PBXBuildFile; fileRef = A864531102B70C9EEFED6414E39BD841 /* YKFOATHDeleteAPDU.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2758A65F08BCA318E94263D46E0EB5DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCF4DC2E7E3142D165A70FB082678230;
+			remoteInfo = YubiKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01A2F92740BE3E3C858967B43D70210C /* YKFFIDO2CommandAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2CommandAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2CommandAPDU.h; sourceTree = "<group>"; };
+		03395E50A5089E005F2D9A7B8327849E /* UIWindowAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIWindowAdditions.m; path = YubiKit/YubiKit/Helpers/Additions/UIWindowAdditions.m; sourceTree = "<group>"; };
+		03A3C79711B6A64377D95F89F6D46217 /* YKFPCSCErrors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFPCSCErrors.h; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSCErrors.h; sourceTree = "<group>"; };
+		03DDCA66FD9AF5BD7348EAF8D3A9F3CF /* Pods-RNYubikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RNYubikit-umbrella.h"; sourceTree = "<group>"; };
+		0669B8D0C7221BCB678691D25E52F651 /* YKFKeyFIDO2Service.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2Service.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/YKFKeyFIDO2Service.h; sourceTree = "<group>"; };
+		06D4F4B4B7421B96381AB59CC7B06985 /* YKFAccessoryDescription+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFAccessoryDescription+Private.h"; path = "YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessoryDescription+Private.h"; sourceTree = "<group>"; };
+		0782DF2FAA91BBA1E99DEEF12E86E6E4 /* YKFKeyService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyService.h; path = YubiKit/YubiKit/Sessions/Shared/Services/YKFKeyService.h; sourceTree = "<group>"; };
+		09A64CE204120B79712A95DCA32F88F5 /* YKFAccessoryConnectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAccessoryConnectionController.h; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessoryConnectionController.h; sourceTree = "<group>"; };
+		0AAD1CA847CC3EA5A788331894FBCB2C /* YKFOATHPutAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHPutAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHPutAPDU.h; sourceTree = "<group>"; };
+		0ACE97647862C131C9D9EB6306EDECF5 /* YKFURIIdentifierCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFURIIdentifierCode.h; path = YubiKit/YubiKit/Sessions/NFCSession/YKFURIIdentifierCode.h; sourceTree = "<group>"; };
+		0CBDECF74F15887F227F2E53AFFF7440 /* YKFKeyU2FSignResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FSignResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FSignResponse.h; sourceTree = "<group>"; };
+		0CFEB4D80BC05D6BD9DB0D1D314F9B01 /* YKFKeyFIDO2Service.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2Service.m; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/YKFKeyFIDO2Service.m; sourceTree = "<group>"; };
+		0D866ED043D3D2ABB54BFAD83AEE8648 /* YKFKeyOATHDeleteRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHDeleteRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHDeleteRequest.m; sourceTree = "<group>"; };
+		0DFA74B91197A5DF79B354639CE1516A /* YKFKeyFIDO2GetAssertionResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2GetAssertionResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetAssertionResponse+Private.h"; sourceTree = "<group>"; };
+		0F72C68733A352BD3FE4DDD956BF6CBA /* YKFKVOObservation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKVOObservation.h; path = YubiKit/YubiKit/Helpers/YKFKVOObservation.h; sourceTree = "<group>"; };
+		0F7C14A97E35D93F109DA7A36E165409 /* YKFOATHListAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHListAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHListAPDU.m; sourceTree = "<group>"; };
+		0F88A0CF9CDA049C02ACDD70BE81C7B9 /* YKFNSMutableDataAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNSMutableDataAdditions.h; path = YubiKit/YubiKit/Helpers/Additions/YKFNSMutableDataAdditions.h; sourceTree = "<group>"; };
+		0FC494844906D64DE0F88400C88B8653 /* YubiKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YubiKit.framework; path = YubiKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10A12A5934F0F7F2047D38408BA06794 /* YKFAccessorySession+Debugging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFAccessorySession+Debugging.h"; path = "YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySession+Debugging.h"; sourceTree = "<group>"; };
+		10FB4474DBF485F5B6A69A6063AC8078 /* YKFKeyOATHResetRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHResetRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHResetRequest.m; sourceTree = "<group>"; };
+		11C4AA9F16DD14579AD80CB84B1FECC8 /* Pods-RNYubikit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNYubikit-acknowledgements.plist"; sourceTree = "<group>"; };
+		128D4091D9E64C9F008D191F1D4CA62F /* YKFOATHCredentialValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHCredentialValidator.h; path = YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFOATHCredentialValidator.h; sourceTree = "<group>"; };
+		12CB02385DC56194C81EA2E5D938EC10 /* YubiKitDeviceCapabilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YubiKitDeviceCapabilities.m; path = YubiKit/YubiKit/YubiKitDeviceCapabilities.m; sourceTree = "<group>"; };
+		146445465B9EEE185A3C50FB54387F02 /* YKFFIDO2ClientPinAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2ClientPinAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2ClientPinAPDU.h; sourceTree = "<group>"; };
+		14F5C8948CB981CD5EE1BF715D6936C9 /* YubiKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "YubiKit-Info.plist"; sourceTree = "<group>"; };
+		152F228C8D795DB6C6C1DE45E8F5E224 /* YKFAPDU+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFAPDU+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/APDU/YKFAPDU+Private.h"; sourceTree = "<group>"; };
+		15B9D1F440A09A5172151277B94AC210 /* YKFPCSCErrorMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFPCSCErrorMap.m; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSCErrorMap.m; sourceTree = "<group>"; };
+		165F8B0395C29874A6329C3DC9E72686 /* YKFKeyOATHListResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHListResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHListResponse.m; sourceTree = "<group>"; };
+		17867C685A5538B7FDC156A5E3B39790 /* YKFKeyFIDO2ClientPinRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2ClientPinRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2ClientPinRequest.m; sourceTree = "<group>"; };
+		17D814B9AC9FA2E86DA9783B174C9F44 /* YubiKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YubiKit.h; path = YubiKit/YubiKit/YubiKit.h; sourceTree = "<group>"; };
+		184F5327B5582BF5DD4F9007FDD50FB1 /* YKFViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFViewController.m; path = YubiKit/YubiKit/Helpers/YKFViewController.m; sourceTree = "<group>"; };
+		18F34D59540416B1751FEA931BA06072 /* YubiKitDeviceCapabilities+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YubiKitDeviceCapabilities+Testing.h"; path = "YubiKit/YubiKit/YubiKitDeviceCapabilities+Testing.h"; sourceTree = "<group>"; };
+		198E6AD4C64923330689BDF4281FE929 /* YKFAccessorySession+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFAccessorySession+Private.h"; path = "YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySession+Private.h"; sourceTree = "<group>"; };
+		1A3F949E0C65C800DB692715A7898C93 /* YKFSelectFIDO2ApplicationAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFSelectFIDO2ApplicationAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFSelectFIDO2ApplicationAPDU.h; sourceTree = "<group>"; };
+		1C99F709251358F14D824D1853C1B0D9 /* YKFNFCTagDescription+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFNFCTagDescription+Private.h"; path = "YubiKit/YubiKit/Sessions/NFCSession/YKFNFCTagDescription+Private.h"; sourceTree = "<group>"; };
+		1CAB45F626207126EA9E6E171B02B5E7 /* YKFU2FRegisterAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFU2FRegisterAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/U2F/YKFU2FRegisterAPDU.m; sourceTree = "<group>"; };
+		1DE2CC2F11BF705A7ADCADC634871B56 /* YKFPCSCLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFPCSCLayer.m; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSCLayer.m; sourceTree = "<group>"; };
+		1E5FCE78B9F9917936E4273A3AD5692F /* YKFKeyFIDO2GetAssertionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2GetAssertionRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetAssertionRequest.h; sourceTree = "<group>"; };
+		1E9AC0201FF0082763EA3803155275DF /* Pods-RNYubikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RNYubikit-Info.plist"; sourceTree = "<group>"; };
+		1F188FB37A30761D59B0994C7B1AC6A0 /* YKFKeyFIDO2Error.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2Error.m; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyFIDO2Error.m; sourceTree = "<group>"; };
+		1F300277C4D8A1ED7C63DAF7C8FDAF06 /* YKFKeyFIDO2MakeCredentialResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2MakeCredentialResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2MakeCredentialResponse+Private.h"; sourceTree = "<group>"; };
+		1FDDD2F2E3201053BE08CF04C1DFA317 /* YKFNSMutableDataAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNSMutableDataAdditions.m; path = YubiKit/YubiKit/Helpers/Additions/YKFNSMutableDataAdditions.m; sourceTree = "<group>"; };
+		2467A174544A355C427ECEBB75DE3281 /* YKFKeyOATHCalculateAllResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHCalculateAllResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateAllResponse.h; sourceTree = "<group>"; };
+		250EBB277D645985DD6A137D1F5D8A5B /* YKFQRCodeScanError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFQRCodeScanError.m; path = YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRCodeScanError.m; sourceTree = "<group>"; };
+		267B1E82D121D882A9BEB3F046EDDBB3 /* YKFLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFLogger.m; path = YubiKit/YubiKit/Helpers/YKFLogger.m; sourceTree = "<group>"; };
+		26E6B89B9EB0E6CA8E0D6317C074E40A /* YKFKeyRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/YKFKeyRequest.m; sourceTree = "<group>"; };
+		2749319238C07E76F983137B5B881592 /* EAAccessoryManager+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EAAccessoryManager+Testing.h"; path = "YubiKit/YubiKit/TestExtentions/EAAccessoryManager+Testing.h"; sourceTree = "<group>"; };
+		29B7BA12B5EF36F26C308DC0812BE887 /* YKFWebAuthnClientData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFWebAuthnClientData.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/WebAuthN/YKFWebAuthnClientData.h; sourceTree = "<group>"; };
+		29F362677971E1674686FB5FE9ECF2C5 /* YKFKeyFIDO2Service+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2Service+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/YKFKeyFIDO2Service+Private.h"; sourceTree = "<group>"; };
+		2B230A4630788D2D8011DAD0D8E85560 /* YKFKeyU2FSignResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyU2FSignResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FSignResponse+Private.h"; sourceTree = "<group>"; };
+		2B50385D2D0CB5884980CC16B6AB7017 /* YKFPCSCTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFPCSCTypes.h; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSCTypes.h; sourceTree = "<group>"; };
+		2CAB2380D010C8874FA615DEC82898F0 /* YubiKitExternalLocalization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YubiKitExternalLocalization.h; path = YubiKit/YubiKit/YubiKitExternalLocalization.h; sourceTree = "<group>"; };
+		2D3A3972BD58242892383FCD4D4B0D43 /* YubiKitManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YubiKitManager.m; path = YubiKit/YubiKit/YubiKitManager.m; sourceTree = "<group>"; };
+		2F8FC5C9B1EDE41B81BDE6CDB128DB07 /* YKFKeyCommandConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyCommandConfiguration.m; path = YubiKit/YubiKit/Sessions/Shared/YKFKeyCommandConfiguration.m; sourceTree = "<group>"; };
+		2F9B303D2D7B6BD6800F2233D0713AD5 /* YKFOATHResetAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHResetAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHResetAPDU.m; sourceTree = "<group>"; };
+		2FE86A8A86B6890B1D35CE609AB08E1C /* YKFViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFViewController.h; path = YubiKit/YubiKit/Helpers/YKFViewController.h; sourceTree = "<group>"; };
+		312461225A10F6375850F6BB743EA7A3 /* NFCNDEFReaderSession+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NFCNDEFReaderSession+Testing.h"; path = "YubiKit/YubiKit/TestExtentions/NFCNDEFReaderSession+Testing.h"; sourceTree = "<group>"; };
+		31F41675C1C0A5BA184F4E333CCA2858 /* YKFPCSC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFPCSC.h; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSC.h; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		334A57B50067DC9D92FF22E586C1BC6E /* YKFOTPTokenParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPTokenParser.h; path = YubiKit/YubiKit/SharedModel/YKFOTPTokenParser.h; sourceTree = "<group>"; };
+		34310E0160F797A548A74C7F9A7F31E9 /* YKFKeyU2FSignResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FSignResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FSignResponse.m; sourceTree = "<group>"; };
+		34A45D378E3E97E49438091DFB2A21A6 /* YKFKeyOATHCalculateResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHCalculateResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateResponse.m; sourceTree = "<group>"; };
+		34F77B1481BE4C3A61A6E2CE5895933C /* YKFKeyFIDO2GetInfoResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2GetInfoResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetInfoResponse.m; sourceTree = "<group>"; };
+		36FFF5A810AC5F98537FAAFBDD751B67 /* YKFCBORTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFCBORTag.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBORTag.h; sourceTree = "<group>"; };
+		37045C596F265272D90A4C343109CB6F /* YKFAPDUCommandInstruction.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAPDUCommandInstruction.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/YKFAPDUCommandInstruction.h; sourceTree = "<group>"; };
+		37674B29FBB2914A671F228C8959BC6B /* YKFOATHResetAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHResetAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHResetAPDU.h; sourceTree = "<group>"; };
+		3836A5B7EBCD46B9B9AFDF8A8AEBFDD4 /* YubiKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = YubiKit.modulemap; sourceTree = "<group>"; };
+		38AAC02EF8810445D5663FB25461FDDD /* YKFWebAuthnClientData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFWebAuthnClientData.m; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/WebAuthN/YKFWebAuthnClientData.m; sourceTree = "<group>"; };
+		38AF60443C668348F8E83A551A5F9490 /* YKFOATHCalculateAllAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHCalculateAllAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHCalculateAllAPDU.m; sourceTree = "<group>"; };
+		3A37AEF0E64A31165D8EC2B4FD970784 /* YKFKeyFIDO2GetAssertionRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2GetAssertionRequest+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetAssertionRequest+Private.h"; sourceTree = "<group>"; };
+		3BD3DBBF23418F36A365E917D437ABF5 /* YKFKeyFIDO2SetPinRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2SetPinRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2SetPinRequest.m; sourceTree = "<group>"; };
+		3C1D18EE3ED25C3679A924AB8A8F2CDC /* YubiKitLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YubiKitLogger.h; path = YubiKit/YubiKit/YubiKitLogger.h; sourceTree = "<group>"; };
+		3C63E91D45C2FEF7A171712A8D309D58 /* YKFOATHSetCodeAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHSetCodeAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHSetCodeAPDU.m; sourceTree = "<group>"; };
+		3CB5841969F57E1EC3E394DAAEE753DC /* Pods-RNYubikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RNYubikit-dummy.m"; sourceTree = "<group>"; };
+		3D07D5929329D2988A42B786C38BC105 /* YKFKeyRawCommandService+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyRawCommandService+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Services/RawCommand/YKFKeyRawCommandService+Private.h"; sourceTree = "<group>"; };
+		3DA5D3D36CE7901804D80AF23CECE09A /* YKFFIDO2ResetAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2ResetAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2ResetAPDU.m; sourceTree = "<group>"; };
+		3DE798EA8CA163F8B2DF15E3CAA935CE /* YKFNFCSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNFCSession.h; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCSession.h; sourceTree = "<group>"; };
+		3E759C1CDA5D975F0E28FDE562645B1E /* YKFNSDataAdditions+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFNSDataAdditions+Private.h"; path = "YubiKit/YubiKit/Helpers/Additions/YKFNSDataAdditions+Private.h"; sourceTree = "<group>"; };
+		3F316D481BE3ED506E305754F9898C4B /* YKFKeyOATHRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHRequest.h; sourceTree = "<group>"; };
+		3F4247D0D3B88DE8B2CE86963A6AA6F4 /* YKFU2FSignAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFU2FSignAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/U2F/YKFU2FSignAPDU.m; sourceTree = "<group>"; };
+		3F6E9509C0CE6BD25E33D0FC7C030E63 /* YKFView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFView.m; path = YubiKit/YubiKit/Helpers/YKFView.m; sourceTree = "<group>"; };
+		41572C2656285FF6410A6F0E44F6458E /* YKFSelectU2FApplicationAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFSelectU2FApplicationAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/U2F/YKFSelectU2FApplicationAPDU.h; sourceTree = "<group>"; };
+		41D4B408C2FA88FA1E7DDD095264DA63 /* YKFKeyU2FRegisterResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FRegisterResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRegisterResponse.h; sourceTree = "<group>"; };
+		420181F6568A3706F14A6AFDE60F649C /* YKFOATHListAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHListAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHListAPDU.h; sourceTree = "<group>"; };
+		425101CDC41CB7BB028918A6E5BD20CA /* YKFSelectOATHApplicationAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFSelectOATHApplicationAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFSelectOATHApplicationAPDU.m; sourceTree = "<group>"; };
+		43BB50BD6BF8035FD37B456A905BE8B7 /* YKFNFCSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNFCSession.m; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCSession.m; sourceTree = "<group>"; };
+		4504FEB06C812892DF8B0F6B7D118BF2 /* YKFFIDO2MakeCredentialAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2MakeCredentialAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2MakeCredentialAPDU.h; sourceTree = "<group>"; };
+		466DEF655A986331CBF7BC047EAC5494 /* YKFNFCOTPService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNFCOTPService.m; path = YubiKit/YubiKit/Sessions/NFCSession/Services/YKFNFCOTPService.m; sourceTree = "<group>"; };
+		468AFDC57BFE9E97D22F4805D4A134A0 /* UIDevice+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+Testing.h"; path = "YubiKit/YubiKit/TestExtentions/UIDevice+Testing.h"; sourceTree = "<group>"; };
+		4893B0DC1449B97F693827CF1CA2FF4E /* YKFNFCError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNFCError.h; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCError.h; sourceTree = "<group>"; };
+		48E12B7099522B6CE4B4DF59DF7E4D0D /* YKFKeyFIDO2GetAssertionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2GetAssertionResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetAssertionResponse.h; sourceTree = "<group>"; };
+		48EDC630F9AD99BC2CCC4FF2FB450938 /* YKFNFCTagDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNFCTagDescription.m; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCTagDescription.m; sourceTree = "<group>"; };
+		49C246B111C5480AB873CDA4A3CAA265 /* YKFFIDO2TouchPoolingAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2TouchPoolingAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2TouchPoolingAPDU.m; sourceTree = "<group>"; };
+		4AFA77A06A099444BCF0CFB515FA9089 /* Pods-RNYubikit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RNYubikit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		503079F51D4E6D9459863A5442A9069B /* YKFQRCodeScanViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFQRCodeScanViewController.m; path = YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRCodeScanViewController.m; sourceTree = "<group>"; };
+		50963C70AB2CC09901ED3B7508271C7D /* UIDeviceAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UIDeviceAdditions.m; path = YubiKit/YubiKit/Helpers/Additions/UIDeviceAdditions.m; sourceTree = "<group>"; };
+		5171E721DBBC6530B6EC04DB75256375 /* YKFKeyFIDO2MakeCredentialResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2MakeCredentialResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2MakeCredentialResponse.m; sourceTree = "<group>"; };
+		523A92F3C1E220F64D1970680F9ECA6C /* YKFKeyOATHRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHRequest+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHRequest+Private.h"; sourceTree = "<group>"; };
+		52488A37DD2CA1AE1D4C2AD142E5F1A1 /* YKFFIDO2GetAssertionAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2GetAssertionAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2GetAssertionAPDU.m; sourceTree = "<group>"; };
+		52F89F3FEF44B2629C1693264DF82625 /* YKFKeyOATHService+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHService+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFKeyOATHService+Private.h"; sourceTree = "<group>"; };
+		54051B0312E1A76089D7CB2A1D143C26 /* YKFOTPToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPToken.h; path = YubiKit/YubiKit/SharedModel/YKFOTPToken.h; sourceTree = "<group>"; };
+		55989B8779600DE7D655592805D7F146 /* YKFQRCodeScanError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFQRCodeScanError.h; path = YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRCodeScanError.h; sourceTree = "<group>"; };
+		56D668EE64645409860647B602931CDB /* YKFFIDO2GetInfoAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2GetInfoAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2GetInfoAPDU.m; sourceTree = "<group>"; };
+		57ABAF748320B75F139557F343B42330 /* YKFAccessorySession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFAccessorySession.m; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySession.m; sourceTree = "<group>"; };
+		586157F66D4F53ECAB31A2D69927981E /* YKFNSDataAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNSDataAdditions.m; path = YubiKit/YubiKit/Helpers/Additions/YKFNSDataAdditions.m; sourceTree = "<group>"; };
+		58F019242F2D9989D537801E7B07B47A /* YKFKeyOATHService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHService.m; path = YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFKeyOATHService.m; sourceTree = "<group>"; };
+		5A8A58CFA66B0E5FD9D5FFE4E6A40F23 /* YKFKeyOATHListResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHListResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHListResponse.h; sourceTree = "<group>"; };
+		5AFD565CEF50FE7EFB35D0DE8CDBE707 /* YKFNSStringAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNSStringAdditions.h; path = YubiKit/YubiKit/Helpers/Additions/YKFNSStringAdditions.h; sourceTree = "<group>"; };
+		5BFFE2A58451C59EFDF7468E4B23FC9F /* Pods_RNYubikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RNYubikit.framework; path = "Pods-RNYubikit.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D83DA540C7A8FD59F03607E61BD0C80 /* YKFFIDO2Type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2Type.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFFIDO2Type.h; sourceTree = "<group>"; };
+		5E4C8A546ED6E12C1C2AEAA9ACEFC88D /* YKFKeyFIDO2Request.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2Request.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2Request.m; sourceTree = "<group>"; };
+		5E8386FF43538C18ADC95E26574A7AD3 /* YKFView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFView.h; path = YubiKit/YubiKit/Helpers/YKFView.h; sourceTree = "<group>"; };
+		5F6CC9756EEF43128EE8C1502938A649 /* YubiKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YubiKit-prefix.pch"; sourceTree = "<group>"; };
+		614D47F3856C05E1582669C695BF5B4C /* YKFPermissions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFPermissions.h; path = YubiKit/YubiKit/Helpers/YKFPermissions.h; sourceTree = "<group>"; };
+		6289F5B4CAA79A37B098B50A32B32A03 /* YKFDispatch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFDispatch.m; path = YubiKit/YubiKit/Helpers/YKFDispatch.m; sourceTree = "<group>"; };
+		63144642282A153D5AE06530AF410BB3 /* YKFOTPURIParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOTPURIParser.m; path = YubiKit/YubiKit/SharedModel/YKFOTPURIParser.m; sourceTree = "<group>"; };
+		6455A5FFB20E563DE8F9E069A8EF24CA /* YKFOTPTokenValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPTokenValidator.h; path = YubiKit/YubiKit/SharedModel/YKFOTPTokenValidator.h; sourceTree = "<group>"; };
+		64B90D261A88BAF2997ED7465B731D25 /* YKFCBORDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFCBORDecoder.m; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBORDecoder.m; sourceTree = "<group>"; };
+		658AF39611BAE7BE1779EC4DE7DA46C0 /* YKFKeyU2FRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRequest.h; sourceTree = "<group>"; };
+		659716B360C721CB894C30C8ECB1E0D8 /* YKFKeyFIDO2GetInfoResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2GetInfoResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetInfoResponse+Private.h"; sourceTree = "<group>"; };
+		66FC89A7141764ED8AB1553147B303E4 /* Pods-RNYubikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNYubikit.release.xcconfig"; sourceTree = "<group>"; };
+		67B46BCB151810288A7DDD9C9EA0BB2A /* EASession+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EASession+Testing.h"; path = "YubiKit/YubiKit/TestExtentions/EASession+Testing.h"; sourceTree = "<group>"; };
+		6820E9850BFB83410EE878C3FC7C0F1B /* YKFOTPTokenValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOTPTokenValidator.m; path = YubiKit/YubiKit/SharedModel/YKFOTPTokenValidator.m; sourceTree = "<group>"; };
+		683B66CD7A7E60D8C6CC844F17E093A8 /* YKFKeyU2FRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyU2FRequest+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRequest+Private.h"; sourceTree = "<group>"; };
+		697A92E8F3C355E43D3A4A92F39F12DE /* YKFNFCTagDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNFCTagDescription.h; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCTagDescription.h; sourceTree = "<group>"; };
+		6A0158425CE26ABAC319288164B108F1 /* YKFOATHCredential.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHCredential.h; path = YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFOATHCredential.h; sourceTree = "<group>"; };
+		6A5B9A82393C4F4E9A0DEA0EF696361D /* YKFKeyAPDUError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyAPDUError.h; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyAPDUError.h; sourceTree = "<group>"; };
+		6BC557B92DF7118F485E3702600157BF /* YKFKeyFIDO2ClientPinResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2ClientPinResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2ClientPinResponse.h; sourceTree = "<group>"; };
+		6BD2BA0DDEF2F50D11C1AC926F9DE386 /* YKFAccessoryConnectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFAccessoryConnectionController.m; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessoryConnectionController.m; sourceTree = "<group>"; };
+		6EA000E5F539F36A7A750A15AC436807 /* YKFKeyService+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyService+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Services/YKFKeyService+Private.h"; sourceTree = "<group>"; };
+		6ECC4EB23B572098A9E670078971BE5B /* YKFKeyOATHValidateRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHValidateRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHValidateRequest.h; sourceTree = "<group>"; };
+		705476242ED70D06C5CE51B41FFBD7D5 /* YKFKeyCommandConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyCommandConfiguration.h; path = YubiKit/YubiKit/Sessions/Shared/YKFKeyCommandConfiguration.h; sourceTree = "<group>"; };
+		71AB593831A2A26B08878EB4E0D2CCA8 /* YKFOATHCalculateAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHCalculateAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHCalculateAPDU.h; sourceTree = "<group>"; };
+		7399D91756C22A1BB99EA00626CCF65D /* YKFKeyOATHListResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHListResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHListResponse+Private.h"; sourceTree = "<group>"; };
+		739D12A44782B4E09B0C308E6782CC9C /* YKFOTPTextParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPTextParser.h; path = YubiKit/YubiKit/SharedModel/YKFOTPTextParser.h; sourceTree = "<group>"; };
+		73C417E75B2CEDAD70ADF2014768F68C /* MF_Base32Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MF_Base32Additions.m; path = YubiKit/YubiKit/ThirdParties/MF_Base32Additions.m; sourceTree = "<group>"; };
+		746CD2A68BEAA615BF57648C1C04948C /* YKFKeyOATHService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHService.h; path = YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFKeyOATHService.h; sourceTree = "<group>"; };
+		748F6A16004327359D7725BD8730B3DA /* YKFKeyService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyService.m; path = YubiKit/YubiKit/Sessions/Shared/Services/YKFKeyService.m; sourceTree = "<group>"; };
+		763C897AD5EBD58A7C5739D4AC36FD3A /* YKFCBOREncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFCBOREncoder.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBOREncoder.h; sourceTree = "<group>"; };
+		766E020412DD6C201831D82B14F8ED1D /* YKFKeyOATHError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHError.m; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyOATHError.m; sourceTree = "<group>"; };
+		794285FAB767D779E684FAF1134C47F5 /* YKFKeyFIDO2GetAssertionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2GetAssertionResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetAssertionResponse.m; sourceTree = "<group>"; };
+		798A0DCEF703E93B3429371D178265DA /* YKFKeyOATHResetRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHResetRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHResetRequest.h; sourceTree = "<group>"; };
+		7A72DCEA32C4C1947E1FCCFD247F300D /* Pods-RNYubikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RNYubikit.modulemap"; sourceTree = "<group>"; };
+		7C007A1EB65D65DA75D1DA51EF7788AF /* YKFAccessorySession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAccessorySession.h; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySession.h; sourceTree = "<group>"; };
+		7C5CED6FE8CFB3EED4F5B38410340662 /* YKFOTPToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOTPToken.m; path = YubiKit/YubiKit/SharedModel/YKFOTPToken.m; sourceTree = "<group>"; };
+		7D7BE0334FAC0F5C23466D3A18977044 /* YKFKeyOATHSelectApplicationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHSelectApplicationResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHSelectApplicationResponse.h; sourceTree = "<group>"; };
+		7E4429131E208AC967484274F21169C4 /* YKFKeyOATHCalculateResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHCalculateResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateResponse.h; sourceTree = "<group>"; };
+		7EF7D261DFE6FB7918A2ED6A35437DF3 /* YKFOATHDeleteAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHDeleteAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHDeleteAPDU.m; sourceTree = "<group>"; };
+		7FF229EEC16CB8EA5FC0E122094A59E2 /* YKFKeyOATHListRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHListRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHListRequest.m; sourceTree = "<group>"; };
+		85556A9B4648F1BA6D446FF5CAB2596C /* YKFOATHCalculateAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHCalculateAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHCalculateAPDU.m; sourceTree = "<group>"; };
+		85F95EC5B7FE2508C3873721B1516D7B /* YKFKeyU2FRegisterResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyU2FRegisterResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRegisterResponse+Private.h"; sourceTree = "<group>"; };
+		8727186DFDAC4D6A1660ADCD832B58A5 /* YubiKitConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YubiKitConfiguration.h; path = YubiKit/YubiKit/YubiKitConfiguration.h; sourceTree = "<group>"; };
+		878F46C963BF80C98CE0C5521AB902B3 /* YKFAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/YKFAPDU.m; sourceTree = "<group>"; };
+		88152EBC944F0AA5194AD33D1B0E9764 /* YKFKeyRawCommandService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyRawCommandService.h; path = YubiKit/YubiKit/Sessions/Shared/Services/RawCommand/YKFKeyRawCommandService.h; sourceTree = "<group>"; };
+		883A19F5877B92EC5702875DAFEC501D /* YKFPCSC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFPCSC.m; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSC.m; sourceTree = "<group>"; };
+		891FC021BFD19ABF4111E8312C9FD008 /* YKFKeyFIDO2ChangePinRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2ChangePinRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2ChangePinRequest.h; sourceTree = "<group>"; };
+		8ABA851E92097F37E4F5D22FB61B2F86 /* YKFAccessorySessionConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFAccessorySessionConfiguration.m; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySessionConfiguration.m; sourceTree = "<group>"; };
+		8B0D1E4F6DE438F3348269CD04A7BC17 /* YKFKeyFIDO2Error.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2Error.h; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyFIDO2Error.h; sourceTree = "<group>"; };
+		8BA67B83BEE55EB07121A5FEC2E8B9C7 /* YKFOATHValidateAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHValidateAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHValidateAPDU.m; sourceTree = "<group>"; };
+		8C560079E1D3B47FCB081B35BDAA7026 /* YKFKeyFIDO2GetInfoResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2GetInfoResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetInfoResponse.h; sourceTree = "<group>"; };
+		8F88B95E99EBCED8A2C4A882AE62FA54 /* YubiKitManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YubiKitManager.h; path = YubiKit/YubiKit/YubiKitManager.h; sourceTree = "<group>"; };
+		8F992C4B0FAC991FF48F1C1B52AC3C3A /* YKFKeyU2FSignRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FSignRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FSignRequest.h; sourceTree = "<group>"; };
+		95619B24383CCF33145F8B8C7C91E6E4 /* YKFKeyU2FRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRequest.m; sourceTree = "<group>"; };
+		96463BECCC9E14E9023463A0E60B0CA6 /* YKFOTPTokenParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOTPTokenParser.m; path = YubiKit/YubiKit/SharedModel/YKFOTPTokenParser.m; sourceTree = "<group>"; };
+		96B3F51DA1C944F455781FBFACE02FE1 /* YKFKeyOATHValidateResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHValidateResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHValidateResponse.m; sourceTree = "<group>"; };
+		9811D7E7C5A310D45D62749AF17EFECF /* YKFOATHSetCodeAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHSetCodeAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHSetCodeAPDU.h; sourceTree = "<group>"; };
+		984205CC27EE0CD78DDE84BE0739D9D0 /* YKFFIDO2ResetAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2ResetAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2ResetAPDU.h; sourceTree = "<group>"; };
+		987BBD70E6B546DFD5503C06FB74FE83 /* YKFOTPTextParserProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPTextParserProtocol.h; path = YubiKit/YubiKit/SharedModel/YKFOTPTextParserProtocol.h; sourceTree = "<group>"; };
+		98A5B29233EE3D3D34376CDE2A2DAF89 /* YKFFIDO2CommandAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2CommandAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2CommandAPDU.m; sourceTree = "<group>"; };
+		996FA260922C11EFF83B9593071DDF22 /* YKFDispatch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFDispatch.h; path = YubiKit/YubiKit/Helpers/YKFDispatch.h; sourceTree = "<group>"; };
+		99A70CE3B6F842FB52D75E963AB357C0 /* YKFPCSCLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFPCSCLayer.h; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSCLayer.h; sourceTree = "<group>"; };
+		99F936684B6B53EF014C4C542DDD8055 /* YKFKeyFIDO2ClientPinResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2ClientPinResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2ClientPinResponse.m; sourceTree = "<group>"; };
+		9AFAD09D273BF21131D59AB5CDE9672D /* YKFAccessorySessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAccessorySessionConfiguration.h; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySessionConfiguration.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EA8EE3F4F112ABED3D61CE43DE9D36B /* YKFKeySessionError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeySessionError.m; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeySessionError.m; sourceTree = "<group>"; };
+		9F1722D79690A24097A52A325DB68EF4 /* YKFKeyOATHDeleteRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHDeleteRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHDeleteRequest.h; sourceTree = "<group>"; };
+		A0829E3A3511B2810D56020753961E56 /* YKFPermissions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFPermissions.m; path = YubiKit/YubiKit/Helpers/YKFPermissions.m; sourceTree = "<group>"; };
+		A2F062E6125A7523EDBCF0B4A6C8F4EC /* YKFFIDO2GetNextAssertionAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2GetNextAssertionAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2GetNextAssertionAPDU.h; sourceTree = "<group>"; };
+		A3644E23CF894AFA3C4318B22DE2C0C9 /* YKFCBOREncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFCBOREncoder.m; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBOREncoder.m; sourceTree = "<group>"; };
+		A3958A04DE8155EC254B1F6D5C22FC11 /* YKFFIDO2GetInfoAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2GetInfoAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2GetInfoAPDU.h; sourceTree = "<group>"; };
+		A461513D89C1FC5C4B4F0357FC491C31 /* YKFNFCError+Errors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFNFCError+Errors.h"; path = "YubiKit/YubiKit/Sessions/NFCSession/YKFNFCError+Errors.h"; sourceTree = "<group>"; };
+		A55DF0F05FC9AF7FF6E503388E4CA547 /* Pods-RNYubikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RNYubikit.debug.xcconfig"; sourceTree = "<group>"; };
+		A62ED1EA1057200C3368F074DCE30802 /* YKFNFCConnectionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNFCConnectionController.h; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCConnectionController.h; sourceTree = "<group>"; };
+		A70BEF69DD2BE458845D3299EE6939FC /* YKFKeySessionError+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeySessionError+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeySessionError+Private.h"; sourceTree = "<group>"; };
+		A7D6FDA7C4182462714736B50CD375C0 /* YKFKeyFIDO2MakeCredentialRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2MakeCredentialRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2MakeCredentialRequest.m; sourceTree = "<group>"; };
+		A7E9A048AAEE26CC3B22954C0A08CFB2 /* YKFQRCodeScanOverlayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFQRCodeScanOverlayView.h; path = YubiKit/YubiKit/Sessions/QRReaderSession/Views/YKFQRCodeScanOverlayView.h; sourceTree = "<group>"; };
+		A864531102B70C9EEFED6414E39BD841 /* YKFOATHDeleteAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHDeleteAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHDeleteAPDU.h; sourceTree = "<group>"; };
+		A8A39EE23ACCC87C4A77481692BBC6D1 /* YKFKeyFIDO2VerifyPinRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2VerifyPinRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2VerifyPinRequest.h; sourceTree = "<group>"; };
+		A99866E68BB78BC16CEE5EBF8895535A /* YKFKeyConnectionControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyConnectionControllerProtocol.h; path = YubiKit/YubiKit/Sessions/Shared/YKFKeyConnectionControllerProtocol.h; sourceTree = "<group>"; };
+		A9CB792CD56C27A1665451F7920972FA /* YKFKeyOATHSetCodeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHSetCodeRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHSetCodeRequest.h; sourceTree = "<group>"; };
+		AC51FA40E8A62CF348C603BA44D270F3 /* YKFKeySessionError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeySessionError.h; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeySessionError.h; sourceTree = "<group>"; };
+		AD1DA8C7283889979AD8427764DE8B0D /* YKFPCSCErrorMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFPCSCErrorMap.h; path = YubiKit/YubiKit/Layers/PCSC/YKFPCSCErrorMap.h; sourceTree = "<group>"; };
+		ADE711B67962399207893E9D92103B16 /* YKFCBORType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFCBORType.m; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBORType.m; sourceTree = "<group>"; };
+		AE7623FA1EF9F7A01F8B79463BFFCA1F /* YKFFIDO2GetNextAssertionAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2GetNextAssertionAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2GetNextAssertionAPDU.m; sourceTree = "<group>"; };
+		AF4E44FF376E06DB629E656F99FF06B5 /* YKFQRReaderSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFQRReaderSession.m; path = YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRReaderSession.m; sourceTree = "<group>"; };
+		AFC22CB049A297A262FBB0BE51654EA4 /* YubiKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YubiKit-dummy.m"; sourceTree = "<group>"; };
+		AFEEE8DF28B7CEAFB752D287BFAD56E4 /* YKFKeyU2FService+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyU2FService+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Services/U2F/YKFKeyU2FService+Private.h"; sourceTree = "<group>"; };
+		B0280380CF1C957532818AFA3EB0FDC0 /* UIDeviceAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIDeviceAdditions.h; path = YubiKit/YubiKit/Helpers/Additions/UIDeviceAdditions.h; sourceTree = "<group>"; };
+		B0F8AE6248F6D78D10FEBE2736453819 /* YKFNFCOTPService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNFCOTPService.h; path = YubiKit/YubiKit/Sessions/NFCSession/Services/YKFNFCOTPService.h; sourceTree = "<group>"; };
+		B12DA12782899B1E254E3541CC2DF4BB /* YKFLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFLogger.h; path = YubiKit/YubiKit/Helpers/YKFLogger.h; sourceTree = "<group>"; };
+		B2C1BEEE10DD5995FDD2A04A1538DB55 /* YKFOATHCredential.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHCredential.m; path = YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFOATHCredential.m; sourceTree = "<group>"; };
+		B30CFE0C82B8617396411FBEBE8E4F23 /* YKFKeyFIDO2ClientPinRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2ClientPinRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2ClientPinRequest.h; sourceTree = "<group>"; };
+		B52A08D9C5F3358B204B797551AAF36F /* YKFFIDO2PinAuthKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2PinAuthKey.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/Crypto/YKFFIDO2PinAuthKey.h; sourceTree = "<group>"; };
+		B8005A79EF30291E0674A4CF8D247FA9 /* YKFKeyOATHSelectApplicationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHSelectApplicationResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHSelectApplicationResponse.m; sourceTree = "<group>"; };
+		B97D1381DDF2F006EC47278EA07BB72C /* MF_Base32Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MF_Base32Additions.h; path = YubiKit/YubiKit/ThirdParties/MF_Base32Additions.h; sourceTree = "<group>"; };
+		BAF85AEAF6A994B13CF08ACF8B5DCE96 /* YKFFIDO2PinAuthKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2PinAuthKey.m; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/Crypto/YKFFIDO2PinAuthKey.m; sourceTree = "<group>"; };
+		BB0E33604C926917D50F6317A2AB2FCF /* YKFQRReaderSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFQRReaderSession.h; path = YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRReaderSession.h; sourceTree = "<group>"; };
+		BCA1010C994C1D3A53D63BAE17035531 /* YKFKeyOATHCalculateAllRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHCalculateAllRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateAllRequest.m; sourceTree = "<group>"; };
+		BCE5B26557352995ADB2B2A2156A76E8 /* YKFKeyAPDUError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyAPDUError.m; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyAPDUError.m; sourceTree = "<group>"; };
+		BDE67B1F2AF1E82F780C1C81BEC4D484 /* YKFKeyRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/YKFKeyRequest.h; sourceTree = "<group>"; };
+		BF8112A9B703824F1B8470F5E379FE01 /* YKFKeyFIDO2ChangePinRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2ChangePinRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2ChangePinRequest.m; sourceTree = "<group>"; };
+		C0E9BC884A4A21D7B8FD2D35BA09D8DE /* YKFOATHValidateAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHValidateAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHValidateAPDU.h; sourceTree = "<group>"; };
+		C0FD400FD11F673305EF69D0EA8529A5 /* YKFQRCodeScanError+Errors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFQRCodeScanError+Errors.h"; path = "YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRCodeScanError+Errors.h"; sourceTree = "<group>"; };
+		C2159E6E6198C39A85C2825BF6A26BE5 /* YKFOATHSendRemainingAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHSendRemainingAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHSendRemainingAPDU.m; sourceTree = "<group>"; };
+		C472662043054F0B6ABBBF25E973BAB9 /* YKFKeyOATHError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHError.h; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyOATHError.h; sourceTree = "<group>"; };
+		C481F0AB9D68746770B3E39B084FEFB8 /* YKFKeyOATHValidateResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHValidateResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHValidateResponse.h; sourceTree = "<group>"; };
+		C5090E704AE19E25C622287F3C27A825 /* YKFKeyOATHCalculateResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHCalculateResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateResponse+Private.h"; sourceTree = "<group>"; };
+		C568190C7B2C60A1639DF0FE7A9B45B9 /* YKFKeyU2FSignRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FSignRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FSignRequest.m; sourceTree = "<group>"; };
+		C6D2AC0112A7E7A2FBCD52A2D0BF6110 /* YKFAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/YKFAPDU.h; sourceTree = "<group>"; };
+		C7382E637FA652B44D2E8427F7DA7AB2 /* YKFKeyFIDO2MakeCredentialRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2MakeCredentialRequest+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2MakeCredentialRequest+Private.h"; sourceTree = "<group>"; };
+		C80ED25EC34FF0A9DED1B2F377AEC06C /* YKFAccessoryDescription.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFAccessoryDescription.m; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessoryDescription.m; sourceTree = "<group>"; };
+		C8867D9806B96C109BE665907F83E3B5 /* YKFOTPTextParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOTPTextParser.m; path = YubiKit/YubiKit/SharedModel/YKFOTPTextParser.m; sourceTree = "<group>"; };
+		CAF0A7E1960B6D8B4A0832321E7F32D1 /* YKFBlockMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFBlockMacros.h; path = YubiKit/YubiKit/Helpers/YKFBlockMacros.h; sourceTree = "<group>"; };
+		CEA5D164B0583FFF15ED6C15EA3E73EA /* YKFKeyU2FError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FError.m; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyU2FError.m; sourceTree = "<group>"; };
+		CF134C2DA17FE820509551F5B9AF2556 /* YubiKitLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YubiKitLogger.m; path = YubiKit/YubiKit/YubiKitLogger.m; sourceTree = "<group>"; };
+		CF3C4A2DE3DCEB40F39139FC2F265739 /* YKFKeyOATHPutRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHPutRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHPutRequest.m; sourceTree = "<group>"; };
+		CF3DD8E8D1EA77B2489C796473115CC7 /* YKFAccessorySession+Debugging.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "YKFAccessorySession+Debugging.m"; path = "YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessorySession+Debugging.m"; sourceTree = "<group>"; };
+		D02609D486E6385C48A57098953F70E6 /* YKFKeyFIDO2SetPinRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2SetPinRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2SetPinRequest.h; sourceTree = "<group>"; };
+		D23E6A568465242926A5F6458F1CFDCE /* YKFCBORType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFCBORType.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBORType.h; sourceTree = "<group>"; };
+		D375763F95C0A882D8A4F3214EE0854F /* YKFQRCodeScanOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFQRCodeScanOverlayView.m; path = YubiKit/YubiKit/Sessions/QRReaderSession/Views/YKFQRCodeScanOverlayView.m; sourceTree = "<group>"; };
+		D482880A1DC97FB479033E72751474F3 /* YKFKeyFIDO2GetAssertionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2GetAssertionRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2GetAssertionRequest.m; sourceTree = "<group>"; };
+		D5AF0D76AB83F669C793BAE5DA885473 /* YubiKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YubiKit-umbrella.h"; sourceTree = "<group>"; };
+		D5BD08A6800ECBA44AAAF161CBF6185B /* YKFOTPURIParserProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPURIParserProtocol.h; path = YubiKit/YubiKit/SharedModel/YKFOTPURIParserProtocol.h; sourceTree = "<group>"; };
+		D5DCC91FE4DDFF5B2C085E8E691CA535 /* YKFOATHCredential+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFOATHCredential+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFOATHCredential+Private.h"; sourceTree = "<group>"; };
+		D79829122B49B508ECED6C208FFA8BAD /* YKFKeyU2FService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FService.m; path = YubiKit/YubiKit/Sessions/Shared/Services/U2F/YKFKeyU2FService.m; sourceTree = "<group>"; };
+		D805D706A7DDEEDAD421B2180B0094EE /* YKFCBORDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFCBORDecoder.h; path = YubiKit/YubiKit/Sessions/Shared/Services/FIDO2/CBOR/YKFCBORDecoder.h; sourceTree = "<group>"; };
+		D97AC2B990A888CA4BD972406E44A5C4 /* YKFKeyOATHSetCodeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHSetCodeRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHSetCodeRequest.m; sourceTree = "<group>"; };
+		DA698681D6BD5A91C3F715294A387F7C /* YKFU2FSignAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFU2FSignAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/U2F/YKFU2FSignAPDU.h; sourceTree = "<group>"; };
+		DAAB0BEF322D46F8E7A1EE332A67281C /* YKFURIIdentifierCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFURIIdentifierCode.m; path = YubiKit/YubiKit/Sessions/NFCSession/YKFURIIdentifierCode.m; sourceTree = "<group>"; };
+		DB2ACA36CDD6B7C63764BB7A152BDEEB /* YKFKeyOATHListRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHListRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHListRequest.h; sourceTree = "<group>"; };
+		DC0DF468DDB9AA335CD513FAD990FA0B /* YKFFIDO2MakeCredentialAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2MakeCredentialAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2MakeCredentialAPDU.m; sourceTree = "<group>"; };
+		DC353B60F181460BE1D6DE43AD905CD9 /* YKFFIDO2GetAssertionAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2GetAssertionAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2GetAssertionAPDU.h; sourceTree = "<group>"; };
+		DD503617CE49B6C657F1F4CFA04DCABA /* YKFKeyFIDO2MakeCredentialRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2MakeCredentialRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2MakeCredentialRequest.h; sourceTree = "<group>"; };
+		DD904311A9D42FF1F7D6F7EC1FB1605F /* YKFKeyFIDO2MakeCredentialResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2MakeCredentialResponse.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2MakeCredentialResponse.h; sourceTree = "<group>"; };
+		DE5D787F2729DB96B4C04495D980D4F4 /* YKFKeyRawCommandService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyRawCommandService.m; path = YubiKit/YubiKit/Sessions/Shared/Services/RawCommand/YKFKeyRawCommandService.m; sourceTree = "<group>"; };
+		DEE5A26147182B2692305915EB332E47 /* YKFKVOObservation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKVOObservation.m; path = YubiKit/YubiKit/Helpers/YKFKVOObservation.m; sourceTree = "<group>"; };
+		DF2467ECE7CAB081DB47F2F30A092170 /* YKFSelectU2FApplicationAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFSelectU2FApplicationAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/U2F/YKFSelectU2FApplicationAPDU.m; sourceTree = "<group>"; };
+		E079E33819F4C1410549DE15ADB274F7 /* YKFNFCConnectionController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNFCConnectionController.m; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCConnectionController.m; sourceTree = "<group>"; };
+		E178054D5D4E30968630CD128E83E86B /* YKFNFCOTPService+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFNFCOTPService+Private.h"; path = "YubiKit/YubiKit/Sessions/NFCSession/Services/YKFNFCOTPService+Private.h"; sourceTree = "<group>"; };
+		E21E868D4C784B56C217AFA9885B3DC0 /* YKFOATHPutAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHPutAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHPutAPDU.m; sourceTree = "<group>"; };
+		E28CCC1E64693750426067BD031DE788 /* YKFKeyOATHCalculateAllRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHCalculateAllRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateAllRequest.h; sourceTree = "<group>"; };
+		E2D73F5119B90AC84C92C6DBE962E391 /* YKFKeyU2FRegisterResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FRegisterResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRegisterResponse.m; sourceTree = "<group>"; };
+		E319505C8C42161D32218C78D8C87B6A /* YKFKeyOATHCalculateAllRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHCalculateAllRequest+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateAllRequest+Private.h"; sourceTree = "<group>"; };
+		E3F734575350A24F5CD84CD4A7853550 /* YKFAssert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAssert.h; path = YubiKit/YubiKit/Helpers/YKFAssert.h; sourceTree = "<group>"; };
+		E612B03B7CB8B4D43B8C3134ABBF1CB1 /* YKFNSDataAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFNSDataAdditions.h; path = YubiKit/YubiKit/Helpers/Additions/YKFNSDataAdditions.h; sourceTree = "<group>"; };
+		E62722FCC048A85C59D6B559A9F4C60D /* YKFFIDO2TouchPoolingAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFFIDO2TouchPoolingAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2TouchPoolingAPDU.h; sourceTree = "<group>"; };
+		E6EB47202014104D4C26360AE7C6B22C /* YKFKeyFIDO2Request+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyFIDO2Request+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2Request+Private.h"; sourceTree = "<group>"; };
+		E72A635F56FF95ECBD779ADA6DCCB2A3 /* YKFKeyOATHCalculateRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHCalculateRequest+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateRequest+Private.h"; sourceTree = "<group>"; };
+		E742FF65786D115BA1A97C887CA1CBB7 /* YKFOATHSendRemainingAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHSendRemainingAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHSendRemainingAPDU.h; sourceTree = "<group>"; };
+		E7806370D3C4C99B27A84C3A0859752A /* YKFQRCodeScanViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFQRCodeScanViewController.h; path = YubiKit/YubiKit/Sessions/QRReaderSession/YKFQRCodeScanViewController.h; sourceTree = "<group>"; };
+		E78D807393E4C6C781DD01CB7362C87C /* YKFU2FRegisterAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFU2FRegisterAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/U2F/YKFU2FRegisterAPDU.h; sourceTree = "<group>"; };
+		E797055A99C5E3EE179DEE96D6A01803 /* YKFKeyU2FError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FError.h; path = YubiKit/YubiKit/Sessions/Shared/Errors/YKFKeyU2FError.h; sourceTree = "<group>"; };
+		E8CBB57B8C9874E2A5BFBB02D403492E /* YKFNSStringAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNSStringAdditions.m; path = YubiKit/YubiKit/Helpers/Additions/YKFNSStringAdditions.m; sourceTree = "<group>"; };
+		E8E86C0DE5A485157A3DCB3DC4E6D65E /* YKFKeyOATHRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHRequest.m; sourceTree = "<group>"; };
+		E9D790BE29D82EAD8A1E398EDB383CBE /* YKFFIDO2Type+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFFIDO2Type+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFFIDO2Type+Private.h"; sourceTree = "<group>"; };
+		EAAB9FFDAADE754F79E32A472EA08701 /* YKFSelectOATHApplicationAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFSelectOATHApplicationAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFSelectOATHApplicationAPDU.h; sourceTree = "<group>"; };
+		EC63DFC9B89AE1FBA11A6DCF6AE40A7A /* YKFNFCError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFNFCError.m; path = YubiKit/YubiKit/Sessions/NFCSession/YKFNFCError.m; sourceTree = "<group>"; };
+		ED21033D4EE89A19E0191C1AE27E312B /* YubiKitExternalLocalization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YubiKitExternalLocalization.m; path = YubiKit/YubiKit/YubiKitExternalLocalization.m; sourceTree = "<group>"; };
+		EE63BBAAD75EFB6D57529A8DACA0AECC /* YKFKeyFIDO2VerifyPinRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyFIDO2VerifyPinRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2VerifyPinRequest.m; sourceTree = "<group>"; };
+		EF8232298097C374EC3F9003D9A9A01F /* YKFKeyOATHCalculateRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHCalculateRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateRequest.h; sourceTree = "<group>"; };
+		EFC72FB349A70C592604F5EBA5B7C0B5 /* YKFKeyU2FRegisterRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FRegisterRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRegisterRequest.h; sourceTree = "<group>"; };
+		F0201C4B3ED2204C0C378C5EAABDB5ED /* YKFKeyOATHPutRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyOATHPutRequest.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHPutRequest.h; sourceTree = "<group>"; };
+		F14F297C4343ADF7AE9E4C1829366143 /* YKFOTPURIParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOTPURIParser.h; path = YubiKit/YubiKit/SharedModel/YKFOTPURIParser.h; sourceTree = "<group>"; };
+		F174B6910E68F9EE05A6484BA95BBCCB /* YKFKeyU2FRegisterRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyU2FRegisterRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/U2F/YKFKeyU2FRegisterRequest.m; sourceTree = "<group>"; };
+		F3CBABCB340D8AFF9A487A4ABBF9E96B /* EAAccessory+Testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EAAccessory+Testing.h"; path = "YubiKit/YubiKit/TestExtentions/EAAccessory+Testing.h"; sourceTree = "<group>"; };
+		F4BA3588183FF648E0859683E06F7A16 /* YubiKitConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YubiKitConfiguration.m; path = YubiKit/YubiKit/YubiKitConfiguration.m; sourceTree = "<group>"; };
+		F6301288C2F11A5BA3ECC940D4D39BAA /* YKFKeyFIDO2Request.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyFIDO2Request.h; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFKeyFIDO2Request.h; sourceTree = "<group>"; };
+		F65F8C5A494A026CC3A371B0FDE4B83B /* YubiKitDeviceCapabilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YubiKitDeviceCapabilities.h; path = YubiKit/YubiKit/YubiKitDeviceCapabilities.h; sourceTree = "<group>"; };
+		F68DEBBCE5C07C0CE6FA6DCB1221EAC9 /* YKFKeyU2FService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFKeyU2FService.h; path = YubiKit/YubiKit/Sessions/Shared/Services/U2F/YKFKeyU2FService.h; sourceTree = "<group>"; };
+		F69D0193B0A92C0E07DACC3D41CE96DE /* YKFAccessoryDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFAccessoryDescription.h; path = YubiKit/YubiKit/Sessions/AccessorySession/YKFAccessoryDescription.h; sourceTree = "<group>"; };
+		F77D8E6E7C20811BBC20225CC31BC19B /* YKFKeyOATHCalculateAllResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHCalculateAllResponse.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateAllResponse.m; sourceTree = "<group>"; };
+		F9074B5F8D406CE974F74956BF62FC25 /* YKFFIDO2ClientPinAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2ClientPinAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFFIDO2ClientPinAPDU.m; sourceTree = "<group>"; };
+		FB30C6EB1C029487BB23935BBEAEE4DA /* YKFSelectFIDO2ApplicationAPDU.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFSelectFIDO2ApplicationAPDU.m; path = YubiKit/YubiKit/Sessions/Shared/APDU/FIDO2/YKFSelectFIDO2ApplicationAPDU.m; sourceTree = "<group>"; };
+		FB7A89869CFA15D4345620E106226F2F /* YKFKeyOATHCalculateRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHCalculateRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateRequest.m; sourceTree = "<group>"; };
+		FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YubiKit.xcconfig; sourceTree = "<group>"; };
+		FBE9F33F23492B09D83EBF42B687DAEC /* YKFOATHCredentialValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFOATHCredentialValidator.m; path = YubiKit/YubiKit/Sessions/Shared/Services/OATH/YKFOATHCredentialValidator.m; sourceTree = "<group>"; };
+		FC6391BDC71B1601FE2A1D680073CBD2 /* UIWindowAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UIWindowAdditions.h; path = YubiKit/YubiKit/Helpers/Additions/UIWindowAdditions.h; sourceTree = "<group>"; };
+		FD75BFDA169E6E7D4C59E2045D4590E1 /* YKFOATHCalculateAllAPDU.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YKFOATHCalculateAllAPDU.h; path = YubiKit/YubiKit/Sessions/Shared/APDU/OATH/YKFOATHCalculateAllAPDU.h; sourceTree = "<group>"; };
+		FE6DD59F630A22353BE24F3C0D2BC189 /* YKFKeyOATHCalculateAllResponse+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YKFKeyOATHCalculateAllResponse+Private.h"; path = "YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHCalculateAllResponse+Private.h"; sourceTree = "<group>"; };
+		FF0E39999BEE4A49FCE362F1E40798A1 /* YKFKeyOATHValidateRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFKeyOATHValidateRequest.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/OATH/YKFKeyOATHValidateRequest.m; sourceTree = "<group>"; };
+		FF9433FC4D9963C0C79BB51715A38779 /* YKFFIDO2Type.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YKFFIDO2Type.m; path = YubiKit/YubiKit/Sessions/Shared/Requests/FIDO2/YKFFIDO2Type.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BB0D467316D5E3D325096E0AF7E9C4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26575FB04B690FB1B67DED4EE5510C8E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC736913560E107623301414C433F6CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BE50FE34902DC6E892DAE3928B73AD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01E73C716BFAEF135533B58934A57200 /* Pods-RNYubikit */ = {
+			isa = PBXGroup;
+			children = (
+				7A72DCEA32C4C1947E1FCCFD247F300D /* Pods-RNYubikit.modulemap */,
+				4AFA77A06A099444BCF0CFB515FA9089 /* Pods-RNYubikit-acknowledgements.markdown */,
+				11C4AA9F16DD14579AD80CB84B1FECC8 /* Pods-RNYubikit-acknowledgements.plist */,
+				3CB5841969F57E1EC3E394DAAEE753DC /* Pods-RNYubikit-dummy.m */,
+				1E9AC0201FF0082763EA3803155275DF /* Pods-RNYubikit-Info.plist */,
+				03DDCA66FD9AF5BD7348EAF8D3A9F3CF /* Pods-RNYubikit-umbrella.h */,
+				A55DF0F05FC9AF7FF6E503388E4CA547 /* Pods-RNYubikit.debug.xcconfig */,
+				66FC89A7141764ED8AB1553147B303E4 /* Pods-RNYubikit.release.xcconfig */,
+			);
+			name = "Pods-RNYubikit";
+			path = "Target Support Files/Pods-RNYubikit";
+			sourceTree = "<group>";
+		};
+		258FEA4F815351D7184688A113E0E284 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3836A5B7EBCD46B9B9AFDF8A8AEBFDD4 /* YubiKit.modulemap */,
+				FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */,
+				AFC22CB049A297A262FBB0BE51654EA4 /* YubiKit-dummy.m */,
+				14F5C8948CB981CD5EE1BF715D6936C9 /* YubiKit-Info.plist */,
+				5F6CC9756EEF43128EE8C1502938A649 /* YubiKit-prefix.pch */,
+				D5AF0D76AB83F669C793BAE5DA885473 /* YubiKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YubiKit";
+			sourceTree = "<group>";
+		};
+		35B5089B50FEDE3A9BF9A87E6AADAB43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF31BD978F93F0DE108B0967D2F6B131 /* YubiKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5CFFF035028B225E30542B871FAD09F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				01E73C716BFAEF135533B58934A57200 /* Pods-RNYubikit */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BA4BA52EB57A8664B61EE2E696835EC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BFFE2A58451C59EFDF7468E4B23FC9F /* Pods_RNYubikit.framework */,
+				0FC494844906D64DE0F88400C88B8653 /* YubiKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				35B5089B50FEDE3A9BF9A87E6AADAB43 /* Pods */,
+				BA4BA52EB57A8664B61EE2E696835EC4 /* Products */,
+				5CFFF035028B225E30542B871FAD09F6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF31BD978F93F0DE108B0967D2F6B131 /* YubiKit */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBABCB340D8AFF9A487A4ABBF9E96B /* EAAccessory+Testing.h */,
+				2749319238C07E76F983137B5B881592 /* EAAccessoryManager+Testing.h */,
+				67B46BCB151810288A7DDD9C9EA0BB2A /* EASession+Testing.h */,
+				B97D1381DDF2F006EC47278EA07BB72C /* MF_Base32Additions.h */,
+				73C417E75B2CEDAD70ADF2014768F68C /* MF_Base32Additions.m */,
+				312461225A10F6375850F6BB743EA7A3 /* NFCNDEFReaderSession+Testing.h */,
+				468AFDC57BFE9E97D22F4805D4A134A0 /* UIDevice+Testing.h */,
+				B0280380CF1C957532818AFA3EB0FDC0 /* UIDeviceAdditions.h */,
+				50963C70AB2CC09901ED3B7508271C7D /* UIDeviceAdditions.m */,
+				FC6391BDC71B1601FE2A1D680073CBD2 /* UIWindowAdditions.h */,
+				03395E50A5089E005F2D9A7B8327849E /* UIWindowAdditions.m */,
+				09A64CE204120B79712A95DCA32F88F5 /* YKFAccessoryConnectionController.h */,
+				6BD2BA0DDEF2F50D11C1AC926F9DE386 /* YKFAccessoryConnectionController.m */,
+				F69D0193B0A92C0E07DACC3D41CE96DE /* YKFAccessoryDescription.h */,
+				C80ED25EC34FF0A9DED1B2F377AEC06C /* YKFAccessoryDescription.m */,
+				06D4F4B4B7421B96381AB59CC7B06985 /* YKFAccessoryDescription+Private.h */,
+				7C007A1EB65D65DA75D1DA51EF7788AF /* YKFAccessorySession.h */,
+				57ABAF748320B75F139557F343B42330 /* YKFAccessorySession.m */,
+				10A12A5934F0F7F2047D38408BA06794 /* YKFAccessorySession+Debugging.h */,
+				CF3DD8E8D1EA77B2489C796473115CC7 /* YKFAccessorySession+Debugging.m */,
+				198E6AD4C64923330689BDF4281FE929 /* YKFAccessorySession+Private.h */,
+				9AFAD09D273BF21131D59AB5CDE9672D /* YKFAccessorySessionConfiguration.h */,
+				8ABA851E92097F37E4F5D22FB61B2F86 /* YKFAccessorySessionConfiguration.m */,
+				C6D2AC0112A7E7A2FBCD52A2D0BF6110 /* YKFAPDU.h */,
+				878F46C963BF80C98CE0C5521AB902B3 /* YKFAPDU.m */,
+				152F228C8D795DB6C6C1DE45E8F5E224 /* YKFAPDU+Private.h */,
+				37045C596F265272D90A4C343109CB6F /* YKFAPDUCommandInstruction.h */,
+				E3F734575350A24F5CD84CD4A7853550 /* YKFAssert.h */,
+				CAF0A7E1960B6D8B4A0832321E7F32D1 /* YKFBlockMacros.h */,
+				D805D706A7DDEEDAD421B2180B0094EE /* YKFCBORDecoder.h */,
+				64B90D261A88BAF2997ED7465B731D25 /* YKFCBORDecoder.m */,
+				763C897AD5EBD58A7C5739D4AC36FD3A /* YKFCBOREncoder.h */,
+				A3644E23CF894AFA3C4318B22DE2C0C9 /* YKFCBOREncoder.m */,
+				36FFF5A810AC5F98537FAAFBDD751B67 /* YKFCBORTag.h */,
+				D23E6A568465242926A5F6458F1CFDCE /* YKFCBORType.h */,
+				ADE711B67962399207893E9D92103B16 /* YKFCBORType.m */,
+				996FA260922C11EFF83B9593071DDF22 /* YKFDispatch.h */,
+				6289F5B4CAA79A37B098B50A32B32A03 /* YKFDispatch.m */,
+				146445465B9EEE185A3C50FB54387F02 /* YKFFIDO2ClientPinAPDU.h */,
+				F9074B5F8D406CE974F74956BF62FC25 /* YKFFIDO2ClientPinAPDU.m */,
+				01A2F92740BE3E3C858967B43D70210C /* YKFFIDO2CommandAPDU.h */,
+				98A5B29233EE3D3D34376CDE2A2DAF89 /* YKFFIDO2CommandAPDU.m */,
+				DC353B60F181460BE1D6DE43AD905CD9 /* YKFFIDO2GetAssertionAPDU.h */,
+				52488A37DD2CA1AE1D4C2AD142E5F1A1 /* YKFFIDO2GetAssertionAPDU.m */,
+				A3958A04DE8155EC254B1F6D5C22FC11 /* YKFFIDO2GetInfoAPDU.h */,
+				56D668EE64645409860647B602931CDB /* YKFFIDO2GetInfoAPDU.m */,
+				A2F062E6125A7523EDBCF0B4A6C8F4EC /* YKFFIDO2GetNextAssertionAPDU.h */,
+				AE7623FA1EF9F7A01F8B79463BFFCA1F /* YKFFIDO2GetNextAssertionAPDU.m */,
+				4504FEB06C812892DF8B0F6B7D118BF2 /* YKFFIDO2MakeCredentialAPDU.h */,
+				DC0DF468DDB9AA335CD513FAD990FA0B /* YKFFIDO2MakeCredentialAPDU.m */,
+				B52A08D9C5F3358B204B797551AAF36F /* YKFFIDO2PinAuthKey.h */,
+				BAF85AEAF6A994B13CF08ACF8B5DCE96 /* YKFFIDO2PinAuthKey.m */,
+				984205CC27EE0CD78DDE84BE0739D9D0 /* YKFFIDO2ResetAPDU.h */,
+				3DA5D3D36CE7901804D80AF23CECE09A /* YKFFIDO2ResetAPDU.m */,
+				E62722FCC048A85C59D6B559A9F4C60D /* YKFFIDO2TouchPoolingAPDU.h */,
+				49C246B111C5480AB873CDA4A3CAA265 /* YKFFIDO2TouchPoolingAPDU.m */,
+				5D83DA540C7A8FD59F03607E61BD0C80 /* YKFFIDO2Type.h */,
+				FF9433FC4D9963C0C79BB51715A38779 /* YKFFIDO2Type.m */,
+				E9D790BE29D82EAD8A1E398EDB383CBE /* YKFFIDO2Type+Private.h */,
+				6A5B9A82393C4F4E9A0DEA0EF696361D /* YKFKeyAPDUError.h */,
+				BCE5B26557352995ADB2B2A2156A76E8 /* YKFKeyAPDUError.m */,
+				705476242ED70D06C5CE51B41FFBD7D5 /* YKFKeyCommandConfiguration.h */,
+				2F8FC5C9B1EDE41B81BDE6CDB128DB07 /* YKFKeyCommandConfiguration.m */,
+				A99866E68BB78BC16CEE5EBF8895535A /* YKFKeyConnectionControllerProtocol.h */,
+				891FC021BFD19ABF4111E8312C9FD008 /* YKFKeyFIDO2ChangePinRequest.h */,
+				BF8112A9B703824F1B8470F5E379FE01 /* YKFKeyFIDO2ChangePinRequest.m */,
+				B30CFE0C82B8617396411FBEBE8E4F23 /* YKFKeyFIDO2ClientPinRequest.h */,
+				17867C685A5538B7FDC156A5E3B39790 /* YKFKeyFIDO2ClientPinRequest.m */,
+				6BC557B92DF7118F485E3702600157BF /* YKFKeyFIDO2ClientPinResponse.h */,
+				99F936684B6B53EF014C4C542DDD8055 /* YKFKeyFIDO2ClientPinResponse.m */,
+				8B0D1E4F6DE438F3348269CD04A7BC17 /* YKFKeyFIDO2Error.h */,
+				1F188FB37A30761D59B0994C7B1AC6A0 /* YKFKeyFIDO2Error.m */,
+				1E5FCE78B9F9917936E4273A3AD5692F /* YKFKeyFIDO2GetAssertionRequest.h */,
+				D482880A1DC97FB479033E72751474F3 /* YKFKeyFIDO2GetAssertionRequest.m */,
+				3A37AEF0E64A31165D8EC2B4FD970784 /* YKFKeyFIDO2GetAssertionRequest+Private.h */,
+				48E12B7099522B6CE4B4DF59DF7E4D0D /* YKFKeyFIDO2GetAssertionResponse.h */,
+				794285FAB767D779E684FAF1134C47F5 /* YKFKeyFIDO2GetAssertionResponse.m */,
+				0DFA74B91197A5DF79B354639CE1516A /* YKFKeyFIDO2GetAssertionResponse+Private.h */,
+				8C560079E1D3B47FCB081B35BDAA7026 /* YKFKeyFIDO2GetInfoResponse.h */,
+				34F77B1481BE4C3A61A6E2CE5895933C /* YKFKeyFIDO2GetInfoResponse.m */,
+				659716B360C721CB894C30C8ECB1E0D8 /* YKFKeyFIDO2GetInfoResponse+Private.h */,
+				DD503617CE49B6C657F1F4CFA04DCABA /* YKFKeyFIDO2MakeCredentialRequest.h */,
+				A7D6FDA7C4182462714736B50CD375C0 /* YKFKeyFIDO2MakeCredentialRequest.m */,
+				C7382E637FA652B44D2E8427F7DA7AB2 /* YKFKeyFIDO2MakeCredentialRequest+Private.h */,
+				DD904311A9D42FF1F7D6F7EC1FB1605F /* YKFKeyFIDO2MakeCredentialResponse.h */,
+				5171E721DBBC6530B6EC04DB75256375 /* YKFKeyFIDO2MakeCredentialResponse.m */,
+				1F300277C4D8A1ED7C63DAF7C8FDAF06 /* YKFKeyFIDO2MakeCredentialResponse+Private.h */,
+				F6301288C2F11A5BA3ECC940D4D39BAA /* YKFKeyFIDO2Request.h */,
+				5E4C8A546ED6E12C1C2AEAA9ACEFC88D /* YKFKeyFIDO2Request.m */,
+				E6EB47202014104D4C26360AE7C6B22C /* YKFKeyFIDO2Request+Private.h */,
+				0669B8D0C7221BCB678691D25E52F651 /* YKFKeyFIDO2Service.h */,
+				0CFEB4D80BC05D6BD9DB0D1D314F9B01 /* YKFKeyFIDO2Service.m */,
+				29F362677971E1674686FB5FE9ECF2C5 /* YKFKeyFIDO2Service+Private.h */,
+				D02609D486E6385C48A57098953F70E6 /* YKFKeyFIDO2SetPinRequest.h */,
+				3BD3DBBF23418F36A365E917D437ABF5 /* YKFKeyFIDO2SetPinRequest.m */,
+				A8A39EE23ACCC87C4A77481692BBC6D1 /* YKFKeyFIDO2VerifyPinRequest.h */,
+				EE63BBAAD75EFB6D57529A8DACA0AECC /* YKFKeyFIDO2VerifyPinRequest.m */,
+				E28CCC1E64693750426067BD031DE788 /* YKFKeyOATHCalculateAllRequest.h */,
+				BCA1010C994C1D3A53D63BAE17035531 /* YKFKeyOATHCalculateAllRequest.m */,
+				E319505C8C42161D32218C78D8C87B6A /* YKFKeyOATHCalculateAllRequest+Private.h */,
+				2467A174544A355C427ECEBB75DE3281 /* YKFKeyOATHCalculateAllResponse.h */,
+				F77D8E6E7C20811BBC20225CC31BC19B /* YKFKeyOATHCalculateAllResponse.m */,
+				FE6DD59F630A22353BE24F3C0D2BC189 /* YKFKeyOATHCalculateAllResponse+Private.h */,
+				EF8232298097C374EC3F9003D9A9A01F /* YKFKeyOATHCalculateRequest.h */,
+				FB7A89869CFA15D4345620E106226F2F /* YKFKeyOATHCalculateRequest.m */,
+				E72A635F56FF95ECBD779ADA6DCCB2A3 /* YKFKeyOATHCalculateRequest+Private.h */,
+				7E4429131E208AC967484274F21169C4 /* YKFKeyOATHCalculateResponse.h */,
+				34A45D378E3E97E49438091DFB2A21A6 /* YKFKeyOATHCalculateResponse.m */,
+				C5090E704AE19E25C622287F3C27A825 /* YKFKeyOATHCalculateResponse+Private.h */,
+				9F1722D79690A24097A52A325DB68EF4 /* YKFKeyOATHDeleteRequest.h */,
+				0D866ED043D3D2ABB54BFAD83AEE8648 /* YKFKeyOATHDeleteRequest.m */,
+				C472662043054F0B6ABBBF25E973BAB9 /* YKFKeyOATHError.h */,
+				766E020412DD6C201831D82B14F8ED1D /* YKFKeyOATHError.m */,
+				DB2ACA36CDD6B7C63764BB7A152BDEEB /* YKFKeyOATHListRequest.h */,
+				7FF229EEC16CB8EA5FC0E122094A59E2 /* YKFKeyOATHListRequest.m */,
+				5A8A58CFA66B0E5FD9D5FFE4E6A40F23 /* YKFKeyOATHListResponse.h */,
+				165F8B0395C29874A6329C3DC9E72686 /* YKFKeyOATHListResponse.m */,
+				7399D91756C22A1BB99EA00626CCF65D /* YKFKeyOATHListResponse+Private.h */,
+				F0201C4B3ED2204C0C378C5EAABDB5ED /* YKFKeyOATHPutRequest.h */,
+				CF3C4A2DE3DCEB40F39139FC2F265739 /* YKFKeyOATHPutRequest.m */,
+				3F316D481BE3ED506E305754F9898C4B /* YKFKeyOATHRequest.h */,
+				E8E86C0DE5A485157A3DCB3DC4E6D65E /* YKFKeyOATHRequest.m */,
+				523A92F3C1E220F64D1970680F9ECA6C /* YKFKeyOATHRequest+Private.h */,
+				798A0DCEF703E93B3429371D178265DA /* YKFKeyOATHResetRequest.h */,
+				10FB4474DBF485F5B6A69A6063AC8078 /* YKFKeyOATHResetRequest.m */,
+				7D7BE0334FAC0F5C23466D3A18977044 /* YKFKeyOATHSelectApplicationResponse.h */,
+				B8005A79EF30291E0674A4CF8D247FA9 /* YKFKeyOATHSelectApplicationResponse.m */,
+				746CD2A68BEAA615BF57648C1C04948C /* YKFKeyOATHService.h */,
+				58F019242F2D9989D537801E7B07B47A /* YKFKeyOATHService.m */,
+				52F89F3FEF44B2629C1693264DF82625 /* YKFKeyOATHService+Private.h */,
+				A9CB792CD56C27A1665451F7920972FA /* YKFKeyOATHSetCodeRequest.h */,
+				D97AC2B990A888CA4BD972406E44A5C4 /* YKFKeyOATHSetCodeRequest.m */,
+				6ECC4EB23B572098A9E670078971BE5B /* YKFKeyOATHValidateRequest.h */,
+				FF0E39999BEE4A49FCE362F1E40798A1 /* YKFKeyOATHValidateRequest.m */,
+				C481F0AB9D68746770B3E39B084FEFB8 /* YKFKeyOATHValidateResponse.h */,
+				96B3F51DA1C944F455781FBFACE02FE1 /* YKFKeyOATHValidateResponse.m */,
+				88152EBC944F0AA5194AD33D1B0E9764 /* YKFKeyRawCommandService.h */,
+				DE5D787F2729DB96B4C04495D980D4F4 /* YKFKeyRawCommandService.m */,
+				3D07D5929329D2988A42B786C38BC105 /* YKFKeyRawCommandService+Private.h */,
+				BDE67B1F2AF1E82F780C1C81BEC4D484 /* YKFKeyRequest.h */,
+				26E6B89B9EB0E6CA8E0D6317C074E40A /* YKFKeyRequest.m */,
+				0782DF2FAA91BBA1E99DEEF12E86E6E4 /* YKFKeyService.h */,
+				748F6A16004327359D7725BD8730B3DA /* YKFKeyService.m */,
+				6EA000E5F539F36A7A750A15AC436807 /* YKFKeyService+Private.h */,
+				AC51FA40E8A62CF348C603BA44D270F3 /* YKFKeySessionError.h */,
+				9EA8EE3F4F112ABED3D61CE43DE9D36B /* YKFKeySessionError.m */,
+				A70BEF69DD2BE458845D3299EE6939FC /* YKFKeySessionError+Private.h */,
+				E797055A99C5E3EE179DEE96D6A01803 /* YKFKeyU2FError.h */,
+				CEA5D164B0583FFF15ED6C15EA3E73EA /* YKFKeyU2FError.m */,
+				EFC72FB349A70C592604F5EBA5B7C0B5 /* YKFKeyU2FRegisterRequest.h */,
+				F174B6910E68F9EE05A6484BA95BBCCB /* YKFKeyU2FRegisterRequest.m */,
+				41D4B408C2FA88FA1E7DDD095264DA63 /* YKFKeyU2FRegisterResponse.h */,
+				E2D73F5119B90AC84C92C6DBE962E391 /* YKFKeyU2FRegisterResponse.m */,
+				85F95EC5B7FE2508C3873721B1516D7B /* YKFKeyU2FRegisterResponse+Private.h */,
+				658AF39611BAE7BE1779EC4DE7DA46C0 /* YKFKeyU2FRequest.h */,
+				95619B24383CCF33145F8B8C7C91E6E4 /* YKFKeyU2FRequest.m */,
+				683B66CD7A7E60D8C6CC844F17E093A8 /* YKFKeyU2FRequest+Private.h */,
+				F68DEBBCE5C07C0CE6FA6DCB1221EAC9 /* YKFKeyU2FService.h */,
+				D79829122B49B508ECED6C208FFA8BAD /* YKFKeyU2FService.m */,
+				AFEEE8DF28B7CEAFB752D287BFAD56E4 /* YKFKeyU2FService+Private.h */,
+				8F992C4B0FAC991FF48F1C1B52AC3C3A /* YKFKeyU2FSignRequest.h */,
+				C568190C7B2C60A1639DF0FE7A9B45B9 /* YKFKeyU2FSignRequest.m */,
+				0CBDECF74F15887F227F2E53AFFF7440 /* YKFKeyU2FSignResponse.h */,
+				34310E0160F797A548A74C7F9A7F31E9 /* YKFKeyU2FSignResponse.m */,
+				2B230A4630788D2D8011DAD0D8E85560 /* YKFKeyU2FSignResponse+Private.h */,
+				0F72C68733A352BD3FE4DDD956BF6CBA /* YKFKVOObservation.h */,
+				DEE5A26147182B2692305915EB332E47 /* YKFKVOObservation.m */,
+				B12DA12782899B1E254E3541CC2DF4BB /* YKFLogger.h */,
+				267B1E82D121D882A9BEB3F046EDDBB3 /* YKFLogger.m */,
+				A62ED1EA1057200C3368F074DCE30802 /* YKFNFCConnectionController.h */,
+				E079E33819F4C1410549DE15ADB274F7 /* YKFNFCConnectionController.m */,
+				4893B0DC1449B97F693827CF1CA2FF4E /* YKFNFCError.h */,
+				EC63DFC9B89AE1FBA11A6DCF6AE40A7A /* YKFNFCError.m */,
+				A461513D89C1FC5C4B4F0357FC491C31 /* YKFNFCError+Errors.h */,
+				B0F8AE6248F6D78D10FEBE2736453819 /* YKFNFCOTPService.h */,
+				466DEF655A986331CBF7BC047EAC5494 /* YKFNFCOTPService.m */,
+				E178054D5D4E30968630CD128E83E86B /* YKFNFCOTPService+Private.h */,
+				3DE798EA8CA163F8B2DF15E3CAA935CE /* YKFNFCSession.h */,
+				43BB50BD6BF8035FD37B456A905BE8B7 /* YKFNFCSession.m */,
+				697A92E8F3C355E43D3A4A92F39F12DE /* YKFNFCTagDescription.h */,
+				48EDC630F9AD99BC2CCC4FF2FB450938 /* YKFNFCTagDescription.m */,
+				1C99F709251358F14D824D1853C1B0D9 /* YKFNFCTagDescription+Private.h */,
+				E612B03B7CB8B4D43B8C3134ABBF1CB1 /* YKFNSDataAdditions.h */,
+				586157F66D4F53ECAB31A2D69927981E /* YKFNSDataAdditions.m */,
+				3E759C1CDA5D975F0E28FDE562645B1E /* YKFNSDataAdditions+Private.h */,
+				0F88A0CF9CDA049C02ACDD70BE81C7B9 /* YKFNSMutableDataAdditions.h */,
+				1FDDD2F2E3201053BE08CF04C1DFA317 /* YKFNSMutableDataAdditions.m */,
+				5AFD565CEF50FE7EFB35D0DE8CDBE707 /* YKFNSStringAdditions.h */,
+				E8CBB57B8C9874E2A5BFBB02D403492E /* YKFNSStringAdditions.m */,
+				FD75BFDA169E6E7D4C59E2045D4590E1 /* YKFOATHCalculateAllAPDU.h */,
+				38AF60443C668348F8E83A551A5F9490 /* YKFOATHCalculateAllAPDU.m */,
+				71AB593831A2A26B08878EB4E0D2CCA8 /* YKFOATHCalculateAPDU.h */,
+				85556A9B4648F1BA6D446FF5CAB2596C /* YKFOATHCalculateAPDU.m */,
+				6A0158425CE26ABAC319288164B108F1 /* YKFOATHCredential.h */,
+				B2C1BEEE10DD5995FDD2A04A1538DB55 /* YKFOATHCredential.m */,
+				D5DCC91FE4DDFF5B2C085E8E691CA535 /* YKFOATHCredential+Private.h */,
+				128D4091D9E64C9F008D191F1D4CA62F /* YKFOATHCredentialValidator.h */,
+				FBE9F33F23492B09D83EBF42B687DAEC /* YKFOATHCredentialValidator.m */,
+				A864531102B70C9EEFED6414E39BD841 /* YKFOATHDeleteAPDU.h */,
+				7EF7D261DFE6FB7918A2ED6A35437DF3 /* YKFOATHDeleteAPDU.m */,
+				420181F6568A3706F14A6AFDE60F649C /* YKFOATHListAPDU.h */,
+				0F7C14A97E35D93F109DA7A36E165409 /* YKFOATHListAPDU.m */,
+				0AAD1CA847CC3EA5A788331894FBCB2C /* YKFOATHPutAPDU.h */,
+				E21E868D4C784B56C217AFA9885B3DC0 /* YKFOATHPutAPDU.m */,
+				37674B29FBB2914A671F228C8959BC6B /* YKFOATHResetAPDU.h */,
+				2F9B303D2D7B6BD6800F2233D0713AD5 /* YKFOATHResetAPDU.m */,
+				E742FF65786D115BA1A97C887CA1CBB7 /* YKFOATHSendRemainingAPDU.h */,
+				C2159E6E6198C39A85C2825BF6A26BE5 /* YKFOATHSendRemainingAPDU.m */,
+				9811D7E7C5A310D45D62749AF17EFECF /* YKFOATHSetCodeAPDU.h */,
+				3C63E91D45C2FEF7A171712A8D309D58 /* YKFOATHSetCodeAPDU.m */,
+				C0E9BC884A4A21D7B8FD2D35BA09D8DE /* YKFOATHValidateAPDU.h */,
+				8BA67B83BEE55EB07121A5FEC2E8B9C7 /* YKFOATHValidateAPDU.m */,
+				739D12A44782B4E09B0C308E6782CC9C /* YKFOTPTextParser.h */,
+				C8867D9806B96C109BE665907F83E3B5 /* YKFOTPTextParser.m */,
+				987BBD70E6B546DFD5503C06FB74FE83 /* YKFOTPTextParserProtocol.h */,
+				54051B0312E1A76089D7CB2A1D143C26 /* YKFOTPToken.h */,
+				7C5CED6FE8CFB3EED4F5B38410340662 /* YKFOTPToken.m */,
+				334A57B50067DC9D92FF22E586C1BC6E /* YKFOTPTokenParser.h */,
+				96463BECCC9E14E9023463A0E60B0CA6 /* YKFOTPTokenParser.m */,
+				6455A5FFB20E563DE8F9E069A8EF24CA /* YKFOTPTokenValidator.h */,
+				6820E9850BFB83410EE878C3FC7C0F1B /* YKFOTPTokenValidator.m */,
+				F14F297C4343ADF7AE9E4C1829366143 /* YKFOTPURIParser.h */,
+				63144642282A153D5AE06530AF410BB3 /* YKFOTPURIParser.m */,
+				D5BD08A6800ECBA44AAAF161CBF6185B /* YKFOTPURIParserProtocol.h */,
+				31F41675C1C0A5BA184F4E333CCA2858 /* YKFPCSC.h */,
+				883A19F5877B92EC5702875DAFEC501D /* YKFPCSC.m */,
+				AD1DA8C7283889979AD8427764DE8B0D /* YKFPCSCErrorMap.h */,
+				15B9D1F440A09A5172151277B94AC210 /* YKFPCSCErrorMap.m */,
+				03A3C79711B6A64377D95F89F6D46217 /* YKFPCSCErrors.h */,
+				99A70CE3B6F842FB52D75E963AB357C0 /* YKFPCSCLayer.h */,
+				1DE2CC2F11BF705A7ADCADC634871B56 /* YKFPCSCLayer.m */,
+				2B50385D2D0CB5884980CC16B6AB7017 /* YKFPCSCTypes.h */,
+				614D47F3856C05E1582669C695BF5B4C /* YKFPermissions.h */,
+				A0829E3A3511B2810D56020753961E56 /* YKFPermissions.m */,
+				55989B8779600DE7D655592805D7F146 /* YKFQRCodeScanError.h */,
+				250EBB277D645985DD6A137D1F5D8A5B /* YKFQRCodeScanError.m */,
+				C0FD400FD11F673305EF69D0EA8529A5 /* YKFQRCodeScanError+Errors.h */,
+				A7E9A048AAEE26CC3B22954C0A08CFB2 /* YKFQRCodeScanOverlayView.h */,
+				D375763F95C0A882D8A4F3214EE0854F /* YKFQRCodeScanOverlayView.m */,
+				E7806370D3C4C99B27A84C3A0859752A /* YKFQRCodeScanViewController.h */,
+				503079F51D4E6D9459863A5442A9069B /* YKFQRCodeScanViewController.m */,
+				BB0E33604C926917D50F6317A2AB2FCF /* YKFQRReaderSession.h */,
+				AF4E44FF376E06DB629E656F99FF06B5 /* YKFQRReaderSession.m */,
+				1A3F949E0C65C800DB692715A7898C93 /* YKFSelectFIDO2ApplicationAPDU.h */,
+				FB30C6EB1C029487BB23935BBEAEE4DA /* YKFSelectFIDO2ApplicationAPDU.m */,
+				EAAB9FFDAADE754F79E32A472EA08701 /* YKFSelectOATHApplicationAPDU.h */,
+				425101CDC41CB7BB028918A6E5BD20CA /* YKFSelectOATHApplicationAPDU.m */,
+				41572C2656285FF6410A6F0E44F6458E /* YKFSelectU2FApplicationAPDU.h */,
+				DF2467ECE7CAB081DB47F2F30A092170 /* YKFSelectU2FApplicationAPDU.m */,
+				E78D807393E4C6C781DD01CB7362C87C /* YKFU2FRegisterAPDU.h */,
+				1CAB45F626207126EA9E6E171B02B5E7 /* YKFU2FRegisterAPDU.m */,
+				DA698681D6BD5A91C3F715294A387F7C /* YKFU2FSignAPDU.h */,
+				3F4247D0D3B88DE8B2CE86963A6AA6F4 /* YKFU2FSignAPDU.m */,
+				0ACE97647862C131C9D9EB6306EDECF5 /* YKFURIIdentifierCode.h */,
+				DAAB0BEF322D46F8E7A1EE332A67281C /* YKFURIIdentifierCode.m */,
+				5E8386FF43538C18ADC95E26574A7AD3 /* YKFView.h */,
+				3F6E9509C0CE6BD25E33D0FC7C030E63 /* YKFView.m */,
+				2FE86A8A86B6890B1D35CE609AB08E1C /* YKFViewController.h */,
+				184F5327B5582BF5DD4F9007FDD50FB1 /* YKFViewController.m */,
+				29B7BA12B5EF36F26C308DC0812BE887 /* YKFWebAuthnClientData.h */,
+				38AAC02EF8810445D5663FB25461FDDD /* YKFWebAuthnClientData.m */,
+				17D814B9AC9FA2E86DA9783B174C9F44 /* YubiKit.h */,
+				8727186DFDAC4D6A1660ADCD832B58A5 /* YubiKitConfiguration.h */,
+				F4BA3588183FF648E0859683E06F7A16 /* YubiKitConfiguration.m */,
+				F65F8C5A494A026CC3A371B0FDE4B83B /* YubiKitDeviceCapabilities.h */,
+				12CB02385DC56194C81EA2E5D938EC10 /* YubiKitDeviceCapabilities.m */,
+				18F34D59540416B1751FEA931BA06072 /* YubiKitDeviceCapabilities+Testing.h */,
+				2CAB2380D010C8874FA615DEC82898F0 /* YubiKitExternalLocalization.h */,
+				ED21033D4EE89A19E0191C1AE27E312B /* YubiKitExternalLocalization.m */,
+				3C1D18EE3ED25C3679A924AB8A8F2CDC /* YubiKitLogger.h */,
+				CF134C2DA17FE820509551F5B9AF2556 /* YubiKitLogger.m */,
+				8F88B95E99EBCED8A2C4A882AE62FA54 /* YubiKitManager.h */,
+				2D3A3972BD58242892383FCD4D4B0D43 /* YubiKitManager.m */,
+				258FEA4F815351D7184688A113E0E284 /* Support Files */,
+			);
+			name = YubiKit;
+			path = YubiKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		272BC8BB10BAE9EA6580F6FFD4991778 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F243B5785EB27BE418DCFFA2A7002AA6 /* Pods-RNYubikit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A2072CA4B5F02BD5A7AC9B4B4861E75 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A7E5AF7CE4D0B1AF6C235CCD5C8668 /* EAAccessory+Testing.h in Headers */,
+				99C297B71C394134A9CAA2CE1148FC2F /* EAAccessoryManager+Testing.h in Headers */,
+				E6D9CCF03EF601DEF8E9F3D08C9F9E84 /* EASession+Testing.h in Headers */,
+				D565F7DB2A7DB60A2DBB032A2B852F45 /* MF_Base32Additions.h in Headers */,
+				8CAAF64B301A6FEE1E6F79D85AD8C32D /* NFCNDEFReaderSession+Testing.h in Headers */,
+				CA69D1D2267A5EFA2BC0FAD6C07DDE76 /* UIDevice+Testing.h in Headers */,
+				F4D1A51349CF5DACB777734A39E92C6D /* UIDeviceAdditions.h in Headers */,
+				337F6657F08E2C6B17C5162304C18EA8 /* UIWindowAdditions.h in Headers */,
+				8002D2B108152C877383B2CD7B46E568 /* YKFAccessoryConnectionController.h in Headers */,
+				9991E6572F32153F777A0EB99B2953F0 /* YKFAccessoryDescription+Private.h in Headers */,
+				389DE2BF0B46C5CE0F96FD2C17D8CB85 /* YKFAccessoryDescription.h in Headers */,
+				903B13445C5C184B27473AEFB3D87AFC /* YKFAccessorySession+Debugging.h in Headers */,
+				8300A475FD790CE12AE7718BF0BDF14D /* YKFAccessorySession+Private.h in Headers */,
+				83DEB781C9ED4347A8E5BE9ED13730F5 /* YKFAccessorySession.h in Headers */,
+				D3671C7DE055D53FC1FF00AA365ACC03 /* YKFAccessorySessionConfiguration.h in Headers */,
+				6D8668C58BD1A967DEFFBDDB9DF917C1 /* YKFAPDU+Private.h in Headers */,
+				87609623751197722B04D8093BB66940 /* YKFAPDU.h in Headers */,
+				A2943BCA3E54958575E9254D717DAD23 /* YKFAPDUCommandInstruction.h in Headers */,
+				554FA166F90A58B3D27F1A39401B3F3B /* YKFAssert.h in Headers */,
+				A1E8530CC7E04A8543890332B47F0581 /* YKFBlockMacros.h in Headers */,
+				1982D1D269BA2EC77F1C022E887EC8EC /* YKFCBORDecoder.h in Headers */,
+				CEE7D3610D19D654201C8F0AEEB7096A /* YKFCBOREncoder.h in Headers */,
+				D5062498291DA8F2AD2EEF8E46C6C34F /* YKFCBORTag.h in Headers */,
+				20D9AD5C53D61D2896FD37CCBD7F7AAA /* YKFCBORType.h in Headers */,
+				632A6F3A6605322912DD42ED82898291 /* YKFDispatch.h in Headers */,
+				51D93B47800DF470F4D430E5E3A8344B /* YKFFIDO2ClientPinAPDU.h in Headers */,
+				92C74507E6ED4D600957AFC9738DAC68 /* YKFFIDO2CommandAPDU.h in Headers */,
+				3859215D626A50D1475B905FB039140D /* YKFFIDO2GetAssertionAPDU.h in Headers */,
+				5C7C60C0B4C3E410BB92891F31373A2E /* YKFFIDO2GetInfoAPDU.h in Headers */,
+				B44BBBE93B359D00DB6550FBB8B63220 /* YKFFIDO2GetNextAssertionAPDU.h in Headers */,
+				1A31AB014E63F8BA6B1554C687E3FA16 /* YKFFIDO2MakeCredentialAPDU.h in Headers */,
+				F514412EE2363337FB0898357ACB9E2F /* YKFFIDO2PinAuthKey.h in Headers */,
+				DAF259E3307589535DE2F00D874555CA /* YKFFIDO2ResetAPDU.h in Headers */,
+				BF5C3438B91D2C9795B5115B2A5BCBEF /* YKFFIDO2TouchPoolingAPDU.h in Headers */,
+				2C12F43CD1C96C60E3527910B2081C6A /* YKFFIDO2Type+Private.h in Headers */,
+				9E4B0F9D71DF0BF1C8FEC536D4275E7D /* YKFFIDO2Type.h in Headers */,
+				2AD7A07B7966D2DFB8E2EAE2EFFD77CD /* YKFKeyAPDUError.h in Headers */,
+				168D35D2D94DEA04708862DA9B42E693 /* YKFKeyCommandConfiguration.h in Headers */,
+				993D5D1585DC41286C8F4B6DD1ACF96E /* YKFKeyConnectionControllerProtocol.h in Headers */,
+				43A14F363D4B22E5FD04F4EBDEFCCD41 /* YKFKeyFIDO2ChangePinRequest.h in Headers */,
+				78956729234F545AD5F72C92BBC8A007 /* YKFKeyFIDO2ClientPinRequest.h in Headers */,
+				2277BDA46E1C338195AF53E6F9133054 /* YKFKeyFIDO2ClientPinResponse.h in Headers */,
+				E8453FC213983BE77D5F7470EDBF1A4E /* YKFKeyFIDO2Error.h in Headers */,
+				18CDC927D15184E90B4777A2481E031D /* YKFKeyFIDO2GetAssertionRequest+Private.h in Headers */,
+				D2BF20F3BBFA19407DBD208E62A72629 /* YKFKeyFIDO2GetAssertionRequest.h in Headers */,
+				04EA743A05708F39C5CFE6B573A42EC6 /* YKFKeyFIDO2GetAssertionResponse+Private.h in Headers */,
+				2623D8E5B73CB51A94F12969FC7E360E /* YKFKeyFIDO2GetAssertionResponse.h in Headers */,
+				3DDE4A36EF00733AB98C135D50BE53FB /* YKFKeyFIDO2GetInfoResponse+Private.h in Headers */,
+				058C217066D2AE597C001F50296A7764 /* YKFKeyFIDO2GetInfoResponse.h in Headers */,
+				78C5B15A402561D786AFEBF7187F792C /* YKFKeyFIDO2MakeCredentialRequest+Private.h in Headers */,
+				D4B8ED38AB6A9FC70B0E5F3EC604A5AB /* YKFKeyFIDO2MakeCredentialRequest.h in Headers */,
+				330C789F451A6BB271C809C4E8A06A97 /* YKFKeyFIDO2MakeCredentialResponse+Private.h in Headers */,
+				F4841B293B43EE285E5561EAA2041075 /* YKFKeyFIDO2MakeCredentialResponse.h in Headers */,
+				53817581B5C91E304B1E20CEA6534B80 /* YKFKeyFIDO2Request+Private.h in Headers */,
+				A6BF2536E6B0D16031E8184EB3BF3BF6 /* YKFKeyFIDO2Request.h in Headers */,
+				C7B8475DC1B227EFAA765FBB96CA45C6 /* YKFKeyFIDO2Service+Private.h in Headers */,
+				2947A109134672EE3C217D63D23E9A5F /* YKFKeyFIDO2Service.h in Headers */,
+				3F8750693C13EE1FCCC4007F286B27F2 /* YKFKeyFIDO2SetPinRequest.h in Headers */,
+				E3E0C45738413052B1EA883272A3ED74 /* YKFKeyFIDO2VerifyPinRequest.h in Headers */,
+				80F495A52FFE3104773768C2BF4893E9 /* YKFKeyOATHCalculateAllRequest+Private.h in Headers */,
+				7D1DFCDA6BDE498C1B7920DF0798FBC5 /* YKFKeyOATHCalculateAllRequest.h in Headers */,
+				493311124DA661744A1FF25B60EB4426 /* YKFKeyOATHCalculateAllResponse+Private.h in Headers */,
+				9490047C90ADC83AC9E706454A6AD0A9 /* YKFKeyOATHCalculateAllResponse.h in Headers */,
+				203C95B60E8B4B4DB835E3749662B0BC /* YKFKeyOATHCalculateRequest+Private.h in Headers */,
+				1618C46D207BD99490CBCB4AA3B11931 /* YKFKeyOATHCalculateRequest.h in Headers */,
+				BD3A4EDFE7AF59C356750C1554FDE90D /* YKFKeyOATHCalculateResponse+Private.h in Headers */,
+				75B8BA866A861C95B23282F8FBFEEC12 /* YKFKeyOATHCalculateResponse.h in Headers */,
+				C4FC61526EA4DAF79AE40AA25D14120E /* YKFKeyOATHDeleteRequest.h in Headers */,
+				33F92D120C394905B118F88FB5565D4A /* YKFKeyOATHError.h in Headers */,
+				37E55274ABD9557D4EE0C985D9F26B88 /* YKFKeyOATHListRequest.h in Headers */,
+				744FB0D7EADFF3EC587E87144F9DB275 /* YKFKeyOATHListResponse+Private.h in Headers */,
+				1145788AAB6E0324AC86CC2C3EB04FD5 /* YKFKeyOATHListResponse.h in Headers */,
+				0B8F4CF87CD0D3F4539FC8773B2490EE /* YKFKeyOATHPutRequest.h in Headers */,
+				69020EB34FBF174BAFA4D2E08313A716 /* YKFKeyOATHRequest+Private.h in Headers */,
+				42FE7A34363203D293E832D261DB410E /* YKFKeyOATHRequest.h in Headers */,
+				92622D3572417B8559B39D652F33151B /* YKFKeyOATHResetRequest.h in Headers */,
+				1422DC5EB2850381566120F942DF68FA /* YKFKeyOATHSelectApplicationResponse.h in Headers */,
+				C99E6B66B269F4B3DFB3C18774FB4DDF /* YKFKeyOATHService+Private.h in Headers */,
+				ACDBBDCF035BC2CF3313377B0ACFE962 /* YKFKeyOATHService.h in Headers */,
+				66754B054AB0C2F004E4BE7E51C9C37C /* YKFKeyOATHSetCodeRequest.h in Headers */,
+				35D4D0A4E6BBBE3436545ABDDD6F6FEF /* YKFKeyOATHValidateRequest.h in Headers */,
+				9323A281AC77A998AB90B2AA4240399F /* YKFKeyOATHValidateResponse.h in Headers */,
+				638E4193B13ED22280E61709D41DA7B9 /* YKFKeyRawCommandService+Private.h in Headers */,
+				4F6B623462C0FAEDE9155DA02097B786 /* YKFKeyRawCommandService.h in Headers */,
+				05E6BE33BE04BD8AE64C3BB841BDDF55 /* YKFKeyRequest.h in Headers */,
+				2C747B3D3ED6F511F336146CCAE77BD2 /* YKFKeyService+Private.h in Headers */,
+				1F5576C541DFDACAACF96F7B846C19F2 /* YKFKeyService.h in Headers */,
+				CEEE1E2EACCA8EA6552D91FD4C9C5520 /* YKFKeySessionError+Private.h in Headers */,
+				0BB0AD19F3C080964BDE9234C3285B9A /* YKFKeySessionError.h in Headers */,
+				B296E05F33C278C6354800D1A29350F4 /* YKFKeyU2FError.h in Headers */,
+				42DF8B1D6ACC124A1284E02358BF713C /* YKFKeyU2FRegisterRequest.h in Headers */,
+				2504ED823830496CF5B8594714CB6AD4 /* YKFKeyU2FRegisterResponse+Private.h in Headers */,
+				2B8D6BF2093611D87F4287D6B3EFC4B8 /* YKFKeyU2FRegisterResponse.h in Headers */,
+				5788C8916A59B119C29FFD252F4DCE8C /* YKFKeyU2FRequest+Private.h in Headers */,
+				528C63D7948D917FD53318ACC87332EA /* YKFKeyU2FRequest.h in Headers */,
+				645A8E4A9C83DE046B7F2BD237809109 /* YKFKeyU2FService+Private.h in Headers */,
+				6B71FB57B856A94CA411D083823A0814 /* YKFKeyU2FService.h in Headers */,
+				02F945B094048CEFD02890D92157B08B /* YKFKeyU2FSignRequest.h in Headers */,
+				3806767237EB6D10356D389A6EDFB895 /* YKFKeyU2FSignResponse+Private.h in Headers */,
+				4B713D986C95E4689D989A0415C896A4 /* YKFKeyU2FSignResponse.h in Headers */,
+				4D13365499DC98D9B84FC76555F90552 /* YKFKVOObservation.h in Headers */,
+				5DE036666A4B1655761AC4B7D172ABCD /* YKFLogger.h in Headers */,
+				06CEB8338D13F99181873D2E2124E3C6 /* YKFNFCConnectionController.h in Headers */,
+				F67013408676A03A97DD4647C11EB443 /* YKFNFCError+Errors.h in Headers */,
+				9F65C126CD058C1032AF0E245D38F36D /* YKFNFCError.h in Headers */,
+				EAE883D595C112317C2A339DD10A0514 /* YKFNFCOTPService+Private.h in Headers */,
+				2E7920B8FABBD16D3FAAE66413BEF286 /* YKFNFCOTPService.h in Headers */,
+				C349AD5CB8CF1DD21D52526FCC193EB5 /* YKFNFCSession.h in Headers */,
+				37FADE8660EBB5D74F1E280B720570AC /* YKFNFCTagDescription+Private.h in Headers */,
+				9C3E26175EDB744D3F2B0179E44EAE41 /* YKFNFCTagDescription.h in Headers */,
+				901F9277E236856F502A4BF25E54B01C /* YKFNSDataAdditions+Private.h in Headers */,
+				1EEC6F12C50C6357DBEDF81B803DB3CF /* YKFNSDataAdditions.h in Headers */,
+				34AAE07229408BB893E1E4CAAA203C25 /* YKFNSMutableDataAdditions.h in Headers */,
+				3098F760D53F95D89B483D65274F9544 /* YKFNSStringAdditions.h in Headers */,
+				1A1C07460862FABBB536C26AF420F4B8 /* YKFOATHCalculateAllAPDU.h in Headers */,
+				DD6C0153A6D59634749F7578E3653119 /* YKFOATHCalculateAPDU.h in Headers */,
+				9D3F4F876DB417CD8381F5BDDCA08B04 /* YKFOATHCredential+Private.h in Headers */,
+				B5048658387FBFB872CD1702E6EF1CCA /* YKFOATHCredential.h in Headers */,
+				E571392D035CB173313C839CE326683B /* YKFOATHCredentialValidator.h in Headers */,
+				FB92D2BABCAFE6BC12559E00E504CCC9 /* YKFOATHDeleteAPDU.h in Headers */,
+				537680FFD15D9CE06FEBBFD519779E04 /* YKFOATHListAPDU.h in Headers */,
+				ADE92294F7E22B22CBA29FB1BAE20C36 /* YKFOATHPutAPDU.h in Headers */,
+				A8470077609781A85375B5ED9CDCC76E /* YKFOATHResetAPDU.h in Headers */,
+				7A91A9E46E181FEE9D3C8B4307DD005D /* YKFOATHSendRemainingAPDU.h in Headers */,
+				0B3326F7D3CF54232584F1ED7D8E072E /* YKFOATHSetCodeAPDU.h in Headers */,
+				E1E1537DFA397DC0E2BE6B7EE1CFEF86 /* YKFOATHValidateAPDU.h in Headers */,
+				33C0DE205D0B91A24BAAED6B347134A4 /* YKFOTPTextParser.h in Headers */,
+				6C8A28AD3025325CC4B08B34F77A4CE8 /* YKFOTPTextParserProtocol.h in Headers */,
+				5758C61C3481F8B7C7EAA0045A0917AD /* YKFOTPToken.h in Headers */,
+				C119E5F1C748ADE9869C33B01997DF63 /* YKFOTPTokenParser.h in Headers */,
+				892A00ABD6EA7E52233117D515A662F6 /* YKFOTPTokenValidator.h in Headers */,
+				19BC83997E403DA40672AEA4996F0BD9 /* YKFOTPURIParser.h in Headers */,
+				1D50883E6184F4EF3F31BF4A0B222A48 /* YKFOTPURIParserProtocol.h in Headers */,
+				CA754F35214DF786CF8DB7AFDCA4EBB1 /* YKFPCSC.h in Headers */,
+				5389B0954D0C4DE876268585D0B7E375 /* YKFPCSCErrorMap.h in Headers */,
+				C944A40BBD6C8AD82DDD86761119D128 /* YKFPCSCErrors.h in Headers */,
+				2CE1395520FD36BEADE44F01FA42243D /* YKFPCSCLayer.h in Headers */,
+				0D8DBC867EAF031A306394C474A835BB /* YKFPCSCTypes.h in Headers */,
+				6503A343199397E7BD9890058C1261B4 /* YKFPermissions.h in Headers */,
+				F549F72B4CFD35D4706D23357C125F2B /* YKFQRCodeScanError+Errors.h in Headers */,
+				A97BFBECEC576FEEEC9E604546964010 /* YKFQRCodeScanError.h in Headers */,
+				A64A7DCE80627CAF28C0817CFFC35389 /* YKFQRCodeScanOverlayView.h in Headers */,
+				299C881BB3C11BB27C7E785331D37E4D /* YKFQRCodeScanViewController.h in Headers */,
+				6BFEF8AE1C284737C6F93763F257592B /* YKFQRReaderSession.h in Headers */,
+				12DB8E9B2E345F874BC1F1A4FCF63114 /* YKFSelectFIDO2ApplicationAPDU.h in Headers */,
+				F70B2FE0297C62CDD3455DFCCE9A4959 /* YKFSelectOATHApplicationAPDU.h in Headers */,
+				51CB5E7B9964E6DCC57893302A81FFB0 /* YKFSelectU2FApplicationAPDU.h in Headers */,
+				D659A86C11C80ECD74D917286C9F871F /* YKFU2FRegisterAPDU.h in Headers */,
+				BEF670008585B2D699B458E74BD8B6FF /* YKFU2FSignAPDU.h in Headers */,
+				0D521B9FBB3DD104BBBF8656B6A4CC1E /* YKFURIIdentifierCode.h in Headers */,
+				E4D86E07EE182B5F70B2D9A1543D12FD /* YKFView.h in Headers */,
+				10638926C5FCA6A3C3EDDA9BDD916B96 /* YKFViewController.h in Headers */,
+				C7CAFADF6FB8C2CA329698CD4EC97E3D /* YKFWebAuthnClientData.h in Headers */,
+				76246F8FD2028D942EAAACFF48DF9440 /* YubiKit-umbrella.h in Headers */,
+				2AAC64EEA24AB326423198A1D4202F74 /* YubiKit.h in Headers */,
+				5469400F6EA2FCFD90C0DA8D10E0F5AB /* YubiKitConfiguration.h in Headers */,
+				E30361791222FBCC670AAE051D0C054B /* YubiKitDeviceCapabilities+Testing.h in Headers */,
+				C04A383E4A8932E9F56D8FD0314739C3 /* YubiKitDeviceCapabilities.h in Headers */,
+				9D6B5AB8E08D61A8A6E3C21E39E1E4BF /* YubiKitExternalLocalization.h in Headers */,
+				C84DB5D1AD190EF7B14D9056A20F9803 /* YubiKitLogger.h in Headers */,
+				35651AA2A5EB340496E3A5E65A06D3F2 /* YubiKitManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		708A296B1FBD269BC6299A790D533F20 /* Pods-RNYubikit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FC2FCB920563D332F0300544A0CF02B /* Build configuration list for PBXNativeTarget "Pods-RNYubikit" */;
+			buildPhases = (
+				272BC8BB10BAE9EA6580F6FFD4991778 /* Headers */,
+				8F4C358989EAB2EB79347D08769724D2 /* Sources */,
+				3BB0D467316D5E3D325096E0AF7E9C4B /* Frameworks */,
+				E2ED8120C9F67F335D7F781B16B88715 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF8FCD25341BC6BE10F0159B7C1406E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-RNYubikit";
+			productName = "Pods-RNYubikit";
+			productReference = 5BFFE2A58451C59EFDF7468E4B23FC9F /* Pods_RNYubikit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CCF4DC2E7E3142D165A70FB082678230 /* YubiKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8941DEB2CC5DCD9C04C2F8AACBC6B3D /* Build configuration list for PBXNativeTarget "YubiKit" */;
+			buildPhases = (
+				6A2072CA4B5F02BD5A7AC9B4B4861E75 /* Headers */,
+				B17AA9CCC799E7D329AF064E98ABBB58 /* Sources */,
+				FC736913560E107623301414C433F6CE /* Frameworks */,
+				A203E6EADC67C0B3DD9CE1C8AEF79CB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YubiKit;
+			productName = YubiKit;
+			productReference = 0FC494844906D64DE0F88400C88B8653 /* YubiKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = BA4BA52EB57A8664B61EE2E696835EC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				708A296B1FBD269BC6299A790D533F20 /* Pods-RNYubikit */,
+				CCF4DC2E7E3142D165A70FB082678230 /* YubiKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A203E6EADC67C0B3DD9CE1C8AEF79CB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2ED8120C9F67F335D7F781B16B88715 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F4C358989EAB2EB79347D08769724D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E60EF12D4BDF5CB5C9943C4CB6849B /* Pods-RNYubikit-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17AA9CCC799E7D329AF064E98ABBB58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76ACBC54EE3F0751961D22573CFC1743 /* MF_Base32Additions.m in Sources */,
+				34EEA6C64BC31BC915B2C93A0DCE18B9 /* UIDeviceAdditions.m in Sources */,
+				04E3019B218B4DE3CBBF2509F4E5145E /* UIWindowAdditions.m in Sources */,
+				4178F3852399A10E87A727F09AD2CF54 /* YKFAccessoryConnectionController.m in Sources */,
+				D930100A4EFC4F599FFA671E9D970C43 /* YKFAccessoryDescription.m in Sources */,
+				B2E591D1E376862C01143ECF65ECB240 /* YKFAccessorySession+Debugging.m in Sources */,
+				E6CE147DAFE981CBA72510B1B32A6DC1 /* YKFAccessorySession.m in Sources */,
+				85CA443B836BD596CDCC97D908F7AF85 /* YKFAccessorySessionConfiguration.m in Sources */,
+				6A968D3F2C244A13820EC1CD45A62E91 /* YKFAPDU.m in Sources */,
+				3938C6E5EE6A475591A4F92C244DEC98 /* YKFCBORDecoder.m in Sources */,
+				BF54A0B8B35DB19781539D046E0B5B34 /* YKFCBOREncoder.m in Sources */,
+				80FBFF25C6E6DA904A39BA32ABFF9625 /* YKFCBORType.m in Sources */,
+				55387F07ACBB9177EACFEA85B42EDBD5 /* YKFDispatch.m in Sources */,
+				2CB140D23C29923D32412E819F17B358 /* YKFFIDO2ClientPinAPDU.m in Sources */,
+				F566CCA7A2AE76C30EBA4A0446C6CAA6 /* YKFFIDO2CommandAPDU.m in Sources */,
+				500DEEC2ECCC0231552F4AA1DC085A04 /* YKFFIDO2GetAssertionAPDU.m in Sources */,
+				5D22CCBD736A2CB85335484F407C838F /* YKFFIDO2GetInfoAPDU.m in Sources */,
+				0BC500C2F0454A18F74BF49105986F34 /* YKFFIDO2GetNextAssertionAPDU.m in Sources */,
+				DDB9D603C82AC22C824756DCA0E509D9 /* YKFFIDO2MakeCredentialAPDU.m in Sources */,
+				6DECDF4EB191703223A82FA212D964A1 /* YKFFIDO2PinAuthKey.m in Sources */,
+				8E8D5EB4F1CF01871C398239B96521ED /* YKFFIDO2ResetAPDU.m in Sources */,
+				56D2347F3F0C730FA7D148226E0A1E52 /* YKFFIDO2TouchPoolingAPDU.m in Sources */,
+				2D39A4AB924C5269D1D41F972A22CC78 /* YKFFIDO2Type.m in Sources */,
+				A14A382BE54CD021546D3386D963C111 /* YKFKeyAPDUError.m in Sources */,
+				070417C9C29FBC23AC74A3B704BDF078 /* YKFKeyCommandConfiguration.m in Sources */,
+				6CA245573A5795FC2F147361801CFE2D /* YKFKeyFIDO2ChangePinRequest.m in Sources */,
+				3000B2F086C764FE3431916DB9A93558 /* YKFKeyFIDO2ClientPinRequest.m in Sources */,
+				426E4CCF0FF71C2D0CF5E554893CEF76 /* YKFKeyFIDO2ClientPinResponse.m in Sources */,
+				58CB8C7191C9D5DF12E593BE862AA19C /* YKFKeyFIDO2Error.m in Sources */,
+				4640E07B21196F9FAD8D17B9EA8E4BA3 /* YKFKeyFIDO2GetAssertionRequest.m in Sources */,
+				310DF96DB4A1A0EA87949543E4F78F38 /* YKFKeyFIDO2GetAssertionResponse.m in Sources */,
+				F94DF4629FE6D3E78EEC5D81BAB14B1E /* YKFKeyFIDO2GetInfoResponse.m in Sources */,
+				34C21EAEA1DF9C1432CA692D15752E34 /* YKFKeyFIDO2MakeCredentialRequest.m in Sources */,
+				27D340BDE15CD8BB3771433E9F10EB1C /* YKFKeyFIDO2MakeCredentialResponse.m in Sources */,
+				E8AA34F983C46F5A3D894F4BB265239A /* YKFKeyFIDO2Request.m in Sources */,
+				B5EE3A4BE4087083EBD9D04DF81CEE7D /* YKFKeyFIDO2Service.m in Sources */,
+				197D771DF67D673C90B6A03B2AE3D579 /* YKFKeyFIDO2SetPinRequest.m in Sources */,
+				E64E5CB6BA29532F59FBC62268AE7BE4 /* YKFKeyFIDO2VerifyPinRequest.m in Sources */,
+				B84D79EC153F875CCFB10E28D2A75E30 /* YKFKeyOATHCalculateAllRequest.m in Sources */,
+				70A6AC143BD16228E2F90B68197A7B51 /* YKFKeyOATHCalculateAllResponse.m in Sources */,
+				87D678A681C1E5E7F681F94B9857941E /* YKFKeyOATHCalculateRequest.m in Sources */,
+				0E004F9F7DB7DC6BA23B42D15C76F7B8 /* YKFKeyOATHCalculateResponse.m in Sources */,
+				D9A21D41C863652A47ADD6811E6A99F2 /* YKFKeyOATHDeleteRequest.m in Sources */,
+				045C2D6F15253093589AEE4486C267D2 /* YKFKeyOATHError.m in Sources */,
+				FB7EA2027BFC0C1F923CA9E7F5959398 /* YKFKeyOATHListRequest.m in Sources */,
+				17CA1399D38E387C150024271A982D26 /* YKFKeyOATHListResponse.m in Sources */,
+				56FCA34D3329DCA04C3058F8F298F62A /* YKFKeyOATHPutRequest.m in Sources */,
+				02266BACC589CEBABB377B9118987218 /* YKFKeyOATHRequest.m in Sources */,
+				76AA77D0A69DFC85AE1B08B5551E7816 /* YKFKeyOATHResetRequest.m in Sources */,
+				9A1B6E23F6C3806E0369A2FD6EAF7F54 /* YKFKeyOATHSelectApplicationResponse.m in Sources */,
+				CFC3CE536F866092A6E619A299B87398 /* YKFKeyOATHService.m in Sources */,
+				E0B0B03E086E3661CF8D98A21002B12D /* YKFKeyOATHSetCodeRequest.m in Sources */,
+				F75EBC228E689D630BBF345F0EA64C46 /* YKFKeyOATHValidateRequest.m in Sources */,
+				72E8D56D39755CBEEAC319FA85B252D8 /* YKFKeyOATHValidateResponse.m in Sources */,
+				DD86CAF2B1BE2CD117EFD2702496AAB6 /* YKFKeyRawCommandService.m in Sources */,
+				6149DCE249C6C8F835E624BD2C8187AD /* YKFKeyRequest.m in Sources */,
+				4B0D03C768A88BE8E7EF9FDCFE45D7B7 /* YKFKeyService.m in Sources */,
+				98CD52FB12448B38BD06EB0B4729598F /* YKFKeySessionError.m in Sources */,
+				349405F1AE851F1EA5C7309CD4993EED /* YKFKeyU2FError.m in Sources */,
+				0C088A45A8B49B500E834CF1903603D0 /* YKFKeyU2FRegisterRequest.m in Sources */,
+				061CFF650B1CA700FF128AAB96B7E7C8 /* YKFKeyU2FRegisterResponse.m in Sources */,
+				F92168179D7778E56734A1DA4A9958F4 /* YKFKeyU2FRequest.m in Sources */,
+				ED22D8576B3EF02960D5D2A55663B39D /* YKFKeyU2FService.m in Sources */,
+				49552EF3CF24D88B1CCEC5B266404C50 /* YKFKeyU2FSignRequest.m in Sources */,
+				3D5A62A6F2C8BD25B4693BC7289E6EDD /* YKFKeyU2FSignResponse.m in Sources */,
+				1E8525DCAF5970789A9805FF3C6136FE /* YKFKVOObservation.m in Sources */,
+				0647A39F7BE844FF78FFB671752E9F4B /* YKFLogger.m in Sources */,
+				B97E2142DA63343FBE9F06BF8C082859 /* YKFNFCConnectionController.m in Sources */,
+				154289F9FD91A9C795D0657F5E3FC248 /* YKFNFCError.m in Sources */,
+				370318190748F445C9CF258FA6CEA2AB /* YKFNFCOTPService.m in Sources */,
+				9F357810B22862DA299A228359DE4287 /* YKFNFCSession.m in Sources */,
+				54CE7A4C4FEDCF2BE47CDC0FB63E02A7 /* YKFNFCTagDescription.m in Sources */,
+				BF938CC288B947B4B1BD8F70588B875F /* YKFNSDataAdditions.m in Sources */,
+				73B0721FA086B177E7CDBB57514101D9 /* YKFNSMutableDataAdditions.m in Sources */,
+				80C9E52EBC6479B81E47066C90AB3513 /* YKFNSStringAdditions.m in Sources */,
+				C44765BC5D2177A0D5B3C67BC99E35CC /* YKFOATHCalculateAllAPDU.m in Sources */,
+				29E84345FCBDDF2D32C6D4E023825C62 /* YKFOATHCalculateAPDU.m in Sources */,
+				E5662C6DB48286D52B61294F59F719C9 /* YKFOATHCredential.m in Sources */,
+				8B9970F3A9480935D651351A1CEA19FF /* YKFOATHCredentialValidator.m in Sources */,
+				DC4E4D274EC4BB3553AB75124CE1F947 /* YKFOATHDeleteAPDU.m in Sources */,
+				DE6C918142FAABAC4DF197D0A7DE07F1 /* YKFOATHListAPDU.m in Sources */,
+				804ABBA05FB21D058AA19A7EEE3121DB /* YKFOATHPutAPDU.m in Sources */,
+				63E457ECF7BF556FD99F362FF9F82939 /* YKFOATHResetAPDU.m in Sources */,
+				9E79445E725538413EB2BE1824FF0ED7 /* YKFOATHSendRemainingAPDU.m in Sources */,
+				41FA2BB280CBE3BB12CA1740FC617700 /* YKFOATHSetCodeAPDU.m in Sources */,
+				1D15F6B811ACE9422173E957BF891290 /* YKFOATHValidateAPDU.m in Sources */,
+				5CE5E71673422232D4ED541FBF21412E /* YKFOTPTextParser.m in Sources */,
+				2E283008A33210364C6FFA353762F61C /* YKFOTPToken.m in Sources */,
+				E28433919CF22916A59BEF48FA43790A /* YKFOTPTokenParser.m in Sources */,
+				9A8CFE127FAF04EEAB3718721DB0A064 /* YKFOTPTokenValidator.m in Sources */,
+				A2A7AAAE08EDF3B3676866E235FA921C /* YKFOTPURIParser.m in Sources */,
+				F17EE9BA072F8AF4F31E05E9A121B273 /* YKFPCSC.m in Sources */,
+				E33D2C7D4A219F268C361F9A024D3FC4 /* YKFPCSCErrorMap.m in Sources */,
+				6F62D22BEE7D67E48988D027F4EBF3AF /* YKFPCSCLayer.m in Sources */,
+				14C63D410FB1EAC2E68E72FD8158EABE /* YKFPermissions.m in Sources */,
+				47A807C101AC3ECC43B1ED754EB93B5B /* YKFQRCodeScanError.m in Sources */,
+				61A0AE9A384756B9269A86496C5B0506 /* YKFQRCodeScanOverlayView.m in Sources */,
+				897983CA1D5DAB9B6B7FC330360A7DBD /* YKFQRCodeScanViewController.m in Sources */,
+				4295B8B7BE0D0E1D409087E0B522B615 /* YKFQRReaderSession.m in Sources */,
+				226BE6FA79871C368393DC89D6E07CE8 /* YKFSelectFIDO2ApplicationAPDU.m in Sources */,
+				BB58A082713D2AE7E9BFBF7918B9193B /* YKFSelectOATHApplicationAPDU.m in Sources */,
+				9B581DFB234B010731DED81D63EEF439 /* YKFSelectU2FApplicationAPDU.m in Sources */,
+				BB89C3467BBC3B86489EED1594CC0912 /* YKFU2FRegisterAPDU.m in Sources */,
+				CD05A40B0C00EB947BCE10FFEB10E157 /* YKFU2FSignAPDU.m in Sources */,
+				25F73362BFC5CA0F7AC93FC1558A5637 /* YKFURIIdentifierCode.m in Sources */,
+				EDB15560C901BD9B6651761A04342127 /* YKFView.m in Sources */,
+				DD8D15AB9D3E7C0A16683822428EA94C /* YKFViewController.m in Sources */,
+				0794F585C523934FB0D806F1F28B2015 /* YKFWebAuthnClientData.m in Sources */,
+				FA69D50A1C185A92ED96CD7CFAE36957 /* YubiKit-dummy.m in Sources */,
+				3C571B5BF225E8FB117502809236C525 /* YubiKitConfiguration.m in Sources */,
+				ABE938CCF2210C6F3BE75DD56D7BD4E7 /* YubiKitDeviceCapabilities.m in Sources */,
+				E736B7016A799DAE714833C81E384E77 /* YubiKitExternalLocalization.m in Sources */,
+				CE476376A44AB7876743E95E7ACCCA79 /* YubiKitLogger.m in Sources */,
+				3D1C8686AFAD3F34E5F6B539922CC8EC /* YubiKitManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF8FCD25341BC6BE10F0159B7C1406E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YubiKit;
+			target = CCF4DC2E7E3142D165A70FB082678230 /* YubiKit */;
+			targetProxy = 2758A65F08BCA318E94263D46E0EB5DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		257497152829C177993B5EC99C1D227A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5D42FA61971EE4F524C4A55AAC0A6A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FC89A7141764ED8AB1553147B303E4 /* Pods-RNYubikit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNYubikit/Pods-RNYubikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNYubikit/Pods-RNYubikit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79A6AC7BC2E2A473315761483FF6B37D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55DF0F05FC9AF7FF6E503388E4CA547 /* Pods-RNYubikit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RNYubikit/Pods-RNYubikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RNYubikit/Pods-RNYubikit.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEE651AC9F8230D342E2299EFC485637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YubiKit/YubiKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YubiKit/YubiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YubiKit/YubiKit.modulemap";
+				PRODUCT_MODULE_NAME = YubiKit;
+				PRODUCT_NAME = YubiKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FDFEE9C3B4B890BA0C5AE991337E8A13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBC8982124EED5A3523A2D1E204F52C2 /* YubiKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/YubiKit/YubiKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/YubiKit/YubiKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/YubiKit/YubiKit.modulemap";
+				PRODUCT_MODULE_NAME = YubiKit;
+				PRODUCT_NAME = YubiKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FC2FCB920563D332F0300544A0CF02B /* Build configuration list for PBXNativeTarget "Pods-RNYubikit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79A6AC7BC2E2A473315761483FF6B37D /* Debug */,
+				5D42FA61971EE4F524C4A55AAC0A6A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8941DEB2CC5DCD9C04C2F8AACBC6B3D /* Build configuration list for PBXNativeTarget "YubiKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE651AC9F8230D342E2299EFC485637 /* Debug */,
+				FDFEE9C3B4B890BA0C5AE991337E8A13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,16 @@
+PODS:
+  - YubiKit (3.0.0)
+
+DEPENDENCIES:
+  - YubiKit (~> 3.0.0)
+
+SPEC REPOS:
+  trunk:
+    - YubiKit
+
+SPEC CHECKSUMS:
+  YubiKit: 32146fcca275d9730c1ecc2f9be6b139573c2e09
+
+PODFILE CHECKSUM: 6a709e173005d234dbf4e625f7dd7fe9b03f368e
+
+COCOAPODS: 1.8.4
