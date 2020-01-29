@@ -4,7 +4,7 @@ class RNYubikit: NSObject {
     var accessorySessionStatus = false
     
     @objc
-    func initNFCSession(_ resolve: @escaping RCTPromiseResolveBlock, reject reject: @escaping RCTPromiseRejectBlock) {
+    func initNFCSession(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         if YubiKitDeviceCapabilities.supportsISO7816NFCTags, #available(iOS 13.0, *) {
             // Provide additional setup when NFC is available
             // example
@@ -19,7 +19,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func initAccessorySession(_ resolve: @escaping RCTPromiseResolveBlock, reject reject: @escaping RCTPromiseRejectBlock) -> Void {
+    func initAccessorySession(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
         if YubiKitDeviceCapabilities.supportsMFIAccessoryKey {
             // Make sure the session is started (in case it was closed by another demo).
             YubiKitManager.shared.accessorySession.startSession()
@@ -32,7 +32,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func stopNFCSession(_ resolve: @escaping RCTPromiseResolveBlock, reject reject: @escaping RCTPromiseRejectBlock) {
+    func stopNFCSession(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         if nfcSessionStatus == true, #available(iOS 13.0, *) {
             // Provide additional setup when NFC is available
             // example
@@ -47,7 +47,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func stopAccessorySession(_ resolve: @escaping RCTPromiseResolveBlock, reject reject: @escaping RCTPromiseRejectBlock) {
+    func stopAccessorySession(_ resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         if accessorySessionStatus == true {
             // Provide additional setup when NFC is available
             // example
@@ -61,7 +61,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func registerU2F(challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, reject reject: @escaping RCTPromiseRejectBlock) {
+    func registerU2F(challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         // The challenge and appId are received from the authentication server.
         guard let registerRequest = YKFKeyU2FRegisterRequest(challenge: challenge, appId: appId) else {
             reject("RegisterRequest", "U2F Register Request initialization failed", nil)
@@ -80,7 +80,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func signU2F(keyHandle: String, challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, reject reject: @escaping RCTPromiseRejectBlock) {
+    func signU2F(keyHandle: String, challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         // The challenge and appId are received from the authentication server.
         guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
             reject("U2FSession", "Session not started yet", nil)
