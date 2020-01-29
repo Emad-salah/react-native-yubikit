@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.dependency "React"
-  s.dependency "Yubikit", '3.0.0'
+  s.dependency "YubiKit", '~> 3.0.0'
   # ...
   # s.dependency "..."
 end
