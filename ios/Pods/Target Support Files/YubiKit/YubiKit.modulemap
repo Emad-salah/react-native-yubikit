@@ -1,6 +1,0 @@
-framework module YubiKit {
-  umbrella header "YubiKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
