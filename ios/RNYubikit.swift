@@ -61,7 +61,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func registerU2F(challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    func registerU2F(_ challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         // The challenge and appId are received from the authentication server.
         guard let registerRequest = YKFKeyU2FRegisterRequest(challenge: challenge, appId: appId) else {
             reject("RegisterRequest", "U2F Register Request initialization failed", nil)
@@ -80,7 +80,7 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    func signU2F(keyHandle: String, challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
+    func signU2F(_ keyHandle: String, challenge: String, appId: String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
         // The challenge and appId are received from the authentication server.
         guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
             reject("U2FSession", "Session not started yet", nil)
