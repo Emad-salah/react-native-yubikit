@@ -1,5 +1,5 @@
-import { NativeModules } from 'react-native';
+import { NativeModules } from "react-native";
 
-const { Yubikit } = NativeModules;
+const { RNYubikit } = NativeModules;
 
-export default Yubikit;
+export default RNYubikit;
