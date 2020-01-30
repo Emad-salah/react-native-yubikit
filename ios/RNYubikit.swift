@@ -1,3 +1,22 @@
+import Foundation
+
+struct Log: TextOutputStream {
+
+    func write(_ string: String) {
+        let fm = FileManager.default
+        let log = fm.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("swift-log.txt")
+        if let handle = try? FileHandle(forWritingTo: log) {
+            handle.seekToEndOfFile()
+            handle.write(string.data(using: .utf8)!)
+            handle.closeFile()
+        } else {
+            try? string.data(using: .utf8)?.write(to: log)
+        }
+    }
+}
+
+var logger = Log()
+
 @objc(RNYubikit)
 class RNYubikit: NSObject {
     var nfcSessionStatus = false
@@ -107,6 +126,7 @@ class RNYubikit: NSObject {
                                 return
                             }
                             // The response should not be nil at this point. Send back the response to the authentication server.
+                            print("U2F Register Data:", response, to: &logger)
                             resolve("{ \"clientData\": \"\(response?.clientData ?? "")\", \"registrationData\": \"\(response?.registrationData.base64EncodedString(options: .endLineWithLineFeed) ?? "")\" }")
                             _ = self?.stopNFCSession()
                             self?.nfcSessionStateObservation = nil
