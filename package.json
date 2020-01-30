@@ -1,7 +1,7 @@
 {
 	"name": "react-native-yubikit",
 	"title": "React Native Yubikit",
-	"version": "0.2.7",
+	"version": "0.2.8",
 	"description": "A bridge for Yubikit SDK on React Native",
 	"main": "index.js",
 	"scripts": {
