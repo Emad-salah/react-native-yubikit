@@ -5,17 +5,17 @@ class RNYubikit: NSObject {
     private var nfcSesionStateObservation: NSKeyValueObservation?
     
     @objc
-    private func initNFCSession() {
+    private func initNFCSession() -> Bool {
         if YubiKitDeviceCapabilities.supportsISO7816NFCTags, #available(iOS 13.0, *) {
             // Provide additional setup when NFC is available
             // example
             YubiKitManager.shared.nfcSession.startIso7816Session()
             
             nfcSessionStatus = true
-            resolve(true)
+            return true
         } else {
             // Handle the missing NFC support
-            reject("NFCNotSupported", "Device doesn't support NFC", nil)
+            return false
         }
     }
     
@@ -33,16 +33,16 @@ class RNYubikit: NSObject {
     }
     
     @objc
-    private func stopNFCSession() {
+    private func stopNFCSession() -> Bool {
         if nfcSessionStatus == true, #available(iOS 13.0, *) {
             // Provide additional setup when NFC is available
             // example
             YubiKitManager.shared.nfcSession.stopIso7816Session()
             
             nfcSessionStatus = false
+            return true
         } else {
-            // Handle the missing NFC support
-            reject("NFCSession", "Please start an NFC session first before stopping it", nil)
+            return false
         }
     }
     
@@ -70,12 +70,17 @@ class RNYubikit: NSObject {
 
             let nfcSession = YubiKitManager.shared.nfcSession as! YKFNFCSession
             if nfcSession.iso7816SessionState == .open {
-                self?.registerU2F(challenge, appId: appId, resolver: resolve, rejecter: reject)
+                self.registerU2F(challenge, appId: appId, resolver: resolve, rejecter: reject)
                 return
             }
 
             // The ISO7816 session is started only when required since it's blocking the application UI with the NFC system action sheet.
-            self.initNFCSession()
+            let sessionStarted = self.initNFCSession()
+            
+            guard sessionStarted else {
+                reject("NFCUnsupported", "NFC is not supported on this device", nil)
+                return
+            }
             
             // Execute the request after the key(tag) is connected.
             nfcSesionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
@@ -85,7 +90,7 @@ class RNYubikit: NSObject {
                 }
             })
         } else {
-            self?.registerU2F(challenge, appId: appId, resolver: resolve, rejecter: reject)
+            self.registerU2F(challenge, appId: appId, resolver: resolve, rejecter: reject)
         }
     }
     
@@ -104,7 +109,7 @@ class RNYubikit: NSObject {
                 return
             }
             // The response should not be nil at this point. Send back the response to the authentication server.
-            self.stopNFCSession()
+            _ = self?.stopNFCSession()
             resolve(response)
         }
     }
