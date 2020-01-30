@@ -2,7 +2,7 @@
 class RNYubikit: NSObject {
     var nfcSessionStatus = false
     var accessorySessionStatus = false
-    private var nfcSesionStateObservation: NSKeyValueObservation?
+    private var nfcSessionStateObservation: NSKeyValueObservation?
     
     @objc
     private func initNFCSession() -> Bool {
@@ -85,10 +85,45 @@ class RNYubikit: NSObject {
             }
             
             // Execute the request after the key(tag) is connected.
-            nfcSesionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
+            nfcSessionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
                 if session.iso7816SessionState == .open {
                     self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
-                    self?.nfcSesionStateObservation = nil // remove the observation
+                    // The challenge and appId are received from the authentication server.
+                    guard let registerRequest = YKFKeyU2FRegisterRequest(challenge: challenge, appId: appId) else {
+                        reject("RegisterRequest", "U2F Register Request initialization failed", nil)
+                        return
+                    }
+                    
+                    guard type == "nfc", #available(iOS 13.0, *) else {
+                        reject("NFCUnsupported", "Your device doesn't support NFC", nil)
+                        return
+                    }
+                    
+                    if type == "nfc" {
+                        YubiKitManager.shared.nfcSession.u2fService!.execute(registerRequest) { [weak self] (response, error) in
+                            guard error == nil else {
+                                // Handle the error
+                                reject("U2FService", error?.localizedDescription, error)
+                                return
+                            }
+                            // The response should not be nil at this point. Send back the response to the authentication server.
+                            resolve("{ \"clientData\": \"\(response?.clientData ?? "")\", \"registrationData\": \"\(response?.registrationData.base64EncodedString(options: .endLineWithLineFeed) ?? "")\" }")
+                            _ = self?.stopNFCSession()
+                            self?.nfcSessionStateObservation = nil
+                        }
+                    } else if type == "accessory" {
+                        YubiKitManager.shared.accessorySession.u2fService!.execute(registerRequest) { [weak self] (response, error) in
+                            guard error == nil else {
+                                // Handle the error
+                                reject("U2FService", error?.localizedDescription, error)
+                                return
+                            }
+                            // The response should not be nil at this point. Send back the response to the authentication server.
+                            resolve(response)
+                            _ = self?.stopAccessorySession()
+                            self?.nfcSessionStateObservation = nil
+                        }
+                    }
                 }
             })
         } else {
@@ -134,8 +169,8 @@ class RNYubikit: NSObject {
                     return
                 }
                 // The response should not be nil at this point. Send back the response to the authentication server.
-                _ = self?.stopAccessorySession()
                 resolve(response)
+                _ = self?.stopAccessorySession()
             }
         }
     }
