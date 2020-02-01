@@ -106,7 +106,7 @@ class RNYubikit: NSObject {
             // Execute the request after the key(tag) is connected.
             nfcSessionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
                 if session.iso7816SessionState == .open {
-                    self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
+                    // self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
                     // The challenge and appId are received from the authentication server.
                     guard let registerRequest = YKFKeyU2FRegisterRequest(challenge: challenge, appId: appId) else {
                         reject("RegisterRequest", "U2F Register Request initialization failed", nil)
@@ -126,7 +126,7 @@ class RNYubikit: NSObject {
                                 return
                             }
                             // The response should not be nil at this point. Send back the response to the authentication server.
-                            print("U2F Register Data:", response, to: &logger)
+                            print("[iOS Swift] U2F Register Data:", response, to: &logger)
                             resolve("{ \"clientData\": \"\(response?.clientData ?? "")\", \"registrationData\": \"\(response?.registrationData.base64EncodedString(options: .endLineWithLineFeed) ?? "")\" }")
                             _ = self?.stopNFCSession()
                             self?.nfcSessionStateObservation = nil
