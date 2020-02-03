@@ -22,6 +22,7 @@ class RNYubikit: NSObject {
     var nfcSessionStatus = false
     var accessorySessionStatus = false
     private var nfcSessionStateObservation: NSKeyValueObservation?
+    private var accessorySessionStateObservation: NSKeyValueObservation?
     
     @objc
     private func initNFCSession() -> Bool {
@@ -198,60 +199,107 @@ class RNYubikit: NSObject {
             }
         }
     }
-    
+
     @objc
-    func signU2F(
+    private func signU2F(
         _ type: String,
-        keyHandle: String,
+        session: YKFNFCSession,
         challenge: String,
         appId: String,
-        resolver resolve: @escaping RCTPromiseResolveBlock,
-        rejecter reject: @escaping RCTPromiseRejectBlock
+        keyHandles: [String],
+        callback: @escaping (String?, NSDictionary?) -> ()
     ) {
-        // The challenge and appId are received from the authentication server.
-        guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
-            reject("U2FSession", "Session not started yet", nil)
-            return
-        }
-        
-        var u2fService: YKFKeyU2FServiceProtocol? = nil
-        
-        if type == "nfc", #available(iOS 13.0, *) {
-            guard YubiKitManager.shared.nfcSession.u2fService != nil else {
-                reject("U2FService", "The U2F service is not available (the session is closed or the key is not connected).", nil)
-                return
+        let semaphore = DispatchSemaphore(value: 0)
+        var signedChallenge = false
+        DispatchQueue.global().async {
+            for keyHandle in keyHandles {
+                guard !signedChallenge else {
+                    break
+                }
+                // self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
+                // The challenge and appId are received from the authentication server.
+                guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
+                    continue
+                }
+
+                
+                if type == "nfc" {
+                    guard #available(iOS 13.0, *) else {
+                        callback("NFCUnsupported", nil)
+                        _ = self.stopNFCSession()
+                        self.nfcSessionStateObservation = nil
+                        break
+                    }
+                    
+                    guard session.iso7816SessionState == .open else {
+                        let error = "NFCSessionClosed"
+                        callback(error, nil)
+                        _ = self.stopNFCSession()
+                        self.nfcSessionStateObservation = nil
+                        break
+                    }
+
+                    YubiKitManager.shared.nfcSession.u2fService!.execute(signRequest) { [weak self] (response, error) in
+                        guard error == nil else {
+                            // Handle the error
+                            print("[iOS Swift] U2F Error: \(error?.localizedDescription)")
+                            semaphore.signal()
+                            return
+                        }
+                        // The response should not be nil at this point. Send back the response to the authentication server.
+                        print("[iOS Swift] NFC U2F Sign Data:", response, to: &logger)
+                        let signData: NSDictionary = [
+                            "clientData": response?.clientData ?? "",
+                            "keyHandle": response?.keyHandle ?? "",
+                            "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                        ]
+                        signedChallenge = true
+                        semaphore.signal()
+                        _ = self?.stopNFCSession()
+                        self?.nfcSessionStateObservation = nil
+                        callback(nil, signData)
+                    }
+                    semaphore.wait()
+                } else if type == "accessory" {
+                    
+                    guard session.sessionState == .open else {
+                        let error = "NFCSessionClosed"
+                        callback(error, nil)
+                        _ = self.stopAccessorySession()
+                        self.accessorySessionStateObservation = nil
+                        break
+                    }
+
+                    YubiKitManager.shared.accessorySession.u2fService!.execute(signRequest) { [weak self] (response, error) in
+                        guard error == nil else {
+                            // Handle the error
+                            print("[iOS Swift] U2F Error: \(error?.localizedDescription)")
+                            semaphore.signal()
+                            return
+                        }
+                        // The response should not be nil at this point. Send back the response to the authentication server.
+                        print("[iOS Swift] Accessory U2F Sign Data:", response, to: &logger)
+                        let signData: NSDictionary = [
+                            "clientData": response?.clientData ?? "",
+                            "keyHandle": response?.keyHandle ?? "",
+                            "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                        ]
+                        signedChallenge = true
+                        semaphore.signal()
+                        _ = self?.stopAccessorySession()
+                        self?.accessorySessionStateObservation = nil
+                        callback(nil, signData)
+                    }
+                    semaphore.wait()
+                }
             }
-            
-            u2fService = YubiKitManager.shared.nfcSession.u2fService
-        } else if type == "accessory" {
-            guard YubiKitManager.shared.accessorySession.u2fService != nil else {
-                reject("U2FService", "The U2F service is not available (the session is closed or the key is not connected).", nil)
-                return
-            }
-            
-            u2fService = YubiKitManager.shared.accessorySession.u2fService
-        }
-        
-        if u2fService == nil {
-            reject("UnknownSignType", "An unknown sign type was requested", nil)
-            return
-        }
-        
-        u2fService!.execute(signRequest) { [weak self] (response, error) in
-            guard error == nil else {
-                // Handle the error
-                reject("U2FService", error?.localizedDescription, error)
-                return
-            }
-            // The response should not be nil at this point. Send back the response to the authentication server.
-            resolve(response)
         }
     }
 
     @objc
     func executeSignU2F(
         _ type: String,
-        keyHandle: String,
+        keyHandles: [String],
         challenge: String,
         appId: String,
         resolver resolve: @escaping RCTPromiseResolveBlock,
@@ -276,59 +324,45 @@ class RNYubikit: NSObject {
             // Execute the request after the key(tag) is connected.
             nfcSessionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
                 if session.iso7816SessionState == .open {
-                    // self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
-                    // The challenge and appId are received from the authentication server.
-                    guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
-                        reject("SignRequest", "U2F Sign Request initialization failed", nil)
-                        return
-                    }
-                    
-                    guard type == "nfc", #available(iOS 13.0, *) else {
-                        reject("NFCUnsupported", "Your device doesn't support NFC", nil)
-                        return
-                    }
-                    
-                    if type == "nfc" {
-                        YubiKitManager.shared.nfcSession.u2fService!.execute(signRequest) { [weak self] (response, error) in
-                            guard error == nil else {
-                                // Handle the error
-                                reject("U2FService", error?.localizedDescription, error)
-                                return
-                            }
-                            // The response should not be nil at this point. Send back the response to the authentication server.
-                            print("[iOS Swift] NFC U2F Sign Data:", response, to: &logger)
-                            let signData: NSDictionary = [
-                                "clientData": response?.clientData ?? "",
-                                "keyHandle": response?.keyHandle ?? "",
-                                "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
-                            ]
-                            resolve(signData)
-                            _ = self?.stopNFCSession()
-                            self?.nfcSessionStateObservation = nil
+                    self?.signU2F(type, session: session, challenge: challenge, appId: appId, keyHandles: keyHandles) { error, response in
+                        guard error != nil else {
+                            reject(error, "An error has occurred", nil)
+                            return
                         }
-                    } else if type == "accessory" {
-                        YubiKitManager.shared.accessorySession.u2fService!.execute(signRequest) { [weak self] (response, error) in
-                            guard error == nil else {
-                                // Handle the error
-                                reject("U2FService", error?.localizedDescription, error)
-                                return
-                            }
-                            // The response should not be nil at this point. Send back the response to the authentication server.
-                            print("[iOS Swift] MFi U2F Sign Data:", response, to: &logger)
-                            let signData: NSDictionary = [
-                                "clientData": response?.clientData ?? "",
-                                "keyHandle": response?.keyHandle ?? "",
-                                "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
-                            ]
-                            resolve(signData)
-                            _ = self?.stopAccessorySession()
-                            self?.nfcSessionStateObservation = nil
-                        }
+
+                        resolve(response)
                     }
                 }
             })
         } else {
-            self.signU2F("accessory", keyHandle: keyHandle, challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
+            guard YubiKitDeviceCapabilities.supportsMFIAccessoryKey else {
+                reject("KeyUnsupported", "Your device doesn't support FIDO Keys", nil)
+                return
+            }
+
+            let accessorySession = YubiKitManager.shared.accessorySession as! YKFAccessorySession
+
+            // The ISO7816 session is started only when required since it's blocking the application UI with the NFC system action sheet.
+            let sessionStarted = accessorySession.sessionState == .open ? true : self.initAccessoryession()
+            
+            guard sessionStarted else {
+                reject("KeyUnsupported", "Your device doesn't support FIDO Keys", nil)
+                return
+            }
+            
+            // Execute the request after the key(tag) is connected.
+            accessorySessionStateObservation = accessorySession.observe(\.sessionState, changeHandler: { [weak self] session, change in
+                if session.sessionState == .open {
+                    self?.signU2F(type, session: session, challenge: challenge, appId: appId, keyHandles: keyHandles) { error, response in
+                        guard error != nil else {
+                            reject(error, "An error has occurred", nil)
+                            return
+                        }
+
+                        resolve(response)
+                    }
+                }
+            })
         }
     }
 }
