@@ -126,8 +126,12 @@ class RNYubikit: NSObject {
                                 return
                             }
                             // The response should not be nil at this point. Send back the response to the authentication server.
-                            print("[iOS Swift] U2F Register Data:", response, to: &logger)
-                            resolve("{ \"clientData\": \"\(response?.clientData ?? "")\", \"registrationData\": \"\(response?.registrationData.base64EncodedString(options: .endLineWithLineFeed) ?? "")\" }")
+                            let registerData: NSDictionary = [
+                                "clientData": response?.clientData ?? "",
+                                "registrationData": response?.registrationData.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                            ]
+                            print("[iOS Swift] U2F Register Data: \(response as AnyObject)", to: &logger)
+                            resolve(registerData)
                             _ = self?.stopNFCSession()
                             self?.nfcSessionStateObservation = nil
                         }
@@ -241,6 +245,90 @@ class RNYubikit: NSObject {
             }
             // The response should not be nil at this point. Send back the response to the authentication server.
             resolve(response)
+        }
+    }
+
+    @objc
+    func executeSignU2F(
+        _ type: String,
+        keyHandle: String,
+        challenge: String,
+        appId: String,
+        resolver resolve: @escaping RCTPromiseResolveBlock,
+        rejecter reject: @escaping RCTPromiseRejectBlock
+    ) {
+        if type == "nfc" {
+            guard #available(iOS 13.0, *), YubiKitDeviceCapabilities.supportsISO7816NFCTags else {
+                reject("NFCUnsupported", "Your device doesn't support NFC", nil)
+                return
+            }
+
+            let nfcSession = YubiKitManager.shared.nfcSession as! YKFNFCSession
+
+            // The ISO7816 session is started only when required since it's blocking the application UI with the NFC system action sheet.
+            let sessionStarted = nfcSession.iso7816SessionState == .open ? true : self.initNFCSession()
+            
+            guard sessionStarted else {
+                reject("NFCUnsupported", "NFC is not supported on this device", nil)
+                return
+            }
+            
+            // Execute the request after the key(tag) is connected.
+            nfcSessionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
+                if session.iso7816SessionState == .open {
+                    // self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
+                    // The challenge and appId are received from the authentication server.
+                    guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
+                        reject("SignRequest", "U2F Sign Request initialization failed", nil)
+                        return
+                    }
+                    
+                    guard type == "nfc", #available(iOS 13.0, *) else {
+                        reject("NFCUnsupported", "Your device doesn't support NFC", nil)
+                        return
+                    }
+                    
+                    if type == "nfc" {
+                        YubiKitManager.shared.nfcSession.u2fService!.execute(signRequest) { [weak self] (response, error) in
+                            guard error == nil else {
+                                // Handle the error
+                                reject("U2FService", error?.localizedDescription, error)
+                                return
+                            }
+                            // The response should not be nil at this point. Send back the response to the authentication server.
+                            print("[iOS Swift] NFC U2F Sign Data:", response, to: &logger)
+                            let signData: NSDictionary = [
+                                "clientData": response?.clientData ?? "",
+                                "keyHandle": response?.keyHandle ?? "",
+                                "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                            ]
+                            resolve(signData)
+                            _ = self?.stopNFCSession()
+                            self?.nfcSessionStateObservation = nil
+                        }
+                    } else if type == "accessory" {
+                        YubiKitManager.shared.accessorySession.u2fService!.execute(signRequest) { [weak self] (response, error) in
+                            guard error == nil else {
+                                // Handle the error
+                                reject("U2FService", error?.localizedDescription, error)
+                                return
+                            }
+                            // The response should not be nil at this point. Send back the response to the authentication server.
+                            print("[iOS Swift] MFi U2F Sign Data:", response, to: &logger)
+                            let signData: NSDictionary = [
+                                "clientData": response?.clientData ?? "",
+                                "keyHandle": response?.keyHandle ?? "",
+                                "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                            ]
+                            resolve(signData)
+                            _ = self?.stopAccessorySession()
+                            self?.nfcSessionStateObservation = nil
+                        }
+                    }
+                }
+            })
+        } else {
+            self.signU2F("accessory", keyHandle: keyHandle, challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
         }
     }
 }
