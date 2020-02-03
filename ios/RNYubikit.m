@@ -7,5 +7,5 @@
 
   RCT_EXTERN_METHOD(signU2F:(NSString *)type keyHandle:(NSString *)keyHandle challenge:(NSString *)challenge appId:(NSString *)appId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 
-  RCT_EXTERN_METHOD(executeSignU2F:(NSString *)type keyHandle:(NSString *)keyHandle challenge:(NSString *)challenge appId:(NSString *)appId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+  RCT_EXTERN_METHOD(executeSignU2F:(NSString *)type keyHandles:(NSArray *)keyHandles challenge:(NSString *)challenge appId:(NSString *)appId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 @end
