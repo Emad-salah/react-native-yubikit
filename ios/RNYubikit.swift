@@ -215,13 +215,11 @@ class RNYubikit: NSObject {
                 guard !signedChallenge else {
                     break
                 }
-                // self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
+                
                 // The challenge and appId are received from the authentication server.
                 guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
                     continue
-                }
-
-                
+                }                
                 
                 guard #available(iOS 13.0, *) else {
                     callback("NFCUnsupported", nil)
@@ -278,12 +276,11 @@ class RNYubikit: NSObject {
                 guard !signedChallenge else {
                     break
                 }
-                // self?.registerU2F("nfc", challenge: challenge, appId: appId, resolver: resolve, rejecter: reject)
+                
                 // The challenge and appId are received from the authentication server.
                 guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
                     continue
                 }
-
                 
                 guard session.sessionState == .open else {
                     let error = "NFCSessionClosed"
