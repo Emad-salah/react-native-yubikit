@@ -128,7 +128,7 @@ class RNYubikit: NSObject {
                             }
                             // The response should not be nil at this point. Send back the response to the authentication server.
                             let registerData: NSDictionary = [
-                                "clientData": response?.clientData ?? "",
+                                "clientData": response?.clientData.data(using: .utf8)?.base64EncodedString(options: .endLineWithLineFeed) ?? "",
                                 "registrationData": response?.registrationData.base64EncodedString(options: .endLineWithLineFeed) ?? ""
                             ]
                             print("[iOS Swift] U2F Register Data: \(response as AnyObject)", to: &logger)
