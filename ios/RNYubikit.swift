@@ -219,7 +219,7 @@ class RNYubikit: NSObject {
                 // The challenge and appId are received from the authentication server.
                 guard let signRequest = YKFKeyU2FSignRequest(challenge: challenge, keyHandle: keyHandle, appId: appId) else {
                     continue
-                }                
+                }
                 
                 guard #available(iOS 13.0, *) else {
                     callback("NFCUnsupported", nil)
@@ -246,7 +246,7 @@ class RNYubikit: NSObject {
                     // The response should not be nil at this point. Send back the response to the authentication server.
                     print("[iOS Swift] NFC U2F Sign Data:", response, to: &logger)
                     let signData: NSDictionary = [
-                        "clientData": response?.clientData ?? "",
+                        "clientData": response?.clientData.data(using: .utf8)?.base64EncodedString(options: .endLineWithLineFeed) ?? "",
                         "keyHandle": response?.keyHandle ?? "",
                         "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
                     ]
@@ -300,7 +300,7 @@ class RNYubikit: NSObject {
                     // The response should not be nil at this point. Send back the response to the authentication server.
                     print("[iOS Swift] Accessory U2F Sign Data:", response, to: &logger)
                     let signData: NSDictionary = [
-                        "clientData": response?.clientData ?? "",
+                        "clientData": response?.clientData.data(using: .utf8)?.base64EncodedString(options: .endLineWithLineFeed) ?? "",
                         "keyHandle": response?.keyHandle ?? "",
                         "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
                     ]
