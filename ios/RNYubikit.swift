@@ -344,7 +344,7 @@ class RNYubikit: NSObject {
             nfcSessionStateObservation = nfcSession.observe(\.iso7816SessionState, changeHandler: { [weak self] session, change in
                 if session.iso7816SessionState == .open {
                     self?.signNFCU2F(session: session, challenge: challenge, appId: appId, keyHandles: keyHandles) { error, response in
-                        guard error != nil else {
+                        guard error == nil else {
                             reject(error, "An error has occurred", nil)
                             return
                         }
