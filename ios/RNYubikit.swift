@@ -248,7 +248,7 @@ class RNYubikit: NSObject {
                     let signData: NSDictionary = [
                         "clientData": response?.clientData.data(using: .utf8)?.base64EncodedString(options: .endLineWithLineFeed) ?? "",
                         "keyHandle": response?.keyHandle ?? "",
-                        "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                        "signatureData": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
                     ]
                     signedChallenge = true
                     semaphore.signal()
@@ -257,6 +257,12 @@ class RNYubikit: NSObject {
                     callback(nil, signData)
                 }
                 semaphore.wait()
+            }
+
+            if !signedChallenge {
+                _ = self?.stopNFCSession()
+                self?.nfcSessionStateObservation = nil
+                callback("InvalidSecurityKey", nil)
             }
         }
     }
@@ -302,7 +308,7 @@ class RNYubikit: NSObject {
                     let signData: NSDictionary = [
                         "clientData": response?.clientData.data(using: .utf8)?.base64EncodedString(options: .endLineWithLineFeed) ?? "",
                         "keyHandle": response?.keyHandle ?? "",
-                        "signature": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
+                        "signatureData": response?.signature.base64EncodedString(options: .endLineWithLineFeed) ?? ""
                     ]
                     signedChallenge = true
                     semaphore.signal()
@@ -311,6 +317,12 @@ class RNYubikit: NSObject {
                     callback(nil, signData)
                 }
                 semaphore.wait()
+            }
+
+            if !signedChallenge {
+                _ = self?.stopAccessorySession()
+                self?.accessorySessionStateObservation = nil
+                callback("InvalidSecurityKey", nil)
             }
         }
     }
