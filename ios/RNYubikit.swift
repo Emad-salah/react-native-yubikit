@@ -260,8 +260,8 @@ class RNYubikit: NSObject {
             }
 
             if !signedChallenge {
-                _ = self?.stopNFCSession()
-                self?.nfcSessionStateObservation = nil
+                _ = self.stopNFCSession()
+                self.nfcSessionStateObservation = nil
                 callback("InvalidSecurityKey", nil)
             }
         }
@@ -320,8 +320,8 @@ class RNYubikit: NSObject {
             }
 
             if !signedChallenge {
-                _ = self?.stopAccessorySession()
-                self?.accessorySessionStateObservation = nil
+                _ = self.stopAccessorySession()
+                self.accessorySessionStateObservation = nil
                 callback("InvalidSecurityKey", nil)
             }
         }
