@@ -262,6 +262,7 @@ class RNYubikit: NSObject {
             if !signedChallenge {
                 _ = self.stopNFCSession()
                 self.nfcSessionStateObservation = nil
+                print("[iOS Swift] Security Key error occurred or user has dismissed prompt")
                 callback("InvalidSecurityKey", nil)
             }
         }
@@ -346,6 +347,7 @@ class RNYubikit: NSObject {
 
             // The ISO7816 session is started only when required since it's blocking the application UI with the NFC system action sheet.
             let sessionStarted = nfcSession.iso7816SessionState == .open ? true : self.initNFCSession()
+            let responseSent = false
             
             guard sessionStarted else {
                 reject("NFCUnsupported", "NFC is not supported on this device", nil)
@@ -357,11 +359,26 @@ class RNYubikit: NSObject {
                 if session.iso7816SessionState == .open {
                     self?.signNFCU2F(session: session, challenge: challenge, appId: appId, keyHandles: keyHandles) { error, response in
                         guard error == nil else {
+                            responseSent = true
                             reject(error, "An error has occurred", nil)
                             return
                         }
 
+                        responseSent = true
                         resolve(response)
+                    }
+                }
+
+                if state == .closed {
+                    guard let error = session.iso7816SessionError else {
+                            // session was closed without an error
+                                    return
+                    }
+                    let errorCode = (error as NSError).code;
+                    if errorCode == NFCReaderError.readerSessionInvalidationErrorUserCanceled.rawValue {
+                        // user pressed cancel button 
+                        reject(error, "User has cancelled the prompt", nil)
+                        return
                     }
                 }
             })
