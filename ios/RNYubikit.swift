@@ -347,7 +347,7 @@ class RNYubikit: NSObject {
 
             // The ISO7816 session is started only when required since it's blocking the application UI with the NFC system action sheet.
             let sessionStarted = nfcSession.iso7816SessionState == .open ? true : self.initNFCSession()
-            let responseSent = false
+            var responseSent = false
             
             guard sessionStarted else {
                 reject("NFCUnsupported", "NFC is not supported on this device", nil)
@@ -369,7 +369,7 @@ class RNYubikit: NSObject {
                     }
                 }
 
-                if state == .closed {
+                if session.iso7816SessionState == .closed {
                     guard let error = session.iso7816SessionError else {
                             // session was closed without an error
                                     return
