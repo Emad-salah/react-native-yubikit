@@ -377,7 +377,7 @@ class RNYubikit: NSObject {
                     let errorCode = (error as NSError).code;
                     if errorCode == NFCReaderError.readerSessionInvalidationErrorUserCanceled.rawValue {
                         // user pressed cancel button 
-                        reject(error, "User has cancelled the prompt", nil)
+                        reject("PromptCancelled", "User has cancelled the prompt", nil)
                         return
                     }
                 }
